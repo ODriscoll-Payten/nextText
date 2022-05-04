@@ -1,13 +1,14 @@
 //
-//  ViewController.swift
+//  TutorialViewController.swift
 //  Text Adventure
 //
-//  Created by Payten O'Driscoll on 5/2/22.
+//  Created by Payten O'Driscoll on 5/4/22.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class TutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,4 +16,3 @@ class ViewController: UIViewController {
     }
 
 }
-
