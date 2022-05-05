@@ -10,6 +10,17 @@ import UIKit
 
 class PlayScreenViewController: UIViewController {
 
+    @IBOutlet weak var storyTextView: UITextView!
+    
+    
+    @IBOutlet weak var leftButton: UIButton!
+    
+    
+    @IBOutlet weak var rightButton: UIButton!
+    
+    
+    @IBOutlet weak var skipButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

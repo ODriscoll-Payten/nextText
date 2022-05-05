@@ -48,6 +48,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="a4w-ch-Yja"/>
+                    <connections>
+                        <outlet property="chooseFantasyButton" destination="w3w-UJ-CD2" id="1KZ-cY-gTr"/>
+                        <outlet property="chooseSciFiButton" destination="SyA-fY-I8V" id="Zya-yA-3qD"/>
+                        <outlet property="chooseWesternButton" destination="jJA-9K-f1Z" id="0Vb-xO-b0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

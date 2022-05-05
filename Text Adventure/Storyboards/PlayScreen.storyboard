@@ -51,6 +51,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="VRK-BV-4ly"/>
+                    <connections>
+                        <outlet property="leftButton" destination="YNu-6q-7VY" id="XxE-qs-yNG"/>
+                        <outlet property="rightButton" destination="d0o-6H-mfn" id="sII-GF-Ce4"/>
+                        <outlet property="skipButton" destination="1ez-ua-0lr" id="t2V-9j-k57"/>
+                        <outlet property="storyTextView" destination="JcT-am-wf6" id="jwn-Wq-j8j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWJ-MT-bf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
