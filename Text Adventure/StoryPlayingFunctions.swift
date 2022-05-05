@@ -14,6 +14,8 @@ var skipButtonPressed:Int = 1
 
 
 func playStory(){
-    
+    if leftButtonCount = 0{
+        let "" = SciFiStoryLine1
+    }
     
 }
