@@ -9,7 +9,15 @@ import Foundation
 import UIKit
 
 class GenreSelectionViewController: UIViewController {
-
+    
+    @IBOutlet weak var choseFantasyGenreButton: UIButton!
+    
+    
+    @IBOutlet weak var choseWesternGenreButton: UIButton!
+    
+    
+    @IBOutlet weak var choseSciFiGenreButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
