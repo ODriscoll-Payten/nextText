@@ -13,9 +13,16 @@ var rightButtonCount:Int = 0
 var skipButtonPressed:Int = 1
 
 
-func playStory(){
-    if leftButtonCount = 0{
-        let "" = SciFiStoryLine1
-    }
-    
+func playStorySciFi(){
+
 }
+
+func playStoryFantasy(){
+
+}
+
+func playStoryWestern(){
+
+}
+
+
