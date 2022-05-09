@@ -31,4 +31,28 @@ class PlayScreenViewController: UIViewController {
         let sourceViewController = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
     }
+    
+    @IBAction func leftButtonTapped(_ sender: Any) {
+        leftButtonCount = leftButtonCount + 1
+        
+    }
+    
+    
+    @IBAction func rightButtonTapped(_ sender: Any) {
+        rightButtonCount = rightButtonCount + 1
+        
+    }
+    
+    
+    @IBAction func skipButtonTapped(_ sender: Any) {
+        skipButtonCount = skipButtonCount - 1
+        if skipButtonCount == 0{
+            skipButton.backgroundColor = .gray
+            //disable skipButton
+        }
+        
+    }
+    
+    
+    
 }

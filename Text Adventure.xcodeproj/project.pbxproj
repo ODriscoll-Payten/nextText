@@ -20,6 +20,8 @@
 		4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B4282027CF00C88267 /* SceneDelegate.swift */; };
 		4AD5C2BA282027CF00C88267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B8282027CF00C88267 /* Main.storyboard */; };
 		4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5C2BB282027D000C88267 /* Assets.xcassets */; };
+		797B08B42825681C005F302C /* SciFiStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B32825681C005F302C /* SciFiStory.swift */; };
+		797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B5282575F9005F302C /* StoryPlayFunctions.swift */; };
 		DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECC4E728256AB0005282A9 /* FantasyStory.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		4AD5C2B9282027CF00C88267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AD5C2BB282027D000C88267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AD5C2C0282027D000C88267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		797B08B32825681C005F302C /* SciFiStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiStory.swift; sourceTree = "<group>"; };
+		797B08B5282575F9005F302C /* StoryPlayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayFunctions.swift; sourceTree = "<group>"; };
 		DEECC4E728256AB0005282A9 /* FantasyStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,8 @@
 			children = (
 				4A3CA8AC2822CD970072E0E9 /* StartScreenViewController.swift */,
 				4A3CA8AA2822CD760072E0E9 /* TutorialViewController.swift */,
+				797B08B32825681C005F302C /* SciFiStory.swift */,
+				797B08B5282575F9005F302C /* StoryPlayFunctions.swift */,
 				4A3CA8AE2822CDB70072E0E9 /* GenreSelectionViewController.swift */,
 				4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */,
 				4A3CA8B22822CEB00072E0E9 /* EndScreenViewController.swift */,
@@ -191,6 +197,8 @@
 			files = (
 				4A3CA8AF2822CDB70072E0E9 /* GenreSelectionViewController.swift in Sources */,
 				4AD5C2B3282027CF00C88267 /* AppDelegate.swift in Sources */,
+				797B08B42825681C005F302C /* SciFiStory.swift in Sources */,
+				797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */,
 				4A3CA8AB2822CD760072E0E9 /* TutorialViewController.swift in Sources */,
 				4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */,
 				DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */,

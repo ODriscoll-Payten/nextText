@@ -30,12 +30,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="leftButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="hcU-HI-zKy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0o-6H-mfn">
                                 <rect key="frame" x="253" y="649" width="108" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="rightButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="GSC-kT-F78"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-ua-0lr">
                                 <rect key="frame" x="80" y="792" width="254" height="44"/>
@@ -43,6 +49,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
+                                    <action selector="skipButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="ege-tl-ndM"/>
                                     <segue destination="l7a-Sy-45a" kind="show" id="wjQ-Ql-26f"/>
                                 </connections>
                             </button>

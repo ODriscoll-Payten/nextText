@@ -31,6 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
+                                    <action selector="choseSciFiButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="dgP-3Z-nS5"/>
                                     <segue destination="tLT-FI-Fcj" kind="show" id="cO7-0g-Kc2"/>
                                 </connections>
                             </button>
