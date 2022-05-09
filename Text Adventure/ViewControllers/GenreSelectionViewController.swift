@@ -26,4 +26,14 @@ class GenreSelectionViewController: UIViewController {
         let sourceViewController = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
     }
+    
+    
+    
+    //plays SciFi function
+    @IBAction func choseSciFiButtonTapped(_ sender: Any) {
+        playSciFiStory()
+    }
+    
+    
+    
 }

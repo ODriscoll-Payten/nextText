@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+
+
+var leftButtonCount:Int = 0
+
+var rightButtonCount:Int = 0
+
+var skipButtonCount:Int = 1
+
+
+
+func playSciFiStory(){
+    
+    
+    
+}
