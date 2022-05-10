@@ -8,8 +8,19 @@
 import Foundation
 import UIKit
 
-class PlayScreenViewController: UIViewController {
+class PlayScreenViewController: UIViewController{
     
+    var leftButtonCount:Int = 0
+
+    var rightButtonCount:Int = 0
+
+    var skipButtonCount:Int = 1
+    
+    var fantasyAllowed = false
+    
+    var sciFiAllowed = false
+    
+    var westernAllowed = false
     
     @IBOutlet weak var storyTextView: UITextView!
     
