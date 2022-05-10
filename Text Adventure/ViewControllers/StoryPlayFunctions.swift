@@ -6,19 +6,51 @@
 //
 
 import Foundation
+import UIKit
 
 
 
-var leftButtonCount:Int = 0
-
-var rightButtonCount:Int = 0
-
-var skipButtonCount:Int = 1
 
 
 
 func playSciFiStory(){
+//this function sets up the next screen to whatever
+//it is assigned
     
+//PlayScreenViewCOntroller.backgroundImage =
+//playScreen.storyTextView = sciFILine1
+
+//PlayScreenViewCOntroller.leftButton. text =
+//PlayScreenViewCOntroller.rightButton.text =
+        
+//PlayScreenViewCOntroller.leftButton.color =
+//PlayScreenViewCOntroller.rightButton.color =
+}
+
+func playWesternStory(){
+//this function sets up the next screen to whatever
+//it is assigned
     
+//PlayScreenViewCOntroller.backgroundImage =
+//PlayScreenViewCOntroller.storyTextView = westernline1
     
+//PlayScreenViewCOntroller.leftButton. text =
+//PlayScreenViewCOntroller.rightButton.text =
+    
+//PlayScreenViewCOntroller.leftButton.color =
+//PlayScreenViewCOntroller.rightButton.color =
+}
+
+func playFantasyStory(){
+//this function sets up the next screen to whatever
+//it is assigned
+    
+//PlayScreenViewCOntroller.backgroundImage =
+//playScreen.storyTextView = fantasyline1
+    
+//PlayScreenViewCOntroller.leftButton. text =
+//PlayScreenViewCOntroller.rightButton.text =
+        
+//PlayScreenViewCOntroller.leftButton.color =
+//PlayScreenViewCOntroller.rightButton.color =
 }
