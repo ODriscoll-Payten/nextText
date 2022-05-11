@@ -13,7 +13,7 @@ import UIKit
 
 
 
-func playSciFiStory(){
+//func playSciFiStory(){
 //this function sets up the next screen to whatever
 //it is assigned
     
@@ -25,9 +25,9 @@ func playSciFiStory(){
         
 //PlayScreenViewCOntroller.leftButton.color =
 //PlayScreenViewCOntroller.rightButton.color =
-}
+//}
 
-func playWesternStory(){
+//func playWesternStory(){
 //this function sets up the next screen to whatever
 //it is assigned
     
@@ -39,9 +39,9 @@ func playWesternStory(){
     
 //PlayScreenViewCOntroller.leftButton.color =
 //PlayScreenViewCOntroller.rightButton.color =
-}
+//}
 
-func playFantasyStory(){
+//func playFantasyStory(){
 //this function sets up the next screen to whatever
 //it is assigned
     
@@ -53,4 +53,4 @@ func playFantasyStory(){
         
 //PlayScreenViewCOntroller.leftButton.color =
 //PlayScreenViewCOntroller.rightButton.color =
-}
+//}

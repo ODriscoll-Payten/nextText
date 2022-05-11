@@ -61,7 +61,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
                                     <action selector="skipButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="ege-tl-ndM"/>
-                                    <segue destination="l7a-Sy-45a" kind="show" id="wjQ-Ql-26f"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,6 +89,7 @@
                         <outlet property="rightButton" destination="d0o-6H-mfn" id="uSF-tB-lzO"/>
                         <outlet property="skipButton" destination="1ez-ua-0lr" id="bC8-8c-lM2"/>
                         <outlet property="storyTextView" destination="JcT-am-wf6" id="b8G-MR-vo1"/>
+                        <segue destination="l7a-Sy-45a" kind="show" identifier="endingSegue" id="w9D-Ud-f78"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWJ-MT-bf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
