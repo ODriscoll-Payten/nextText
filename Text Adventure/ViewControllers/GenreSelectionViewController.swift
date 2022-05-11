@@ -57,13 +57,6 @@ class GenreSelectionViewController: UIViewController {
         playSciFiStory()
     }
     
-    
-    
-}
-        
-    }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fantasySelectedSegue"{
             //then do set up here instead
