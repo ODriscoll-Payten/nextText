@@ -16,32 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3w-UJ-CD2" customClass="fantasySelectedSegue">
-                                <rect key="frame" x="133" y="147" width="148" height="159"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
+                                <rect key="frame" x="133" y="124" width="148" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fantasy"/>
                                 <connections>
-                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="ARc-69-uNR"/>
+                                    <action selector="choseFantasyButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="yaZ-2D-pf0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
+                                <rect key="frame" x="133" y="368" width="148" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sci-Fi"/>
+                                <connections>
+                                    <action selector="choseSciFiButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="hH7-vf-j83"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
-                                <rect key="frame" x="133" y="619" width="148" height="159"/>
+                                <rect key="frame" x="133" y="630" width="148" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="cO7-0g-Kc2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
-                                <rect key="frame" x="133" y="384" width="148" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="cIO-bt-597"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="filled" title="Western"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o1W-Jb-FZC"/>
@@ -49,9 +46,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="a4w-ch-Yja"/>
                     <connections>
-                        <outlet property="choseFantasyGenreButton" destination="w3w-UJ-CD2" id="VGb-UU-7gc"/>
-                        <outlet property="choseSciFiGenreButton" destination="SyA-fY-I8V" id="Auf-rD-6E8"/>
-                        <outlet property="choseWesternGenreButton" destination="jJA-9K-f1Z" id="zo7-i4-GHP"/>
+                        <outlet property="choseFantasyGenreButton" destination="jJA-9K-f1Z" id="8Qr-1K-p4a"/>
+                        <outlet property="choseSciFiGenreButton" destination="xED-zL-mHS" id="Ayk-RA-GBE"/>
+                        <outlet property="choseWesternGenreButton" destination="SyA-fY-I8V" id="V6H-W2-2vG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,21 +66,9 @@
             <point key="canvasLocation" x="25" y="1199"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ARc-69-uNR"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
