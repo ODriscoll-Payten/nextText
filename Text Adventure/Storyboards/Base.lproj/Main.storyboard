@@ -16,20 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgX-Fr-byf">
-                                <rect key="frame" x="132" y="419" width="151" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgX-Fr-byf">
+                                <rect key="frame" x="70" y="498" width="274" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="atw-wy-nQV"/>
+                                    <constraint firstAttribute="width" constant="274" id="mwv-QQ-Yko"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Start"/>
                                 <connections>
                                     <segue destination="cjZ-oB-heT" kind="show" id="7zT-71-xkv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe5-5Y-irq">
-                                <rect key="frame" x="148" y="512" width="118" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe5-5Y-irq">
+                                <rect key="frame" x="131" y="613" width="152" height="31"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Help"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Tutorial"/>
                                 <connections>
                                     <segue destination="EzK-5C-qNp" kind="show" id="rCu-mT-eMV"/>
                                 </connections>
@@ -37,12 +41,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fe5-5Y-irq" secondAttribute="bottom" constant="218" id="5bO-i7-PGM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OgX-Fr-byf" secondAttribute="trailing" constant="70" id="Gff-K1-6D9"/>
+                            <constraint firstItem="fe5-5Y-irq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="PCx-nP-9BM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fe5-5Y-irq" secondAttribute="trailing" constant="131" id="qIk-cF-Iy8"/>
+                            <constraint firstItem="fe5-5Y-irq" firstAttribute="top" secondItem="OgX-Fr-byf" secondAttribute="bottom" constant="45" id="wGT-AP-MxE"/>
+                            <constraint firstItem="OgX-Fr-byf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="wcQ-m4-hpT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LrN-qX-hd5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="45.535714285714285"/>
+            <point key="canvasLocation" x="36" y="46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EV1-8B-jq0">
@@ -84,6 +96,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

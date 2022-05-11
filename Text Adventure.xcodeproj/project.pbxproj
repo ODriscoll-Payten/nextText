@@ -22,6 +22,7 @@
 		4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5C2BB282027D000C88267 /* Assets.xcassets */; };
 		797B08B42825681C005F302C /* SciFiStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B32825681C005F302C /* SciFiStory.swift */; };
 		797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B5282575F9005F302C /* StoryPlayFunctions.swift */; };
+		DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE77A192282B455200FD67DF /* FantasyMusic.mp3 */; };
 		DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECC4E728256AB0005282A9 /* FantasyStory.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		4AD5C2C0282027D000C88267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797B08B32825681C005F302C /* SciFiStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiStory.swift; sourceTree = "<group>"; };
 		797B08B5282575F9005F302C /* StoryPlayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayFunctions.swift; sourceTree = "<group>"; };
+		DE77A192282B455200FD67DF /* FantasyMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FantasyMusic.mp3; sourceTree = "<group>"; };
 		DEECC4E728256AB0005282A9 /* FantasyStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				4A3CA8BE2822D1CC0072E0E9 /* Storyboards */,
 				4AD5C2BB282027D000C88267 /* Assets.xcassets */,
 				4AD5C2C0282027D000C88267 /* Info.plist */,
+				DE77A192282B455200FD67DF /* FantasyMusic.mp3 */,
 			);
 			path = "Text Adventure";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				4A3CA8BB2822D1220072E0E9 /* EndScreen.storyboard in Resources */,
 				4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */,
+				DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */,
 				4A3CA8B52822D0E30072E0E9 /* TutorialScreen.storyboard in Resources */,
 				4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */,
 				4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */,
@@ -343,6 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T22LLLY7PY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Text Adventure/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -370,6 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T22LLLY7PY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Text Adventure/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

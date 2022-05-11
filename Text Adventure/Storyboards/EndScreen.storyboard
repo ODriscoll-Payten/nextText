@@ -16,35 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A69-Fu-WBw">
-                                <rect key="frame" x="125" y="426" width="164" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-Cr-R9H">
+                                <rect key="frame" x="153" y="613" width="108" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="XVs-qy-Ipw"/>
+                                    <constraint firstAttribute="height" constant="44" id="rvy-cE-DTY"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Choose another story"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="retry"/>
+                                <connections>
+                                    <segue destination="bnn-Iz-03E" kind="unwind" unwindAction="unwindToPlayScreen:" id="1kI-zy-hfL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A69-Fu-WBw">
+                                <rect key="frame" x="70" y="502" width="274" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="REY-fs-Bhf"/>
+                                    <constraint firstAttribute="height" constant="58" id="TQa-ut-WyG"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Choose another story?"/>
                                 <connections>
                                     <action selector="ChooseAnotherStoryPressed:" destination="44W-hx-J06" eventType="touchUpInside" id="XyH-jc-y8a"/>
                                     <segue destination="bnn-Iz-03E" kind="unwind" unwindAction="unwindToGenreSelection:" id="ell-vE-s7V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-Cr-R9H">
-                                <rect key="frame" x="153" y="613" width="108" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="retry"/>
-                                <connections>
-                                    <segue destination="bnn-Iz-03E" kind="unwind" unwindAction="unwindToPlayScreen:" id="1kI-zy-hfL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZDu-DA-z9R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Odp-Cr-R9H" firstAttribute="leading" secondItem="ZDu-DA-z9R" secondAttribute="leading" constant="153" id="BXY-F5-9E4"/>
+                            <constraint firstItem="Odp-Cr-R9H" firstAttribute="top" secondItem="A69-Fu-WBw" secondAttribute="bottom" constant="53" id="O4f-iW-gnc"/>
+                            <constraint firstItem="A69-Fu-WBw" firstAttribute="leading" secondItem="ZDu-DA-z9R" secondAttribute="leading" constant="70" id="QEW-wD-pFj"/>
+                            <constraint firstItem="ZDu-DA-z9R" firstAttribute="trailing" secondItem="Odp-Cr-R9H" secondAttribute="trailing" constant="153" id="cAj-kc-zpB"/>
+                            <constraint firstItem="Odp-Cr-R9H" firstAttribute="top" secondItem="A69-Fu-WBw" secondAttribute="bottom" constant="53" id="mPO-zp-R76"/>
+                            <constraint firstItem="ZDu-DA-z9R" firstAttribute="bottom" secondItem="Odp-Cr-R9H" secondAttribute="bottom" constant="205" id="pJi-Q0-bpZ"/>
+                            <constraint firstItem="ZDu-DA-z9R" firstAttribute="trailing" secondItem="A69-Fu-WBw" secondAttribute="trailing" constant="70" id="yRK-D7-Sye"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cN1-57-4v3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vy3-tq-kAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bnn-Iz-03E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="680" y="2135"/>
+            <point key="canvasLocation" x="679.71014492753625" y="2134.8214285714284"/>
         </scene>
         <!--Main-->
         <scene sceneID="Ygd-kc-TNI">
@@ -58,6 +75,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
