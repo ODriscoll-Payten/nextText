@@ -54,7 +54,7 @@ class GenreSelectionViewController: UIViewController {
     
     //plays SciFi function
     @IBAction func choseSciFiButtonTapped(_ sender: Any) {
-        playSciFiStory()
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
