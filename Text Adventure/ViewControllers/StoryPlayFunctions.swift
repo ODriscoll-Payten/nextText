@@ -11,8 +11,6 @@ import UIKit
 
 
 
-
-
 //skipButtonCount = 1
 //print("here")
 //skipButton.setTitle("NEXT", for: .normal)

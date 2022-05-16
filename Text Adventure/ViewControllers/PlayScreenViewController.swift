@@ -22,6 +22,10 @@ class PlayScreenViewController: UIViewController{
     
     var westernAllowed = false
     
+    
+    let sciFIOrganizer = [sciFiLine1, sciFiline1AndAHalf, sciFiLine2, sciFiLine3, sciFiLine4, sciFiLine5, sciFiLine6,sciFiline6AndAHalf, sciFiLine7, sciFiLine8]
+    
+    
     @IBOutlet weak var storyTextView: UITextView!
     
     
@@ -34,20 +38,25 @@ class PlayScreenViewController: UIViewController{
     @IBOutlet weak var skipButton: UIButton!
     
     
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if fantasyAllowed == true{
             storyTextView.text = introText1
-            playFantasyStory()
+            
             
         } else if sciFiAllowed == true{
             storyTextView.text = sciFiLine1
-            playSciFiStory()
+          
             
         } else if westernAllowed == true{
             storyTextView.text = "kjasfjb"
-            playWesternStory()
+         
         }
         
         //If skip/next is an option then right and left shouldn't be
@@ -60,7 +69,19 @@ class PlayScreenViewController: UIViewController{
             skipButton.backgroundColor = .gray
             skipButton.isEnabled = false
         }
+        updateUI()
     }
+    
+    
+    func updateUI(){
+        //set the text
+        //set the button tittle
+        //update button count
+    }
+    
+    
+    
+    
     
     
     @IBAction func unwindToPlayScreen(_ unwindSegue: UIStoryboardSegue) {
@@ -82,34 +103,6 @@ class PlayScreenViewController: UIViewController{
         skipButtonCount = skipButtonCount - 1
     }
     
-    
-    
-    
-    
-    func playFantasyStory(){
-        
-        
-        
-    }//end
-    
-    
-    
-    
-    func playWesternStory(){
-        
-        
-        
-    }//end
-    
-    
-    
-    
-    func playSciFiStory(){
-        
-        
-        
-        
-        
-    }//end
+
     
 }//end

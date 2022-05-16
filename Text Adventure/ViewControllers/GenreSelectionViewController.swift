@@ -59,8 +59,7 @@ class GenreSelectionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "fantasySelectedSegue"{
-            //then do set up here instead
-            if let playVC = segue.destination as? PlayScreenViewController{
+           if let playVC = segue.destination as? PlayScreenViewController{
                 playVC.leftButtonCount = 0
                 playVC.rightButtonCount = 0
                 playVC.skipButtonCount = 0
