@@ -38,7 +38,7 @@ class PlayScreenViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if fantasyAllowed == true{
-            storyTextView.text = introText1
+            storyTextView.text = fantIntroText1
             playFantasyStory()
             
         } else if sciFiAllowed == true{
