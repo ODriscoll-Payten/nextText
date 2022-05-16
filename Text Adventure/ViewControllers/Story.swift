@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Story{
+    //sets the title and holds everything
+    var title:String
+   
+    
+}
+

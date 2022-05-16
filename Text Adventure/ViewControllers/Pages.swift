@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Pages{
+    //keep track of text display
+    let pages = []
+}
+

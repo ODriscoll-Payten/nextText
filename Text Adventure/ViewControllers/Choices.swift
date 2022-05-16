@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+
+
+struct Choices{
+    //navigates array
+}
