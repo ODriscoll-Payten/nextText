@@ -9,9 +9,14 @@ import Foundation
 
 let sciFiIntroText1:String = "You woke up upon a spaceship, 15 million light years away from your home planet on earth- and not even close to your destination. The crew have spent the last few hours running around and trying to pacify you and the rest of the travelers that were on the way to Delta B. The captain released a statement saying that everything was under control. Apparently there was a malfunction with the cryo sleep functionality within the ship. They told everybody to return to their pods so they could begin to do a ‘Slow Sleep’ protocol and have us under again."
 
+
+
 let sciFiIntroText2:String = "You feel a little restless and you know it'll be a while before they actually get to putting everyone to sleep, so you could take a walk if you wanted but you also know that the crew is going to want to put everyone to sleep as soon as possible- and the idea of being forgotten and left awake is horrible!"
 
-let sciFiDecision1:String = "RETURN TO POD OR WALK AROUND"
+
+
+let sciFiDecision1Option1:String = "RETURN TO POD"
+let sciFiDecision1Option2:String = "WALK AROUND"
 
 
 //1 option go back to pod
@@ -22,13 +27,15 @@ let sciFiLine1:String = "You return to your pod, you have complete faith and tru
 //1 option walk around some
 let sciFiLine2:String = "You decide to walk around some before returning to your pod, you’ve been laying on your back for a good couple of years now and you're starting to feel it. As you walk around you find that the majority of the passengers have calmed down, grabbing a drink or a bite to  eat from the only half functioning cafeteria. You do see one gentleman sitting at the coffee bar, despite the fact that you’ve all been in pods he somehow seems… dirty. Maybe he just missed decontamination."
 
-let sciFiDecision2:String = "LET'S GRAB A COFFEE OR I WANNA SEE MORE OF THE SHIP"
+let sciFiDecision2Option1:String = "LET'S GRAB A COFFEE"
+let sciFiDecision2Option2:String = "I WANNA SEE MORE OF THE SHIP"
 
 
 //2 grab coffee
 let sciFiLine3:String = "“You decide to sit and grab a coffee as well, when you sit down the man doesn’t spare you a glance, simply keeps staring dead eyed into his coffee. You Strike up a conversation, you’ve been lonely for the past couple of… however long you were actually asleep. When you first begin talking to him, you're mostly met with grunts and shakes of his head, discouraged you mention returning back to your pod and he grabs your arm to keep you from getting up. He puts on a sly smile, his teeth look yellowed and rotten. His breath is horrendous. 'I wouldn’t if I were you' he says. He seems to be very serious but he’s freaking you out"
 
-let sciFiDecision3:String = "BREAK AWAY or LISTEN TO HIM"
+let sciFiDecision3Option1:String = "BREAK AWAY"
+let sciFiDecision3Option2:String = "LISTEN TO HIM"
 
 
 //3 break away

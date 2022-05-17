@@ -7,8 +7,23 @@
 
 import Foundation
 
-struct Pages{
+struct SciFiPages{
     //keep track of text display
-    let pages = []
+    
+    let pageIdentifier = UUID()
+    
+    let sciFiText:String
+    
+    
+//    func getId(identifier:String) -> identifier{
+//        forEach Page in sciFiPages{
+//            let identifier = UUID().uuidString
+//            return identifier
+//        }
+//    }
+    
+    
+    
+    
 }
 

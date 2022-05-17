@@ -7,8 +7,12 @@
 
 import Foundation
 
-
-
-struct Choices{
+struct Choice{
     //navigates array
+let choiceTitle:String
+    
+let choiceDestination:String
+//its a string because the uuid will also be a string
+    
+    
 }
