@@ -14,6 +14,8 @@ struct SciFiPages{
     
     let sciFiText:String
     
+    
+    
     let sciFiChoicesLeft = [sciFiDecision1Option1,sciFiDecision2Option1, sciFiDecision3Option1]
     
     let sciFiChoicesRight = [sciFiDecision1Option2,sciFiDecision2Option2, sciFiDecision3Option2]
