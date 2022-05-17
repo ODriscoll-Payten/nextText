@@ -10,7 +10,6 @@ import Foundation
 let sciFiIntroText1:String = "You woke up upon a spaceship, 15 million light years away from your home planet on earth- and not even close to your destination. The crew have spent the last few hours running around and trying to pacify you and the rest of the travelers that were on the way to Delta B. The captain released a statement saying that everything was under control. Apparently there was a malfunction with the cryo sleep functionality within the ship. They told everybody to return to their pods so they could begin to do a ‘Slow Sleep’ protocol and have us under again."
 
 
-
 let sciFiIntroText2:String = "You feel a little restless and you know it'll be a while before they actually get to putting everyone to sleep, so you could take a walk if you wanted but you also know that the crew is going to want to put everyone to sleep as soon as possible- and the idea of being forgotten and left awake is horrible!"
 
 

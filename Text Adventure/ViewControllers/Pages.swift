@@ -10,11 +10,14 @@ import Foundation
 struct SciFiPages{
     //keep track of text display
     
-    let pageIdentifier = UUID()
+    var pageIdentifier = UUID().uuidString
     
     let sciFiText:String
     
     
+}
+
+
 //    func getId(identifier:String) -> identifier{
 //        forEach Page in sciFiPages{
 //            let identifier = UUID().uuidString
@@ -22,8 +25,3 @@ struct SciFiPages{
 //        }
 //    }
     
-    
-    
-    
-}
-
