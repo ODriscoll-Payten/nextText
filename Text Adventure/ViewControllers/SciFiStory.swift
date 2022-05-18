@@ -7,10 +7,24 @@
 
 import Foundation
 
-let sciFiIntroText1:String = "You woke up upon a spaceship, 15 million light years away from your home planet on earth- and not even close to your destination. The crew have spent the last few hours running around and trying to pacify you and the rest of the travelers that were on the way to Delta B. The captain released a statement saying that everything was under control. Apparently there was a malfunction with the cryo sleep functionality within the ship. They told everybody to return to their pods so they could begin to do a ‘Slow Sleep’ protocol and have us under again."
+protocol pageProtocol {
+    var text:String {get set}
+    var id:String {get set}
+}
 
 
-let sciFiIntroText2:String = "You feel a little restless and you know it'll be a while before they actually get to putting everyone to sleep, so you could take a walk if you wanted but you also know that the crew is going to want to put everyone to sleep as soon as possible- and the idea of being forgotten and left awake is horrible!"
+struct sciFiIntroText1: pageProtocol{
+    var text: String = "You woke up upon a spaceship, 15 million light years away from your home planet on earth- and not even close to your destination. The crew have spent the last few hours running around and trying to pacify you and the rest of the travelers that were on the way to Delta B. The captain released a statement saying that everything was under control. Apparently there was a malfunction with the cryo sleep functionality within the ship. They told everybody to return to their pods so they could begin to do a ‘Slow Sleep’ protocol and have us under again."
+   var id = "c38fa10a-d646-11ec-9d64-0242ac120002"
+    
+}
+
+
+struct sciFiIntroText2: pageProtocol{
+    var text: String = "You feel a little restless and you know it'll be a while before they actually get to putting everyone to sleep, so you could take a walk if you wanted but you also know that the crew is going to want to put everyone to sleep as soon as possible- and the idea of being forgotten and left awake is horrible!"
+    
+    var id = "82d9c7fc-d647-11ec-9d64-0242ac120002"
+}
 
 
 
@@ -19,12 +33,16 @@ let sciFiDecision1Option2:String = "WALK AROUND"
 
 
 //1 option go back to pod
-let sciFiLine1:String = "You return to your pod, you have complete faith and trust in your captain and crew. I mean they got you this far. As you lay down in your pod and a pod maintenance employee locks it down you do begin to fall into a slow sleep. Except… falling into cryo sleep feels different then last time. After a while your chest begins to have a hard time grabbing oxygen. You begin to panic and go to knock on your pod roof to grab someone's attention, but you can’t- you feel too weak to even make a fist. Panic grips your mind as black fills your vision. You will sleep, but you will never wake up on Delta B."
+struct sciFiLine1:pageProtocol {
+    var text: String = "You return to your pod, you have complete faith and trust in your captain and crew. I mean they got you this far. As you lay down in your pod and a pod maintenance employee locks it down you do begin to fall into a slow sleep. Except… falling into cryo sleep feels different then last time. After a while your chest begins to have a hard time grabbing oxygen. You begin to panic and go to knock on your pod roof to grab someone's attention, but you can’t- you feel too weak to even make a fist. Panic grips your mind as black fills your vision. You will sleep, but you will never wake up on Delta B."
+    var id = "b625a964-d647-11ec-9d64-0242ac120002"
+}
 
 //you died
 
 //1 option walk around some
-let sciFiLine2:String = "You decide to walk around some before returning to your pod, you’ve been laying on your back for a good couple of years now and you're starting to feel it. As you walk around you find that the majority of the passengers have calmed down, grabbing a drink or a bite to  eat from the only half functioning cafeteria. You do see one gentleman sitting at the coffee bar, despite the fact that you’ve all been in pods he somehow seems… dirty. Maybe he just missed decontamination."
+struct sciFiLine2:pageProtocol {
+    "You decide to walk around some before returning to your pod, you’ve been laying on your back for a good couple of years now and you're starting to feel it. As you walk around you find that the majority of the passengers have calmed down, grabbing a drink or a bite to  eat from the only half functioning cafeteria. You do see one gentleman sitting at the coffee bar, despite the fact that you’ve all been in pods he somehow seems… dirty. Maybe he just missed decontamination."}
 
 let sciFiDecision2Option1:String = "LET'S GRAB A COFFEE"
 let sciFiDecision2Option2:String = "I WANNA SEE MORE OF THE SHIP"
