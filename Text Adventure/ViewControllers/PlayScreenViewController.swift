@@ -51,7 +51,7 @@ class PlayScreenViewController: UIViewController{
             
             
         } else if sciFiAllowed == true{
-            storyTextView.text = sciFiLine1
+            storyTextView.text = "whoops give me a sec"
           
             
         } else if westernAllowed == true{
