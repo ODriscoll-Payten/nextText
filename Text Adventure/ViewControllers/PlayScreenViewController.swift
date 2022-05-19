@@ -25,13 +25,6 @@ class PlayScreenViewController: UIViewController{
     var westernAllowed = false
     
     
-    let sciFiChoicesLeft = [sciFiDecision1Option1,sciFiDecision2Option1, sciFiDecision3Option1]
-    
-    let sciFiChoicesRight = [sciFiDecision1Option2,sciFiDecision2Option2, sciFiDecision3Option2]
-    
-    public var choiceIndex = 0
-    
-    
     @IBOutlet weak var storyTextView: UITextView!
     
     
@@ -56,22 +49,6 @@ class PlayScreenViewController: UIViewController{
         } else if westernAllowed == true{
             storyTextView.text = "kjasfjb"
         }
-        
-        
-        func choiceIndexNav (){
-            if choiceIndex == 0{
-                leftButton.setTitle(sciFiChoicesLeft[0], for: .normal)
-                rightButton.setTitle(sciFiChoicesRight[0], for: .normal)
-            } else if choiceIndex == 1{
-                leftButton.setTitle(sciFiChoicesLeft[1], for: .normal)
-                rightButton.setTitle(sciFiChoicesRight[1], for: .normal)
-            } else if choiceIndex == 2{
-                leftButton.setTitle(sciFiChoicesLeft[2], for: .normal)
-                rightButton.setTitle(sciFiChoicesRight[2], for: .normal)
-            }
-        }
-        
-        
         
         
         //If skip/next is an option then right and left shouldn't be
