@@ -7,12 +7,15 @@
 
 import Foundation
 
-struct Choice{
-    //navigates array
-let choiceTitle:String
+struct Choice {
+    let id:String
     
-let choiceDestination:String
-//its a string because the uuid will also be a string
+    let leftButtonText:String
+    let rightButtonText:String
     
+    let leftStoryText:String
+    let rightStoryText:String
     
+    let leftNextChoiceId:String
+    let rightNextChoiceId:String
 }
