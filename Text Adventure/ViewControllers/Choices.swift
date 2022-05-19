@@ -16,6 +16,6 @@ struct Choice {
     let leftStoryText:String
     let rightStoryText:String
     
-    let leftNextChoiceId:String
-    let rightNextChoiceId:String
+    let leftNextChoiceId:String?
+    let rightNextChoiceId:String?
 }
