@@ -32,12 +32,7 @@ class Story{
     func chooseLeft() {
         guard let currentChoice = choices.last else { return }
         text.append(currentChoice.leftStoryText)
-        if let rightChoiceId = currentChoice.rightNextChoiceId, let nextChoice = findTheNextLeftChoice {
-        //            addChoice(nextChoice)
-        //        } else {
-        //            isFinished = true
-        //        }
-        //    }
+        
 
     }
     
@@ -65,4 +60,4 @@ class Story{
     }
     
 }
-}
+
