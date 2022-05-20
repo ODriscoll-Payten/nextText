@@ -60,6 +60,8 @@ class PlayScreenViewController: UIViewController{
         if skipButtonCount == 0{
             skipButton.backgroundColor = .gray
             skipButton.isEnabled = false
+            leftButton.isEnabled = true
+            rightButton.isEnabled = true
         }
         updateUI()
     }
@@ -91,6 +93,7 @@ class PlayScreenViewController: UIViewController{
     
     
     @IBAction func rightButtonTapped(_ sender: Any) {
+        
         rightButtonCount = rightButtonCount + 1
         updateUI()
         
