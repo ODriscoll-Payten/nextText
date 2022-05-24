@@ -7,101 +7,89 @@
 
 import Foundation
 
-let fantIntroText1: String = "You wake up in a prison cell, unable to recall what happened to bring you here; you can only hope it wasn't for something serious."
+import UIKit
 
-let fantIntroText2: String = "You hear heavy footsteps approaching your cell and notice a paladin in armor approaching you. It's your lucky day, prisoner."
+var fantasyStory = Story(title: "Fantasy Story", text: fantIntroText1 , choices: [fantDecision1, fantDecision2A, fantDecision2B, fantDecision3A, fantDecision3B])
 
-let fantIntroText3: String = "The Lord of these territories had released every prisoner in the hopes of regaining control of the castle in Enchanted Mountain. It has been lost since the dragon attack, yet the Lord of the Land appears desperate. He Offers each Prisoner an item to help them combat the monster"
+var fantIntroText1: String = "You wake up in a prison cell you are not sure how you got here. You can only hope that it was not for anything serious. You shuttle at the thought of what you might have done. Suddenly you hear heavy footsteps approaching your cell. The Prison guard looks at me and said \"Its your lucky day prisoner.\" As you walk out into the field you see a man in a fancy robe I believe it is the lord of this castle. He annouced that he is willing to give me my freedom if I am willing to go on an adventure to reclaim the castle in the Enchanted Mountain. I believe it was about five years ago the kingdom there has fallen into the hands of a Mighty Dragon! \n The Lord walks towards me with one hand having a Sword and the other with a Shield. /n Which one should I choose?"
 
-// Choice Dialouge
+var fantDecision1 = Choice (id: "fanD1",
+                            leftButtonText: "The Sword",
+                            rightButtonText: "The Shield",
+                            leftStoryText: fan_LD,
+                            rightStoryText: fan_RD,
+                            leftNextChoiceId: "fantDecision2A",
+                            rightNextChoiceId: "fantDecision2B")
 
-let fantDecision1 = "For the Sword press the Left Button, For the Shield press the Right Button. Choose Wisely..."
-
-// FIRST SET OF CHOICES
-
-// leftButton = [Sword]
-// rightButton = [Shield]
-
-
-// If the User chooses [Sword]
-let fantLine1: String = "This sword is a great pick for a weapon that will do some damage and will get you where you need to go."
-
-let fantLine2: String = "As you approach the Enchanted Mountain, you will notice a dense forest ahead of you."
-
-let fantLine3: String = "The sun is about to set. Should I wait till sunset or go into the woods?"
-
-// If the User chooses [Shield]
-let fantLine4: String = "This fine shield should protect me against the dragon, and you are on your way with it."
-
-let fantLine5: String = "As you approach the Enchanted Mountain, you will notice a dense forest ahead of you."
-
-let fantLine6: String = "The sun is about to set.  Should I wait till sunset or go into the woods?"
-
-// Choice Dialougue
-
-let fantDecision2 = "To Wait til Morning press the Left Button, To Continue thru the night press the Right Button. Choose Wisely..."
-
-// SECOND SET OF CHOICES
-
-// leftButton = [Wait til Morning]
-// rightButton = [Continue thru the Night]
+    // If User Selects [Sword]
+var fan_LD: String = "I have Choosen the Sword! I should be able to begin my journey now! The Enchanted Mountain isn't too far from here however there is a thick forest and it is getting late now should I wait til morning or should I continue my journey thru the night?"
 
 
-// If user selects [Sword] -> [Wait til Morning]
-let fantLine7: String = "Vampires attacked you at night. You were slain because you did not have adequate protection. You have choose poorly"
 
-// GAMEOVER
+    // If User Selects [Shield]
+var fan_RD: String = "I have Choosen the Shield! I should be able to begin my journey now! The Enchanted Mountain isn't too far from here however there is a thick forest and it is getting late now should I wait til morning or should I continue my journey into the night?"
 
-// If User selects [Sword] -> [Continue into the Night]
-let fantLine8: String = "You proceed into the forest, and luckily for you, you were able to attack a number of vampires with your sword."
 
-let fantLine9: String = "I may stroll securely towards the castle now that the Vampires have been defeated. You finally make it to the castle and enter"
+// [Sword] -> [Wait til Morning] || [Continue into the Night]
+var fantDecision2A = Choice (id: "fanD2A",
+                            leftButtonText: "Wait til Morning",
+                            rightButtonText: "Continue into the Night",
+                            leftStoryText: fan_LD_LD,
+                            rightStoryText: fan_LD_RD,
+                            leftNextChoiceId: nil,
+                            rightNextChoiceId: "fantDecision3A")
 
-// If User selects[Shields] -> [Wait til Morning]
-let fantLine10: String = "During the night you were attacked by vampires. Luckily for you had some good protection to defend you."
+// [Shield] -> [Wait til Morning] || [Continue into the Night]
+var fantDecision2B = Choice (id: "fanD2B",
+                            leftButtonText: "Wait til Morning",
+                            rightButtonText: "Continue into the Night",
+                            leftStoryText: fan_LD_LD,
+                            rightStoryText: fan_LD_RD,
+                            leftNextChoiceId: "fantDecision3B",
+                            rightNextChoiceId: nil)
 
-let fantLine11: String = "That morning, I was able to go securely into the castle."
+    // [Sword] -> [Wait til Morning]
+var fan_LD_LD: String = "While you were resting you were ambused by vampires without good protective gear you did not survive this encounter"
+    // GAMEOVER
 
-// If User selects [Shield] -> [Continue into the Night]
-let fantLine12: String = "You move further into your forest. You can't protect yourself against a horde of vampires without a strong weapon. You have choose poorly"
+    // [Sword] -> [Continue into the Night]
+var fan_LD_RD: String = "You continue into the night and while you were walking you see a vampire clan nearby! Luckily for you they don't seem to have notice you so you had the element of surprise to attack them! \n You finally make your way into the castle while you were walking towards the Throne room where the Dragon resides I stumble across two enchanted item. One is a Enchanted Helmet I'm not sure what it does but I'm just it will give me good protection and thee other item is a Enchanted Bow I'm not sure what this Bow can do but looks extremly powerful. Which one should I take?"
 
-// GAMEOVER
+    // [Shield] -> [Wait til Morning]
+var fan_RD_LD: String = "While you were resting you were ambused by vampires! But luckily for you your shield protected you from the vampire attack and with enough time the sun has risen killing all the vampires! You finally make your way into the castle while you were walking towards the Throne room where the Dragon resides I stumble across two enchanted item. One is a Enchanted Helmet I'm not sure what it does but I'm just it will give me good protection and thee other item is a Enchanted Bow I'm not sure what this Bow can do but looks extremly powerful Which one should I take?"
 
-// THIRD SET OF CHOICES
-let fantLine13: String = "You arrived at the castle's trophy chamber, where you discovered several valuables. But only two appear to be enticing, but you only have room for one."
+    // [Shield] -> [Continue into the Night]
+var fan_RD_RD: String = "You continue into the night and while you were walking you ran across a vampire clan without a good weapon you perished"
+    //GAMEOVER
 
-let fantDecision3 = "For the Enchanted Helmet pressed the Left Button, For the Enchanted Bow press the Right Button. But Choose Wisely..."
+    // [Sword] -> [Continue into the Night] -> [Enchanted Helmet] || [Enchanted Bow]
+var fantDecision3A = Choice (id: "fant3A",
+                            leftButtonText: "Enchanted Helmet",
+                            rightButtonText: "Enchanted Bow",
+                            leftStoryText: fan_RD_LD,
+                            rightStoryText: fan_RD_RD,
+                            leftNextChoiceId: "YOU WIN!",
+                            rightNextChoiceId: nil)
 
-//leftButton = Enchanted Helmet
-//rightButton = Enchanted Bow
+// [Shield] -> [Wait Til Morning] -> [Enchanted Helmet] || [Enchanted Bow]
+var fantDecision3B = Choice (id: "fant3B",
+                            leftButtonText: "Enchanted Helmet",
+                            rightButtonText: "Enchanted Bow",
+                            leftStoryText: fan_RD_LD,
+                            rightStoryText: fan_RD_RD,
+                            leftNextChoiceId: nil,
+                            rightNextChoiceId: "YOU WIN!")
 
-// If User selected [Sword] -> [Continue into the Night] -> [Helmet]
-let fantLine14: String = "You choose to pick up the Enchanted Helmet. With this you should be able to defeat the dragon with this!"
+    
+    // [Sword] -> [Continue into the Night] -> [Enchanted Helmet]
+var fan_LD_RD_LD: String = "You finally come face to face with the mighty dragon! While you were fighting the Dragon landed a hit luckily for you the Enchanted Helmet protected me and guided me when to fight the Dragon. After a few blows my enchanted helmet guided me to strike the Dragon and i was able to stab the Dragon right in the heart! Congratulation Dragonslayer you have slain the Dragon with your Sword and Helmet! You return back to the village a hero to be remembered forever!"
+    // [Sword] -> [Continue into the Night] -> [Enchanted Bow]
+var fan_LD_RD_RD: String = "You finally come face to face with the Dragon! You battled the Dragon with your Sword but when the Dragon struck you, you did not have enough protective gear on thus you did not survive"
+    //GAMEOVER
 
-let fantLine15: String = "It was a grueling struggle, but you were able to vanquish the dragon with my sword and an enchanted helmet. You return back to the village as a hero!"
+    //[Shield] -> [Wait Til Morning] -> [Enchanted Helmet]
+var fan_RD_LD_LD: String = "You finally come face to face with the Dragon! But you do not have any weapons! You perished!"
+    //GAMEOVER
 
-// HAPPY EVER AFTER!
-
-// If User Selected [Sword] -> [Continue into the Night] -> [Enchanted Bow]
-
-let fantLine16: String = "You choose to pick up the Enchanted Bow, and with it, you should be able to combat the dragon!"
-
-let fantLine17: String = "Unfortunately, You did not have adequate protection gear when fighting the Dragon. You have choose poorly"
-
-// GAMEOVER
-
-// If User selects [Shield] -> [Wait til Morning] ->[Enchanted Helmet]
-
-let fantLine18: String = "You decided to Pick up the Enchanted Helmet with this. You should be able to protect yourself from the dragon with this!"
-
-let fantLine19: String = "Unfortunately while fighting the Dragon You did not have enough weapons to defeat the dragon. You have choose poorly"
-
-// GAMEOVER
-
-// If User selects [Shield] -> [Wait til Morning] -> [Enchanted Bow]
-
-let fantLine20: String = "You decided to Pick up the Enchanted Bow with this. You should be able to fight the dragon with this!"
-
-let fantLine21: String = "It was a difficult battle, but you were able to vanquish the Dragon with the Shield and Enchanted Bow!"
-
-// HAPPY EVER AFTER!
+    // [Shield] -> [Wait Til Morning] -> [Enchanted Bow]
+var fan_RD_LD_RD: String = "You finally come face to face with the Dragon! While you were fighting the Dragon landed a hit luckily for you the Shield was able to protect you and while you were blocking you can sense that the Enchanted Bow was ready to fire! Without a moment to lose you shoot your shot! The arrow aimed directly towards the dragons heart! Congratulation Dragonslayer you have slain the Dragon with your Shield and Bow! You return back to the village a hero to be remembered forever!"
