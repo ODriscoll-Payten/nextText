@@ -30,15 +30,15 @@ class Story {
         text.append(currentChoice.leftStoryText)
     }
     
-    func chooseRight() {
-        guard let currentChoice = choices.last else { return }
-        text.append(currentChoice.rightStoryText)
-        if let rightChoiceId = currentChoice.rightNextChoiceId, let nextChoice = findTheNExtChoice {
-            addChoice(nextChoice)
-        } else {
-            isFinished = true
-        }
-    }
+//    func chooseRight() {
+//        guard let currentChoice = choices.last else { return }
+//        text.append(currentChoice.rightStoryText)
+//        if let rightChoiceId = currentChoice.rightNextChoiceId, let nextChoice = findTheNExtChoice {
+//            addChoice(nextChoice)
+//        } else {
+//            isFinished = true
+//        }
+//    }
     
 }
 
