@@ -16,44 +16,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
-                                <rect key="frame" x="133" y="124" width="148" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Fantasy"/>
-                                <connections>
-                                    <action selector="choseFantasyButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="yaZ-2D-pf0"/>
-                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
-                                <rect key="frame" x="133" y="368" width="148" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sci-Fi"/>
-                                <connections>
-                                    <action selector="choseSciFiButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="hH7-vf-j83"/>
-                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
-                                <rect key="frame" x="133" y="630" width="148" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Western"/>
-                                <connections>
-                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-dY-8Tg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYY-YN-lew">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose You're Adventure!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyo-Dh-aDL">
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="66"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
+                                                <rect key="frame" x="27" y="74" width="360" height="269"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Fantasy"/>
+                                                <connections>
+                                                    <action selector="choseFantasyButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="yaZ-2D-pf0"/>
+                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
+                                                <rect key="frame" x="27" y="506" width="360" height="269"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sci-Fi"/>
+                                                <connections>
+                                                    <action selector="choseSciFiButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="hH7-vf-j83"/>
+                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
+                                                <rect key="frame" x="27" y="953" width="360" height="269"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Western"/>
+                                                <connections>
+                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fague Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQA-O6-kpL">
+                                                <rect key="frame" x="27" y="351" width="360" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fague Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riG-Ir-GWZ">
+                                                <rect key="frame" x="27" y="798" width="360" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fague Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtS-lA-EAv">
+                                                <rect key="frame" x="27" y="1242" width="360" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="Ct9-54-Dqc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pYY-YN-lew" secondAttribute="bottom" id="ZDi-D3-8z8"/>
+                                    <constraint firstItem="pYY-YN-lew" firstAttribute="top" secondItem="dcl-dY-8Tg" secondAttribute="top" id="ZMi-RF-0T6"/>
+                                    <constraint firstAttribute="trailing" secondItem="pYY-YN-lew" secondAttribute="trailing" id="cmu-Wy-HT6"/>
+                                    <constraint firstItem="pYY-YN-lew" firstAttribute="leading" secondItem="dcl-dY-8Tg" secondAttribute="leading" id="cpa-fR-12M"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o1W-Jb-FZC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dcl-dY-8Tg" secondAttribute="bottom" id="MCN-Hx-TwJ"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="leading" secondItem="o1W-Jb-FZC" secondAttribute="leading" id="PDM-Zv-Z3D"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="trailing" secondItem="o1W-Jb-FZC" secondAttribute="trailing" id="dX4-4Q-hpr"/>
+                            <constraint firstItem="pYY-YN-lew" firstAttribute="height" secondItem="gTe-qb-UAP" secondAttribute="height" multiplier="1.67411" id="n9C-Io-QcF"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="top" secondItem="o1W-Jb-FZC" secondAttribute="top" id="tdd-n5-SwH"/>
+                            <constraint firstItem="pYY-YN-lew" firstAttribute="width" secondItem="gTe-qb-UAP" secondAttribute="width" id="vHg-iP-wEc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a4w-ch-Yja"/>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="choseFantasyGenreButton" destination="jJA-9K-f1Z" id="8Qr-1K-p4a"/>
                         <outlet property="choseSciFiGenreButton" destination="xED-zL-mHS" id="Ayk-RA-GBE"/>
                         <outlet property="choseWesternGenreButton" destination="SyA-fY-I8V" id="V6H-W2-2vG"/>
+                        <outlet property="fantasyGenreDescription" destination="SQA-O6-kpL" id="25R-wc-o7f"/>
+                        <outlet property="scifiGenreDescription" destination="riG-Ir-GWZ" id="edb-4q-Qti"/>
+                        <outlet property="westernGenreDescription" destination="xtS-lA-EAv" id="6St-2N-jeB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -72,7 +132,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="p4u-JM-ygB"/>
+        <segue reference="LCh-u9-etd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
