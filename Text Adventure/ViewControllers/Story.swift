@@ -28,6 +28,11 @@ class Story {
     func chooseLeft() {
         guard let currentChoice = choices.last else { return }
         text.append(currentChoice.leftStoryText)
+        if let leftChoiceId = currentChoice.leftNextChoiceId, let nextChoice = findTheNExtChoice {
+            addChoice(nextChoice)
+        } else {
+            isFinished = true
+        }
     }
     
 //    func chooseRight() {
@@ -40,5 +45,5 @@ class Story {
 //        }
 //    }
     
-}
+}//end
 
