@@ -23,7 +23,7 @@ class PlayScreenViewController: UIViewController{
     var westernAllowed = false
     
     
-    let sciFIOrganizer = [sciFiLine1, sciFiline1AndAHalf, sciFiLine2, sciFiLine3, sciFiLine4, sciFiLine5, sciFiLine6,sciFiline6AndAHalf, sciFiLine7, sciFiLine8]
+    
     
     
     @IBOutlet weak var storyTextView: UITextView!
@@ -47,7 +47,7 @@ class PlayScreenViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if fantasyAllowed == true{
-            storyTextView.text = introText1
+            storyTextView.text = fantIntroText1
             
             
         } else if sciFiAllowed == true{
