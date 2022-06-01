@@ -83,7 +83,7 @@ class PlayScreenViewController: UIViewController{
     }
     
     @IBAction func leftButtonTapped(_ sender: Any) {
-        story.chooseLeft()
+//        story.chooseLeft()
         updateUI()
         leftButtonCount = leftButtonCount + 1
         updateUI()
