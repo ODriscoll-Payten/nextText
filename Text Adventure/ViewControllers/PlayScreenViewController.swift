@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class PlayScreenViewController: UIViewController{
     
@@ -37,15 +38,18 @@ class PlayScreenViewController: UIViewController{
     @IBOutlet weak var skipButton: UIButton!
     
     
+    var backGroundPlayer = AVAudioPlayer()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if fantasyAllowed == true{
             storyTextView.text = fantIntroText1
-            
+            playBackGroundMusic(fileNamed: "FantasyMusic.mp3")
         } else if sciFiAllowed == true{
-            storyTextView.text = "Here SHOULD be the text"
-            
+            storyTextView.text = sciFiStart
+            playBackGroundMusic(fileNamed: "space-chillout-14194")
         } else if westernAllowed == true{
             storyTextView.text = "kjasfjb"
         }
@@ -73,7 +77,24 @@ class PlayScreenViewController: UIViewController{
     }
     
     
-    
+    func playBackGroundMusic(fileNamed: String) {
+        let url = Bundle.main.url(forResource: fileNamed, withExtension: nil)
+        guard let newURL = url else {
+            
+            return print("Could not find file called \(fileNamed)")
+        }
+        do {
+            backGroundPlayer = try AVAudioPlayer(contentsOf: newURL)
+            backGroundPlayer.numberOfLoops = -1 // <- -1 makes it so it will run until we stop it
+            backGroundPlayer.prepareToPlay()
+            backGroundPlayer.play()
+            
+        }
+        
+        catch let error as NSError {
+            print (error.description)
+        }
+    }
     
     
     
