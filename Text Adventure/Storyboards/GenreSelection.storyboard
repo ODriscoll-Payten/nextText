@@ -23,7 +23,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Fantasy"/>
                                 <connections>
                                     <action selector="choseFantasyButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="yaZ-2D-pf0"/>
-                                    <segue destination="tLT-FI-Fcj" kind="show" id="LCh-u9-etd"/>
+                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
@@ -33,7 +33,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Sci-Fi"/>
                                 <connections>
                                     <action selector="choseSciFiButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="hH7-vf-j83"/>
-                                    <segue destination="tLT-FI-Fcj" kind="show" id="QaC-KG-5Ek"/>
+                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
@@ -42,7 +42,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Western"/>
                                 <connections>
-                                    <segue destination="tLT-FI-Fcj" kind="show" id="p4u-JM-ygB"/>
+                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
                                 </connections>
                             </button>
                         </subviews>
