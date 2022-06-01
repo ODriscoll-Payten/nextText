@@ -49,7 +49,7 @@ class PlayScreenViewController: UIViewController{
             playBackGroundMusic(fileNamed: "FantasyMusic.mp3")
         } else if sciFiAllowed == true{
             storyTextView.text = sciFiStart
-            playBackGroundMusic(fileNamed: "space-chillout-14194")
+            playBackGroundMusic(fileNamed: "space-chillout-14194.mp3")
         } else if westernAllowed == true{
             storyTextView.text = "kjasfjb"
         }
