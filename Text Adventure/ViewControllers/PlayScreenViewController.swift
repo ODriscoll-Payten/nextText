@@ -33,7 +33,7 @@ class PlayScreenViewController: UIViewController{
     
     @IBOutlet weak var skipButton: UIButton!
     
-    @IBOutlet weak var muteButtonTapped: UIButton!
+    @IBOutlet weak var muteButtonTapped: UIBarButtonItem!
     
     var backGroundPlayer = AVAudioPlayer()
     
@@ -46,21 +46,17 @@ class PlayScreenViewController: UIViewController{
         // Do any additional setup after loading the view.
         if fantasyAllowed == true {
             storyTextView.text = fantIntroText1
-            playBMusic.toggle()
             playBMusic = true
             
         } else if sciFiAllowed == true {
             
             storyTextView.text = sciFiStart
-            playBackGroundMusic(fileNamed: "space-chillout-14194.mp3")
+            playBMusic = true
             
         } else if westernAllowed == true {
             
             storyTextView.text = "kjasfjb"
         }
-        
-        
-       
         
         //If skip/next is an option then right and left shouldn't be
         if skipButton.isEnabled == true{
@@ -74,6 +70,7 @@ class PlayScreenViewController: UIViewController{
         }
         updateUI()
         playFantasyMusic(fileNamed: "FantasyMusic.mp3")
+        playSciFiMusic(fileNamed: "space-chillout-14194.mp3")
     }
     
     
@@ -84,16 +81,28 @@ class PlayScreenViewController: UIViewController{
         
     }
     
+    // Func that will play the Genre Music
+    
+    // This Func plays the Fantasy Music
     func playFantasyMusic(fileNamed: String) {
         if fantasyAllowed == true && playBMusic == true {
             playBackGroundMusic(fileNamed: "FantasyMusic.mp3")
         } else {
-            print("Music Code is not working")
+            print("Fantasy Music is not working")
         }
     }
-    // Need to create more funcs like above for other music genre
+    
+    // This Func plays the Sci-Fi Music
+    func playSciFiMusic(fileNamed: String) {
+        if sciFiAllowed == true && playBMusic == true {
+            playBackGroundMusic(fileNamed: "space-chillout-14194.mp3")
+        } else {
+            print("Sci-Fi Music is not working")
+        }
+    }
     
     
+    // Func that plays the Music for a
     func playBackGroundMusic(fileNamed: String) {
         let url = Bundle.main.url(forResource: fileNamed, withExtension: nil)
         guard let newURL = url else {
@@ -141,16 +150,17 @@ class PlayScreenViewController: UIViewController{
     }
     
     // Need Toggle to work for Mute
+   
     @IBAction func muteButtonTapped(_ sender: Any) {
         playBMusic.toggle()
         
         if playBMusic == false {
             backGroundPlayer.stop()
-            muteButtonTapped.setTitle("Off", for: .normal)
+            muteButtonTapped.title = "Off"
 
         } else {
             backGroundPlayer.play()
-            muteButtonTapped.setTitle("On", for: .normal)
+            muteButtonTapped.title = "On"
         }
     }
     
