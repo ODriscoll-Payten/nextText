@@ -57,7 +57,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="VRK-BV-4ly">
-                        <barButtonItem key="rightBarButtonItem" title="🔊" changesSelectionAsPrimaryAction="YES" id="NBI-4A-pAr">
+                        <barButtonItem key="rightBarButtonItem" title="Music Setting" changesSelectionAsPrimaryAction="YES" id="NBI-4A-pAr">
                             <connections>
                                 <action selector="muteButtonTapped:" destination="8qv-db-ecK" id="WS5-4C-tOI"/>
                             </connections>

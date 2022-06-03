@@ -43,6 +43,9 @@ class PlayScreenViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        muteButtonTapped.image = UIImage(systemName: "mic.fill")
+        
         // Do any additional setup after loading the view.
         if fantasyAllowed == true {
             storyTextView.text = fantIntroText1
@@ -156,12 +159,11 @@ class PlayScreenViewController: UIViewController{
         
         if playBMusic == false {
             backGroundPlayer.stop()
-            muteButtonTapped.title = "🔇"
+            muteButtonTapped.image = UIImage(systemName: "mic.slash.fill")
 
         } else {
             backGroundPlayer.play()
-            muteButtonTapped.title = "🔊"
-        }
+            muteButtonTapped.image = UIImage(systemName: "mic.fill")        }
     }
     
     
