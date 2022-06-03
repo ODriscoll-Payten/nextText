@@ -92,7 +92,7 @@ class PlayScreenViewController: UIViewController{
         }
     }
     
-    // This Func plays the Sci-Fi Music
+    
     func playSciFiMusic(fileNamed: String) {
         if sciFiAllowed == true && playBMusic == true {
             playBackGroundMusic(fileNamed: "space-chillout-14194.mp3")
@@ -156,11 +156,11 @@ class PlayScreenViewController: UIViewController{
         
         if playBMusic == false {
             backGroundPlayer.stop()
-            muteButtonTapped.title = "Off"
+            muteButtonTapped.title = "🔇"
 
         } else {
             backGroundPlayer.play()
-            muteButtonTapped.title = "On"
+            muteButtonTapped.title = "🔊"
         }
     }
     
