@@ -58,7 +58,7 @@ class PlayScreenViewController: UIViewController{
             
         } else if westernAllowed == true {
             
-            storyTextView.text = "kjasfjb"
+            storyTextView.text = westernStart
         }
         
         //If skip/next is an option then right and left shouldn't be
