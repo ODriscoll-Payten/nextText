@@ -58,9 +58,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
                                                 <rect key="frame" x="27" y="953" width="360" height="269"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Western"/>
                                                 <connections>
+                                                    <action selector="choseWesternButtonTapped:" destination="9le-1a-bZg" eventType="touchUpInside" id="oFq-oE-AQ2"/>
                                                     <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
                                                 </connections>
                                             </button>
@@ -89,6 +92,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="westernMusic" translatesAutoresizingMaskIntoConstraints="NO" id="7IR-4z-QIB">
+                                                <rect key="frame" x="27" y="953" width="360" height="269"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -146,6 +153,7 @@
     <resources>
         <image name="FantasyImage" width="960" height="671"/>
         <image name="eclipse-g1311b2857_1920" width="1920" height="1269"/>
+        <image name="westernMusic" width="2400" height="1764"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -60,12 +60,17 @@ class GenreSelectionViewController: UIViewController {
     
     //plays Fantasy function
     @IBAction func choseFantasyButtonTapped(_ sender: Any) {
-        //        playBackGroundMusic(fileNamed: "FantasyMusic.mp3") // <- plays selected music when Button tapped :)
+        
     }
     
     //plays SciFi function
     @IBAction func choseSciFiButtonTapped(_ sender: Any) {
-        //        playBackGroundMusic(fileNamed: "space-chillout-14194")
+        
+    }
+    
+    
+    @IBAction func choseWesternButtonTapped(_ sender: Any) {
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

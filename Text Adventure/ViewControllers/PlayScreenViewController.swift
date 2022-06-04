@@ -52,17 +52,17 @@ class PlayScreenViewController: UIViewController{
             playBMusic = true
             
         } else if sciFiAllowed == true {
-            
             storyTextView.text = sciFiStart
             playBMusic = true
             
         } else if westernAllowed == true {
-            
             storyTextView.text = westernStart
+            playBMusic = true
+    
         }
         
         //If skip/next is an option then right and left shouldn't be
-        if skipButton.isEnabled == true{
+        if skipButton.isEnabled == true {
             leftButton.isEnabled = false
             rightButton.isEnabled = false
         }
@@ -74,10 +74,12 @@ class PlayScreenViewController: UIViewController{
         updateUI()
         playFantasyMusic(fileNamed: "FantasyMusic.mp3")
         playSciFiMusic(fileNamed: "space-chillout-14194.mp3")
+        playWesternMusic(fileNamed: "West.mp3")
+        
     }
     
     
-    func updateUI(){
+    func updateUI(){ 
         //set the text
         //set the button tittle
         //update button count
@@ -91,7 +93,7 @@ class PlayScreenViewController: UIViewController{
         if fantasyAllowed == true && playBMusic == true {
             playBackGroundMusic(fileNamed: "FantasyMusic.mp3")
         } else {
-            print("Fantasy Music is not working")
+            print("Fantasy usic is not working")
         }
     }
     
@@ -100,9 +102,19 @@ class PlayScreenViewController: UIViewController{
         if sciFiAllowed == true && playBMusic == true {
             playBackGroundMusic(fileNamed: "space-chillout-14194.mp3")
         } else {
-            print("Sci-Fi Music is not working")
+            print("Sci-Fi music is not working")
         }
     }
+    
+    func playWesternMusic(fileNamed: String) {
+        if westernAllowed == true && playBMusic == true {
+            playBackGroundMusic(fileNamed: "West.mp3")
+        } else {
+            print("Western Music is not working")
+        }
+    }
+
+   
     
     
     // Func that plays the Music for a
