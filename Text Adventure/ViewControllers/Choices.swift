@@ -6,16 +6,21 @@
 //
 
 import Foundation
-
-struct Choice {
-    let id:String
+class ChoiceNode {
+    let text: String
+    let leftChoice: ChoiceNode
+    let rightChoice: ChoiceNode
+    let parent: ChoiceNode?
+    let leftButtonTitle: String
+    let rightButtonTitle: String
     
-    let leftButtonText:String
-    let rightButtonText:String
-    
-    let leftStoryText:String
-    let rightStoryText:String
-    
-    let leftNextChoiceId:String?
-    let rightNextChoiceId:String?
+    init(text: String, leftChoice: ChoiceNode, rightChoice: ChoiceNode, parent: ChoiceNode?, leftButtonTitle: String, rightButtonTitle: String) {
+        self.text = text
+        self.leftChoice = leftChoice
+        self.rightChoice = rightChoice
+        self.parent = parent
+        self.leftButtonTitle = leftButtonTitle
+        self.rightButtonTitle = rightButtonTitle
+    }
 }
+
