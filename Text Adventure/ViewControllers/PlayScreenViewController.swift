@@ -74,7 +74,8 @@ class PlayScreenViewController: UIViewController{
         updateUI()
         playFantasyMusic(fileNamed: "FantasyMusic.mp3")
         playSciFiMusic(fileNamed: "space-chillout-14194.mp3")
-        playWesternMusic(fileNamed: "West.mp3")
+        playWesternMusic(fileNamed: "last-stand-108860.mp3")
+        updateUI()
         
     }
     
@@ -108,13 +109,14 @@ class PlayScreenViewController: UIViewController{
     
     func playWesternMusic(fileNamed: String) {
         if westernAllowed == true && playBMusic == true {
-            playBackGroundMusic(fileNamed: "West.mp3")
+            playBackGroundMusic(fileNamed: "last-stand-108860.mp3")
         } else {
             print("Western Music is not working")
         }
     }
 
    
+    
     
     
     // Func that plays the Music for a

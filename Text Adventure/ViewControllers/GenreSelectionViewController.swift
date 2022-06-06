@@ -92,16 +92,16 @@ class GenreSelectionViewController: UIViewController {
                 playVC.fantasyAllowed = false
                 playVC.sciFiAllowed = true
                 playVC.westernAllowed = false
+            }
+        } else if segue.identifier == "westernSelectedSegue"{
+            if let playVC = segue.destination as? PlayScreenViewController{
+                playVC.leftButtonCount = 0
+                playVC.rightButtonCount = 0
+                playVC.skipButtonCount = 0
+                playVC.fantasyAllowed = false
+                playVC.sciFiAllowed = false
+                playVC.westernAllowed = true
                 
-            } else if segue.identifier == "westernSelectedSegue"{
-                if let playVC = segue.destination as? PlayScreenViewController{
-                    playVC.leftButtonCount = 0
-                    playVC.rightButtonCount = 0
-                    playVC.skipButtonCount = 0
-                    playVC.fantasyAllowed = false
-                    playVC.sciFiAllowed = false
-                    playVC.westernAllowed = true
-                }
             }
         }
     }

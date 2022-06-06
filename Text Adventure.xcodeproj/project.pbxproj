@@ -28,8 +28,8 @@
 		797B08BA2832A863005F302C /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B92832A863005F302C /* Pages.swift */; };
 		797B08BC2832A8C1005F302C /* Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08BB2832A8C1005F302C /* Choices.swift */; };
 		DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */; };
+		DE588633284E481400599600 /* last-stand-108860.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE588632284E481400599600 /* last-stand-108860.mp3 */; };
 		DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE77A192282B455200FD67DF /* FantasyMusic.mp3 */; };
-		DEB1D306284B04A300CADB77 /* west.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DEB1D305284B04A300CADB77 /* west.mp3 */; };
 		DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECC4E728256AB0005282A9 /* FantasyStory.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		797B08B92832A863005F302C /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		797B08BB2832A8C1005F302C /* Choices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choices.swift; sourceTree = "<group>"; };
 		DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FantasyImage.jpeg; sourceTree = "<group>"; };
+		DE588632284E481400599600 /* last-stand-108860.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "last-stand-108860.mp3"; sourceTree = "<group>"; };
 		DE77A192282B455200FD67DF /* FantasyMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FantasyMusic.mp3; sourceTree = "<group>"; };
-		DEB1D305284B04A300CADB77 /* west.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = west.mp3; sourceTree = "<group>"; };
 		DEECC4E728256AB0005282A9 /* FantasyStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 				4AD5C2C0282027D000C88267 /* Info.plist */,
 				DE77A192282B455200FD67DF /* FantasyMusic.mp3 */,
 				796C5B022847B008008ED937 /* space-chillout-14194.mp3 */,
-				DEB1D305284B04A300CADB77 /* west.mp3 */,
+				DE588632284E481400599600 /* last-stand-108860.mp3 */,
 				DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */,
 			);
 			path = "Text Adventure";
@@ -204,7 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A3CA8BB2822D1220072E0E9 /* EndScreen.storyboard in Resources */,
-				DEB1D306284B04A300CADB77 /* west.mp3 in Resources */,
 				4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */,
 				DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */,
 				796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */,
@@ -212,6 +211,7 @@
 				DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */,
 				4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */,
 				4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */,
+				DE588633284E481400599600 /* last-stand-108860.mp3 in Resources */,
 				4AD5C2BA282027CF00C88267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
