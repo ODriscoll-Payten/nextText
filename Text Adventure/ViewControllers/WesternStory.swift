@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 
-
-var westernStart: String = """
+let westernStart =
+    """
 The smell of burning coal wafts subtly through the traincar as it rattles along the tracks.  Your gun chittering along in its holster. The bullets inside almost begging to be let loose. You're anxious, every hair on the back of your neck stands on end like the quills of a porcupine and you know in your gut that you would have been better off staying right where you were at. But train tickets ain't cheap, and alive and broke is a hell of a lot better than dead with a couple bucks. So you grit your teeth and slide a hand down the back of your neck. Your leather boots tapping the ground anxiously.
 
 The voice of the ticket collector breaks through the silence of the traincar.
@@ -20,7 +21,7 @@ The voice of the ticket collector breaks through the silence of the traincar.
 Your boots stomp flat against the ground as you look to the front of the traincar. The ticket collector lay dead on the floor, a smoking gun protruding from the hand of a man wearing a bandana over his mouth and nose. Two more men dressed similarly appear behind him. “Welcome to StatesVille passengers!” he shouts. “Although we are not the Public Interest Enforcers we will be collecting a tax from you!”. The two men behind him produce large sacks and begin walking down the aisles. “Wallets, Watches, Jewelry and valuables into the bags please and thank you” The man with the gun says with a cheery lilt to his voice. One of the thugs walks to your aisle and shoves a bag in your face.
 """
 
-let westernChoice1 = Choice (id: "wec1", leftButtonText: "Spit in the bag", rightButtonText: "Hand over your valuables", leftStoryText: wC1Ld, rightStoryText: wC1Rd, leftNextChoiceId: nil, rightNextChoiceId: "wec2")
+//let westernChoice1 = Choice (id: "wec1", leftButtonText: "Spit in the bag", rightButtonText: "Hand over your valuables", leftStoryText: wC1Ld, rightStoryText: wC1Rd, leftNextChoiceId: nil, rightNextChoiceId: "wec2")
 
 //choice 1 lft
 var wC1Ld: String = "As the bandit shoves the bag in your face you stare back at him defiantly and hock a loogie into the bag. The bandit pushes you into the wall and produces a knife from his belt. “Your valuables or your life” he says threateningly. “Your mom considers that a valuable” you reply gesturing at your spit. The knife is plunged into your kneck…"
@@ -38,7 +39,7 @@ The bandits exit the train car and disappear from sight.
 
 """
 
-let westernChoice2 = Choice (id: "wec2", leftButtonText: "Exit the train", rightButtonText: "Stay on the train", leftStoryText: wC2Ld, rightStoryText: wC2Rd, leftNextChoiceId: "wec3", rightNextChoiceId: nil)
+//let westernChoice2 = Choice (id: "wec2", leftButtonText: "Exit the train", rightButtonText: "Stay on the train", leftStoryText: wC2Ld, rightStoryText: wC2Rd, leftNextChoiceId: "wec3", rightNextChoiceId: nil)
 
 //choice 2 left
 var wC2Ld = """
@@ -55,7 +56,7 @@ Being robbed the first 3 seconds of your stay really turned you off to the idea 
 // GAME OVER: leave before trouble ending
 
 
-let westernChoice3 = Choice (id: "wec3", leftButtonText: "Solve things with violence", rightButtonText: "Explain that you were robbed ", leftStoryText: wC3Ld, rightStoryText: wC3Rd , leftNextChoiceId: nil, rightNextChoiceId: "wec4")
+//let westernChoice3 = Choice (id: "wec3", leftButtonText: "Solve things with violence", rightButtonText: "Explain that you were robbed ", leftStoryText: wC3Ld, rightStoryText: wC3Rd , leftNextChoiceId: nil, rightNextChoiceId: "wec4")
 
 //choice 3 lft
 var wC3Ld =
@@ -70,7 +71,7 @@ You explain to the man what happened on the train. He simply nods unsympathetica
 """
 
 
-let westernChoice4 = Choice(id: "wec4", leftButtonText: "Give him your shoes", rightButtonText: "Refuse", leftStoryText: wC4Ld, rightStoryText: wC4Rd, leftNextChoiceId: nil, rightNextChoiceId: "wec5")
+//let westernChoice4 = Choice(id: "wec4", leftButtonText: "Give him your shoes", rightButtonText: "Refuse", leftStoryText: wC4Ld, rightStoryText: wC4Rd, leftNextChoiceId: nil, rightNextChoiceId: "wec5")
 
 // choice 4 lft
 var wC4Ld = """
@@ -94,7 +95,7 @@ var wC4Rd = """
 You awake in a jail cell, the steel bars in front of you planted into the cold hard ground, containing you within a small cell. Your abdomen still hurts from where you were punched but it doesn't seem like any ribs are broken. You notice a man sitting in a chair sleeping just outside your cell, His back turned to you and his loud snoring the only sound in the room apart from the soft opening of a door. As you observe the man you notice the ring of keys on his belt.
 
 """
-let westernChoice5 = Choice(id: "wec5", leftButtonText: "Do nothing", rightButtonText: "Reach for the keys ", leftStoryText: wC5Ld, rightStoryText: wC5Rd, leftNextChoiceId: "wec6", rightNextChoiceId: nil)
+//let westernChoice5 = Choice(id: "wec5", leftButtonText: "Do nothing", rightButtonText: "Reach for the keys ", leftStoryText: wC5Ld, rightStoryText: wC5Rd, leftNextChoiceId: "wec6", rightNextChoiceId: nil)
 
 //choice 5 lft
 var wC5Ld = """
@@ -115,7 +116,7 @@ you died in a prison beating
 """
 // you died, prison beating
 
-let westernChoice6 = Choice(id: "wec6", leftButtonText: "Go back to sleep", rightButtonText: "Attempt escape", leftStoryText: wC6Ld, rightStoryText: wC6Rd, leftNextChoiceId: "wec7", rightNextChoiceId: "weEsc")
+//let westernChoice6 = Choice(id: "wec6", leftButtonText: "Go back to sleep", rightButtonText: "Attempt escape", leftStoryText: wC6Ld, rightStoryText: wC6Rd, leftNextChoiceId: "wec7", rightNextChoiceId: "weEsc")
 
 //choice 6 lft
 var wC6Ld =
@@ -138,7 +139,7 @@ You scoot across the cell to where the guard is peacefully sleeping, making sure
 
 """
 
-let westernEscapeChoice = Choice(id: "weEsc", leftButtonText: "Go get your boots", rightButtonText: "Take the dress shoes", leftStoryText: wEscLd, rightStoryText: wEscRd, leftNextChoiceId: nil, rightNextChoiceId: nil)
+//let westernEscapeChoice = Choice(id: "weEsc", leftButtonText: "Go get your boots", rightButtonText: "Take the dress shoes", leftStoryText: wEscLd, rightStoryText: wEscRd, leftNextChoiceId: nil, rightNextChoiceId: nil)
 
 
 //escape choice lft
@@ -163,7 +164,7 @@ YOUR PATIENCE AND CAREFUL THINKING ALLOWED YOU TO ESCAPE WITH YOUR LIFE!
 // GAME OVER: escape ending
 
 
-let westernChoice7 = Choice(id: "wec7", leftButtonText: "Turn around and throw your gun", rightButtonText: "Continue pacing", leftStoryText: wC7Ld, rightStoryText: wC7Rd, leftNextChoiceId: nil, rightNextChoiceId: nil)
+//let westernChoice7 = Choice(id: "wec7", leftButtonText: "Turn around and throw your gun", rightButtonText: "Continue pacing", leftStoryText: wC7Ld, rightStoryText: wC7Rd, leftNextChoiceId: nil, rightNextChoiceId: nil)
 
 //choice 7 lft
 var wC7Ld =
@@ -185,4 +186,46 @@ var wC7Rd =
 """
 // you died, hard to win a gunfight with air bullets
 
-var westernStory = Story(title: "Welcome to Statesville", text: westernStart, choices: [westernChoice1,westernChoice2,westernChoice3,westernChoice4,westernChoice5,westernChoice6,westernChoice7,westernEscapeChoice,])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fileprivate let westernNode6 = ChoiceNode(deathText: wC7Rd, endingText: wC7Ld, text: wC6Ld, leftChoice: nil , rightChoice: nil , leftButtonTitle: "Turn around and throw your gun", rightButtonTitle: "Continue pacing")
+
+fileprivate let westernEscapeNode = ChoiceNode(deathText: wEscLd, endingText: wEscRd, text: wC6Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: "Go get your boots", rightButtonTitle: "Take the dress shoes")
+
+fileprivate let westernNode5 = ChoiceNode(deathText: nil, endingText: nil, text: wC5Ld, leftChoice: westernNode6, rightChoice: westernEscapeNode, leftButtonTitle: "Go back to sleep", rightButtonTitle: "Attempt escape")
+
+
+fileprivate let westernNode4 = ChoiceNode(deathText: wC5Rd, endingText: nil, text: wC4Rd, leftChoice: westernNode5, rightChoice: nil, leftButtonTitle: "Do nothing", rightButtonTitle: "Reach for the keys")
+
+
+fileprivate let westernNode3 = ChoiceNode(deathText: nil, endingText: wC4Ld, text: wC3Rd, leftChoice: nil, rightChoice: westernNode4, leftButtonTitle: "Give him your shoes", rightButtonTitle: "Refuse")
+
+fileprivate let westernNode2 = ChoiceNode(deathText: wC3Ld, endingText: nil, text: wC2Ld, leftChoice: nil, rightChoice: westernNode3, leftButtonTitle: "Solve things with violence", rightButtonTitle: "Explain that you were robbed" )
+
+fileprivate let westernNode1 = ChoiceNode (deathText: nil, endingText: wC2Rd,text: wC1Rd, leftChoice:  westernNode2, rightChoice: nil, leftButtonTitle: "Exit the train", rightButtonTitle: "Stay on the train")
+
+fileprivate let introNode = ChoiceNode(deathText: wC1Ld, endingText: nil ,text: westernStart, leftChoice: westernNode1, rightChoice: nil , leftButtonTitle: "Spit in the bag", rightButtonTitle: "Hand over your valuables")
+
+func setParents() {
+    westernNode1.parent = introNode
+    westernNode2.parent = westernNode1
+    westernNode3.parent = westernNode2
+    westernNode4.parent = westernNode3
+    westernNode5.parent = westernNode4
+    westernNode6.parent = westernNode5
+    westernEscapeNode.parent = westernNode5
+}
+

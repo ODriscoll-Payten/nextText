@@ -11,7 +11,7 @@ import AVFoundation
 
 class PlayScreenViewController: UIViewController{
     
-    var story = sciFiStory
+    //var story = sciFiStory
     
     var leftButtonCount:Int = 0
     

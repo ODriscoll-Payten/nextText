@@ -7,18 +7,21 @@
 
 import Foundation
 class ChoiceNode {
+    let deathText: String?
+    let endingText: String?
     let text: String
-    let leftChoice: ChoiceNode
-    let rightChoice: ChoiceNode
-    let parent: ChoiceNode?
+    let leftChoice: ChoiceNode?
+    let rightChoice: ChoiceNode?
+    var parent: ChoiceNode?
     let leftButtonTitle: String
     let rightButtonTitle: String
     
-    init(text: String, leftChoice: ChoiceNode, rightChoice: ChoiceNode, parent: ChoiceNode?, leftButtonTitle: String, rightButtonTitle: String) {
+    init(deathText: String?, endingText: String?,text: String, leftChoice: ChoiceNode?, rightChoice: ChoiceNode?, leftButtonTitle: String, rightButtonTitle: String) {
+        self.deathText = text
+        self.endingText = endingText
         self.text = text
         self.leftChoice = leftChoice
         self.rightChoice = rightChoice
-        self.parent = parent
         self.leftButtonTitle = leftButtonTitle
         self.rightButtonTitle = rightButtonTitle
     }
