@@ -10,7 +10,7 @@ import UIKit
 
 struct Story {
     var title: String
-       var image: String
-       var music: String
-       var startNode: ChoiceNode
+    var image: String
+    var musicFileName: String
+    var startNode: ChoiceNode
 }

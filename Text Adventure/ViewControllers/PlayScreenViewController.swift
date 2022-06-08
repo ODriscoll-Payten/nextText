@@ -12,18 +12,15 @@ import AVFoundation
 class PlayScreenViewController: UIViewController{
     
     //var story = sciFiStory
-    
-    var leftButtonCount:Int = 0
-    
-    var rightButtonCount:Int = 0
-    
-    var skipButtonCount:Int = 0
-    
+    var choices = [ChoiceNode]()
+        
     var fantasyAllowed = false
     
     var sciFiAllowed = false
     
     var westernAllowed = false
+    
+    var currentStory: Story?
     
     @IBOutlet weak var storyTextView: UITextView!
     
@@ -45,76 +42,35 @@ class PlayScreenViewController: UIViewController{
         super.viewDidLoad()
         
         muteButtonTapped.image = UIImage(systemName: "mic.fill")
-        
-        // Do any additional setup after loading the view.
-        if fantasyAllowed == true {
-            storyTextView.text = fantIntroText1
-            playBMusic = true
-            
-        } else if sciFiAllowed == true {
-            storyTextView.text = sciFiStart
-            playBMusic = true
-            
-        } else if westernAllowed == true {
-            storyTextView.text = westernStart
-            playBMusic = true
-    
-        }
-        
-        //If skip/next is an option then right and left shouldn't be
-        if skipButton.isEnabled == true {
-            leftButton.isEnabled = false
-            rightButton.isEnabled = false
-        }
-        
-        if skipButtonCount == 0 {
-            skipButton.backgroundColor = .gray
-            skipButton.isEnabled = false
-        }
+        choices.append(currentStory!.startNode)
+        playMusic()
         updateUI()
-        playFantasyMusic(fileNamed: "FantasyMusic.mp3")
-        playSciFiMusic(fileNamed: "space-chillout-14194.mp3")
-        playWesternMusic(fileNamed: "last-stand-108860.mp3")
-        updateUI()
-        
     }
     
+    func playMusic(){
+        playBackGroundMusic(fileNamed: currentStory!.musicFileName)
+    }
     
     func updateUI(){ 
-        //set the text
-        //set the button tittle
-        //update button count
+       var currentStoryText = ""
+        for choice in choices {
+            currentStoryText += choice.text
+            currentStoryText += "\n\n"
+        }
+        storyTextView.text = currentStoryText
+        if let last = choices.last{
+            leftButton.setTitle(last.leftButtonTitle, for: .normal)
+            rightButton.setTitle(last.rightButtonTitle, for: .normal)
+        }
+       
+        
         
     }
     
     // Func that will play the Genre Music
     
     // This Func plays the Fantasy Music
-    func playFantasyMusic(fileNamed: String) {
-        if fantasyAllowed == true && playBMusic == true {
-            playBackGroundMusic(fileNamed: "FantasyMusic.mp3")
-        } else {
-            print("Fantasy usic is not working")
-        }
-    }
-    
-    
-    func playSciFiMusic(fileNamed: String) {
-        if sciFiAllowed == true && playBMusic == true {
-            playBackGroundMusic(fileNamed: "space-chillout-14194.mp3")
-        } else {
-            print("Sci-Fi music is not working")
-        }
-    }
-    
-    func playWesternMusic(fileNamed: String) {
-        if westernAllowed == true && playBMusic == true {
-            playBackGroundMusic(fileNamed: "last-stand-108860.mp3")
-        } else {
-            print("Western Music is not working")
-        }
-    }
-
+  
    
     
     
@@ -148,21 +104,26 @@ class PlayScreenViewController: UIViewController{
     
     @IBAction func leftButtonTapped(_ sender: Any) {
 //        story.chooseLeft()
-        updateUI()
-        leftButtonCount = leftButtonCount + 1
+        
+        if let leftChoice = currentStory?.startNode.leftChoice{
+            choices.append(leftChoice)
+        }
         updateUI()
     }
     
     
     @IBAction func rightButtonTapped(_ sender: Any) {
-        rightButtonCount = rightButtonCount + 1
+      
+        if let rightChoice = currentStory?.startNode.rightChoice{
+            choices.append(rightChoice)
+        }
         updateUI()
         
     }
     
     
     @IBAction func skipButtonTapped(_ sender: Any) {
-        skipButtonCount = skipButtonCount - 1
+        
         updateUI()
     }
     

@@ -198,26 +198,26 @@ var wC7Rd =
 
 
 
+/* */
 
 
+//let westernNode6 = ChoiceNode(/*deathText: wC7Rd, endingText: wC7Ld,*/ text: wC6Ld, leftChoice: nil , rightChoice: nil , leftButtonTitle: "Turn around and throw your gun", rightButtonTitle: "Continue pacing")
+//
+//let westernEscapeNode = ChoiceNode(/*deathText: wEscLd, endingText: wEscRd,*/ text: wC6Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: "Go get your boots", rightButtonTitle: "Take the dress shoes")
+//
+//let westernNode5 = ChoiceNode(/*deathText: nil, endingText: nil,*/ text: wC5Ld, leftChoice: westernNode6, rightChoice: westernEscapeNode, leftButtonTitle: "Go back to sleep", rightButtonTitle: "Attempt escape")
+//
+//
+//let westernNode4 = ChoiceNode(/*deathText: wC5Rd, endingText: nil,*/ text: wC4Rd, leftChoice: westernNode5, rightChoice: nil, leftButtonTitle: "Do nothing", rightButtonTitle: "Reach for the keys")
+//
+//
+//let westernNode3 = ChoiceNode(/*deathText: nil, endingText: wC4Ld,*/ text: wC3Rd, leftChoice: nil, rightChoice: westernNode4, leftButtonTitle: "Give him your shoes", rightButtonTitle: "Refuse")
+//
+//let westernNode2 = ChoiceNode(/*deathText: wC3Ld, endingText: nil,*/ text: wC2Ld, leftChoice: nil, rightChoice: westernNode3, leftButtonTitle: "Solve things with violence", rightButtonTitle: "Explain that you were robbed" )
 
-let westernNode6 = ChoiceNode(deathText: wC7Rd, endingText: wC7Ld, text: wC6Ld, leftChoice: nil , rightChoice: nil , leftButtonTitle: "Turn around and throw your gun", rightButtonTitle: "Continue pacing")
+let westernNode1 = ChoiceNode (/*deathText: nil, endingText: wC2Rd,*/text: wC1Rd, leftChoice:  nil, rightChoice: nil, leftButtonTitle: "Exit the train", rightButtonTitle: "Stay on the train")
 
-let westernEscapeNode = ChoiceNode(deathText: wEscLd, endingText: wEscRd, text: wC6Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: "Go get your boots", rightButtonTitle: "Take the dress shoes")
-
-let westernNode5 = ChoiceNode(deathText: nil, endingText: nil, text: wC5Ld, leftChoice: westernNode6, rightChoice: westernEscapeNode, leftButtonTitle: "Go back to sleep", rightButtonTitle: "Attempt escape")
-
-
-let westernNode4 = ChoiceNode(deathText: wC5Rd, endingText: nil, text: wC4Rd, leftChoice: westernNode5, rightChoice: nil, leftButtonTitle: "Do nothing", rightButtonTitle: "Reach for the keys")
-
-
-let westernNode3 = ChoiceNode(deathText: nil, endingText: wC4Ld, text: wC3Rd, leftChoice: nil, rightChoice: westernNode4, leftButtonTitle: "Give him your shoes", rightButtonTitle: "Refuse")
-
-let westernNode2 = ChoiceNode(deathText: wC3Ld, endingText: nil, text: wC2Ld, leftChoice: nil, rightChoice: westernNode3, leftButtonTitle: "Solve things with violence", rightButtonTitle: "Explain that you were robbed" )
-
-let westernNode1 = ChoiceNode (deathText: nil, endingText: wC2Rd,text: wC1Rd, leftChoice:  westernNode2, rightChoice: nil, leftButtonTitle: "Exit the train", rightButtonTitle: "Stay on the train")
-
-let introNode = ChoiceNode(deathText: wC1Ld, endingText: nil ,text: westernStart, leftChoice: westernNode1, rightChoice: nil , leftButtonTitle: "Spit in the bag", rightButtonTitle: "Hand over your valuables")
+let westernIntroNode = ChoiceNode(/*deathText: wC1Ld, endingText: nil ,*/text: westernStart, leftChoice: westernNode1, rightChoice: nil , leftButtonTitle: "Hand over your valuables", rightButtonTitle: "Spit in the bag")
 
 
 
