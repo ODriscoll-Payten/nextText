@@ -17,6 +17,7 @@
 		4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */; };
 		4A3CA8BB2822D1220072E0E9 /* EndScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8BA2822D1220072E0E9 /* EndScreen.storyboard */; };
 		4A6A975F284AC934001502BD /* WesternStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A975E284AC934001502BD /* WesternStory.swift */; };
+		4A6A97812850E703001502BD /* SetParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A97802850E703001502BD /* SetParents.swift */; };
 		4AD5C2B3282027CF00C88267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B2282027CF00C88267 /* AppDelegate.swift */; };
 		4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B4282027CF00C88267 /* SceneDelegate.swift */; };
 		4AD5C2BA282027CF00C88267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B8282027CF00C88267 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayScreen.storyboard; sourceTree = "<group>"; };
 		4A3CA8BA2822D1220072E0E9 /* EndScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndScreen.storyboard; sourceTree = "<group>"; };
 		4A6A975E284AC934001502BD /* WesternStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternStory.swift; sourceTree = "<group>"; };
+		4A6A97802850E703001502BD /* SetParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetParents.swift; sourceTree = "<group>"; };
 		4AD5C2AF282027CF00C88267 /* Text Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD5C2B2282027CF00C88267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD5C2B4282027CF00C88267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				4A3CA8B22822CEB00072E0E9 /* EndScreenViewController.swift */,
 				DEECC4E728256AB0005282A9 /* FantasyStory.swift */,
 				4A6A975E284AC934001502BD /* WesternStory.swift */,
+				4A6A97802850E703001502BD /* SetParents.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				797B08BC2832A8C1005F302C /* Choices.swift in Sources */,
 				797B08BA2832A863005F302C /* Pages.swift in Sources */,
 				DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */,
+				4A6A97812850E703001502BD /* SetParents.swift in Sources */,
 				4A3CA8AD2822CD970072E0E9 /* StartScreenViewController.swift in Sources */,
 				4A3CA8B32822CEB00072E0E9 /* EndScreenViewController.swift in Sources */,
 				4A3CA8B12822CE4B0072E0E9 /* PlayScreenViewController.swift in Sources */,

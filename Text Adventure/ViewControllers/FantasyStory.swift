@@ -109,7 +109,7 @@ var fantDecision2A = ChoiceNode(deathText: "String",
                                 leftButtonTitle: "Wait til Morning",
                                 rightButtonTitle: "Continue into the Night")
 
-fileprivate var fantIntroNode = ChoiceNode(deathText: "String",
+var fantIntroNode = ChoiceNode(deathText: "String",
                                    endingText: "No ending text",
                                    text: fantIntroText1,
                                    leftChoice: fantDecision2A,
