@@ -66,7 +66,7 @@ var gameover = ChoiceNode(deathText: "GAMEOVER",
                           leftButtonTitle: "GAME",
                           rightButtonTitle: "OVER")
 
-var fantasyStory = Story(title: "Fantasy!", image: "pic", music: "FantasyMusic.mp3", startNode: firstDecisionNode)
+var fantasyStory = Story(title: "Fantasy!", image: "pic", music: "FantasyMusic.mp3", startNode: fantIntroNode)
 
 
 
@@ -116,5 +116,4 @@ var fantIntroNode = ChoiceNode(deathText: "String",
                                    rightChoice: fantDecision2B,
                                    leftButtonTitle: "Sword",
                                    rightButtonTitle: "Shield")
-
 
