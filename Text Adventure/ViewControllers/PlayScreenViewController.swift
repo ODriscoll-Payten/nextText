@@ -22,6 +22,9 @@ class PlayScreenViewController: UIViewController{
     
     var currentStory: Story?
     
+    var currentChoice: ChoiceNode?
+
+    
     @IBOutlet weak var storyTextView: UITextView!
     
     @IBOutlet weak var leftButton: UIButton!
@@ -105,7 +108,7 @@ class PlayScreenViewController: UIViewController{
     @IBAction func leftButtonTapped(_ sender: Any) {
 //        story.chooseLeft()
         
-        if let leftChoice = currentStory?.startNode.leftChoice{
+        if let leftChoice = choices.last?.leftChoice{
             choices.append(leftChoice)
         }
         updateUI()
@@ -113,8 +116,9 @@ class PlayScreenViewController: UIViewController{
     
     
     @IBAction func rightButtonTapped(_ sender: Any) {
-      
-        if let rightChoice = currentStory?.startNode.rightChoice{
+
+        if let rightChoice = choices.last?.rightChoice
+        {
             choices.append(rightChoice)
         }
         updateUI()
