@@ -20,21 +20,12 @@ class GenreSelectionViewController: UIViewController {
     
     
     @IBOutlet weak var westernGenreDescription: UILabel!
-    
-    @IBOutlet weak var fantasyCoverImage: UIImageView!
-    
-    
-    @IBOutlet weak var scifiCoverImage: UIImageView!
-    
-    @IBOutlet weak var westernCocerImage: UIImageView!
+
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
-        
-        fantasyGenreDescription.text = "Vague Description about the Fantasy Story"
-        scifiGenreDescription.text = "Vague Description about the Sci-Fi Story"
-        westernGenreDescription.text = "Vague Description about a Western"
+
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
