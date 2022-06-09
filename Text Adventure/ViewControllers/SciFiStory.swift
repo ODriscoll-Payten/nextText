@@ -23,13 +23,13 @@ var sciFiStart: String = "You woke up upon a spaceship, 15 million light years a
 //
 //
 ////choice 1 lft
-//var sC1Ld: String = "You return to your pod, you have complete faith and trust in your captain and crew. I mean they got you this far. As you lay down in your pod and a pod maintenance employee locks it down you do begin to fall into a slow sleep. Except… falling into cryo sleep feels different then last time. After a while your chest begins to have a hard time grabbing oxygen. You begin to panic and go to knock on your pod roof to grab someone's attention, but you can’t- you feel too weak to even make a fist. Panic grips your mind as black fills your vision. You will sleep, but you will never wake up on Delta B."
+var sC1Ld: String = "You return to your pod, you have complete faith and trust in your captain and crew. I mean they got you this far. As you lay down in your pod and a pod maintenance employee locks it down you do begin to fall into a slow sleep. Except… falling into cryo sleep feels different then last time. After a while your chest begins to have a hard time grabbing oxygen. You begin to panic and go to knock on your pod roof to grab someone's attention, but you can’t- you feel too weak to even make a fist. Panic grips your mind as black fills your vision. You will sleep, but you will never wake up on Delta B."
 //
 //
 ////you died
 //
 ////choice 1 rgt
-//let sC1Rd = "You decide to walk around some before returning to your pod, you’ve been laying on your back for a good couple of years now and you're starting to feel it. As you walk around you find that the majority of the passengers have calmed down, grabbing a drink or a bite to  eat from the only half functioning cafeteria. You do see one gentleman sitting at the coffee bar, despite the fact that you’ve all been in pods he somehow seems… dirty. Maybe he just missed decontamination."
+let sC1Rd = "You decide to walk around some before returning to your pod, you’ve been laying on your back for a good couple of years now and you're starting to feel it. As you walk around you find that the majority of the passengers have calmed down, grabbing a drink or a bite to  eat from the only half functioning cafeteria. You do see one gentleman sitting at the coffee bar, despite the fact that you’ve all been in pods he somehow seems… dirty. Maybe he just missed decontamination."
 //
 //
 //let sciFiChoice2 = Choice (id: "sfc2",
@@ -70,4 +70,13 @@ var sciFiStart: String = "You woke up upon a spaceship, 15 million light years a
 //
 //
 //
-//
+
+
+
+///walk around option choice one
+let sciFiNode1 = ChoiceNode (text: sC1Rd, leftChoice: westernNode2, rightChoice: westernStayOnTrainNode, leftButtonTitle: "LET'S GRAB A COFFEE", rightButtonTitle: "Stay on the train")
+
+///intro death choice return to pod
+let sciFiIntroDeathNode = ChoiceNode(text: sC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
+
+let sciFiStartNode = ChoiceNode(text: sciFiStart, leftChoice: sciFiIntroDeathNode , rightChoice: westernNode1 , leftButtonTitle: "RETURN TO POD", rightButtonTitle: "WALK AROUND")
