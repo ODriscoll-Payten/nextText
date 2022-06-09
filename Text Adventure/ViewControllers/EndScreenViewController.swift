@@ -9,17 +9,17 @@ import Foundation
 import UIKit
 
 class EndScreenViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
-
+    
     
     
     @IBAction func ChooseAnotherStoryPressed(_ sender: Any) {
-      
-        }
+        
     }
+}
 
