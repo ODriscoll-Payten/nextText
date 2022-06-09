@@ -221,7 +221,7 @@ let westernNode2 = ChoiceNode(/*deathText: wC3Ld, endingText: nil,*/ text: wC2Ld
 
 let westernStayOnTrainNode = ChoiceNode(text: wC2Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
 
-let westernNode1 = ChoiceNode (/*deathText: nil, endingText: wC2Rd,*/text: wC1Rd, leftChoice: westernNode2, rightChoice: nil, leftButtonTitle: "Exit the train", rightButtonTitle: "Stay on the train")
+let westernNode1 = ChoiceNode (/*deathText: nil, endingText: wC2Rd,*/text: wC1Rd, leftChoice: westernNode2, rightChoice: westernStayOnTrainNode, leftButtonTitle: "Exit the train", rightButtonTitle: "Stay on the train")
 
 let westernIntroDeathNode = ChoiceNode(text: wC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
 

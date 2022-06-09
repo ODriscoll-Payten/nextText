@@ -23,8 +23,7 @@ class PlayScreenViewController: UIViewController{
     var currentStory: Story?
     
     var currentChoice: ChoiceNode?
-
-    
+  
     @IBOutlet weak var storyTextView: UITextView!
     
     @IBOutlet weak var leftButton: UIButton!
@@ -48,6 +47,7 @@ class PlayScreenViewController: UIViewController{
         choices.append(currentStory!.startNode)
         playMusic()
         updateUI()
+        skipButton.isEnabled = false
     }
     
     func playMusic(){
@@ -59,14 +59,26 @@ class PlayScreenViewController: UIViewController{
         for choice in choices {
             currentStoryText += choice.text
             currentStoryText += "\n\n"
+            leftButton.isEnabled = true
+            rightButton.isEnabled = true
+            skipButton.isEnabled = false
         }
         storyTextView.text = currentStoryText
         if let last = choices.last{
             leftButton.setTitle(last.leftButtonTitle, for: .normal)
             rightButton.setTitle(last.rightButtonTitle, for: .normal)
+            currentChoice = last
+            if currentChoice?.leftChoice == nil && currentChoice?.rightChoice == nil{
+                skipButton.isEnabled = true
+                if skipButton.isEnabled == true{
+                    skipButton.setTitle("Try Again Bozo", for: .normal)
+                }
+                leftButton.isEnabled = false
+                rightButton.isEnabled = false
+                leftButton.backgroundColor = .gray
+                rightButton.backgroundColor = .gray
+            }
         }
-       
-        
         
     }
     
@@ -127,7 +139,8 @@ class PlayScreenViewController: UIViewController{
     
     
     @IBAction func skipButtonTapped(_ sender: Any) {
-        
+        choices.removeAll()
+        choices.append(currentStory!.startNode)
         updateUI()
     }
     

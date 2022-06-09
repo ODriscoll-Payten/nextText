@@ -47,7 +47,7 @@
                                 <rect key="frame" x="53" y="742" width="308" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <buttonConfiguration key="configuration" style="filled"/>
                                 <connections>
                                     <action selector="skipButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="ege-tl-ndM"/>
                                 </connections>
