@@ -26,7 +26,6 @@
 		797B08B42825681C005F302C /* SciFiStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B32825681C005F302C /* SciFiStory.swift */; };
 		797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B5282575F9005F302C /* StoryPlayFunctions.swift */; };
 		797B08B82832A823005F302C /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B72832A823005F302C /* Story.swift */; };
-		797B08BA2832A863005F302C /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B92832A863005F302C /* Pages.swift */; };
 		797B08BC2832A8C1005F302C /* Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08BB2832A8C1005F302C /* Choices.swift */; };
 		DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */; };
 		DE588633284E481400599600 /* last-stand-108860.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE588632284E481400599600 /* last-stand-108860.mp3 */; };
@@ -56,7 +55,6 @@
 		797B08B32825681C005F302C /* SciFiStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiStory.swift; sourceTree = "<group>"; };
 		797B08B5282575F9005F302C /* StoryPlayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayFunctions.swift; sourceTree = "<group>"; };
 		797B08B72832A823005F302C /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		797B08B92832A863005F302C /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		797B08BB2832A8C1005F302C /* Choices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choices.swift; sourceTree = "<group>"; };
 		DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FantasyImage.jpeg; sourceTree = "<group>"; };
 		DE588632284E481400599600 /* last-stand-108860.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "last-stand-108860.mp3"; sourceTree = "<group>"; };
@@ -80,17 +78,9 @@
 			children = (
 				4A3CA8AC2822CD970072E0E9 /* StartScreenViewController.swift */,
 				4A3CA8AA2822CD760072E0E9 /* TutorialViewController.swift */,
-				797B08B32825681C005F302C /* SciFiStory.swift */,
-				797B08B5282575F9005F302C /* StoryPlayFunctions.swift */,
 				4A3CA8AE2822CDB70072E0E9 /* GenreSelectionViewController.swift */,
-				797B08B72832A823005F302C /* Story.swift */,
-				797B08B92832A863005F302C /* Pages.swift */,
-				797B08BB2832A8C1005F302C /* Choices.swift */,
 				4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */,
 				4A3CA8B22822CEB00072E0E9 /* EndScreenViewController.swift */,
-				DEECC4E728256AB0005282A9 /* FantasyStory.swift */,
-				4A6A975E284AC934001502BD /* WesternStory.swift */,
-				4A6A97802850E703001502BD /* SetParents.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -116,6 +106,27 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		4A3F65CE2852519000B68A71 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				4A6A975E284AC934001502BD /* WesternStory.swift */,
+				DEECC4E728256AB0005282A9 /* FantasyStory.swift */,
+				797B08B32825681C005F302C /* SciFiStory.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		4A3F65D02852532900B68A71 /* Functionality */ = {
+			isa = PBXGroup;
+			children = (
+				797B08B72832A823005F302C /* Story.swift */,
+				797B08BB2832A8C1005F302C /* Choices.swift */,
+				4A6A97802850E703001502BD /* SetParents.swift */,
+				797B08B5282575F9005F302C /* StoryPlayFunctions.swift */,
+			);
+			path = Functionality;
+			sourceTree = "<group>";
+		};
 		4AD5C2A6282027CF00C88267 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +146,8 @@
 		4AD5C2B1282027CF00C88267 /* Text Adventure */ = {
 			isa = PBXGroup;
 			children = (
+				4A3F65D02852532900B68A71 /* Functionality */,
+				4A3F65CE2852519000B68A71 /* Stories */,
 				4A3CA8BC2822D18E0072E0E9 /* ViewControllers */,
 				4A3CA8BD2822D1AE0072E0E9 /* Delegate */,
 				4A3CA8BE2822D1CC0072E0E9 /* Storyboards */,
@@ -233,7 +246,6 @@
 				4A3CA8AB2822CD760072E0E9 /* TutorialViewController.swift in Sources */,
 				4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */,
 				797B08BC2832A8C1005F302C /* Choices.swift in Sources */,
-				797B08BA2832A863005F302C /* Pages.swift in Sources */,
 				DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */,
 				4A6A97812850E703001502BD /* SetParents.swift in Sources */,
 				4A3CA8AD2822CD970072E0E9 /* StartScreenViewController.swift in Sources */,
