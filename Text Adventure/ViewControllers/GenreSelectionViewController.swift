@@ -47,7 +47,7 @@ class GenreSelectionViewController: UIViewController {
             playVC.currentStory = westernStory
             
         } else if segue.identifier == "sciFiSelectedSegue"{
-            playVC.currentStory = westernStory
+            playVC.currentStory = sciFiStory
             
         } else if segue.identifier == "westernSelectedSegue"{
             playVC.currentStory = westernStory

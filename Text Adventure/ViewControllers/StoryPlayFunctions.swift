@@ -12,6 +12,5 @@ import UIKit
 let westernStory = Story(title: "Western", image: "", musicFileName: "last-stand-108860.mp3", startNode: westernIntroNode)
 //let fantasyStory = Story(title: "Fantasy", image: "", musicFileName: "FantasyMusic.mp3", startNode: fantIntroNode)
 //space-chillout-14194.mp3
-func StoryPlay() {
-    
-}
+
+let sciFiStory = Story(title: "Out Of Oxygen", image: "", musicFileName: "space-chillout-14194.mp3", startNode: sciFiStartNode)
