@@ -17,9 +17,16 @@ class GenreSelectionViewController: UIViewController {
     
     @IBOutlet weak var fantasyGenreDescription: UILabel!
     @IBOutlet weak var scifiGenreDescription: UILabel!
+    
+    
     @IBOutlet weak var westernGenreDescription: UILabel!
     
+    @IBOutlet weak var fantasyCoverImage: UIImageView!
     
+    
+    @IBOutlet weak var scifiCoverImage: UIImageView!
+    
+    @IBOutlet weak var westernCocerImage: UIImageView!
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
