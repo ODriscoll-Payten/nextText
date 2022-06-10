@@ -17,15 +17,23 @@ class GenreSelectionViewController: UIViewController {
     
     @IBOutlet weak var fantasyGenreDescription: UILabel!
     @IBOutlet weak var scifiGenreDescription: UILabel!
-    
-    
     @IBOutlet weak var westernGenreDescription: UILabel!
-
+    
+    
+    @IBOutlet weak var fantasyImage: UIImageView!
+    @IBOutlet weak var scifiImage: UIImageView!
+    @IBOutlet weak var westernImage: UIImageView!
+    
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
-
+        fantasyImage.layer.cornerRadius = 25
+        choseFantasyGenreButton.layer.cornerRadius = 25
+        scifiImage.layer.cornerRadius = 25
+        choseSciFiGenreButton.layer.cornerRadius = 25
+        westernImage.layer.cornerRadius = 25
+        choseWesternGenreButton.layer.cornerRadius = 25
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
