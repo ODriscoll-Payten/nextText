@@ -42,7 +42,7 @@ class GenreSelectionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let playVC = segue.destination as? PlayScreenViewController else { return}
         if segue.identifier == "fantasySelectedSegue"{
-            playVC.currentStory = westernStory
+            playVC.currentStory = fantasyStory
             
         } else if segue.identifier == "sciFiSelectedSegue"{
             playVC.currentStory = sciFiStory
