@@ -47,7 +47,7 @@ class PlayScreenViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        muteButtonTapped.image = UIImage(systemName: "mic.fill")
+        muteButtonTapped.image = UIImage(systemName: "speaker.wave.3.fill")
         choices.append(currentStory!.startNode)
         playMusic()
         updateUI()
@@ -146,10 +146,10 @@ class PlayScreenViewController: UIViewController{
         
         if playBMusic == false {
             backGroundPlayer.stop()
-            muteButtonTapped.image = UIImage(systemName: "mic.slash.fill")
+            muteButtonTapped.image = UIImage(systemName: "speaker.slash.fill")
             
         } else {
             backGroundPlayer.play()
-            muteButtonTapped.image = UIImage(systemName: "mic.fill")        }
+            muteButtonTapped.image = UIImage(systemName: "speaker.wave.3.fill")        }
     }
 }
