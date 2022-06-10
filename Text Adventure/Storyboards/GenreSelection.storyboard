@@ -142,6 +142,9 @@
                         <outlet property="choseFantasyGenreButton" destination="jJA-9K-f1Z" id="8Qr-1K-p4a"/>
                         <outlet property="choseSciFiGenreButton" destination="xED-zL-mHS" id="Ayk-RA-GBE"/>
                         <outlet property="choseWesternGenreButton" destination="SyA-fY-I8V" id="V6H-W2-2vG"/>
+                        <outlet property="fantasyImage" destination="r4R-lf-h0I" id="Ney-A1-HS8"/>
+                        <outlet property="scifiImage" destination="6R9-IH-Esc" id="k94-59-Jiu"/>
+                        <outlet property="westernImage" destination="7IR-4z-QIB" id="DKP-Qu-hP2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
