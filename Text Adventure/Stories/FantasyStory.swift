@@ -39,6 +39,7 @@ var fan_RD_RD: String = "You continue into the night and while you were walking 
 
     // [Sword] -> [Continue into the Night] -> [Enchanted Helmet]
 var fan_LD_RD_LD: String = "You finally come face to face with the mighty dragon! While you were fighting the Dragon landed a hit luckily for you the Enchanted Helmet protected me and guided me when to fight the Dragon. After a few blows my enchanted helmet guided me to strike the Dragon and i was able to stab the Dragon right in the heart! Congratulation Dragonslayer you have slain the Dragon with your Sword and Helmet! You return back to the village a hero to be remembered forever!"
+
     // [Sword] -> [Continue into the Night] -> [Enchanted Bow]
 var fan_LD_RD_RD: String = "You finally come face to face with the Dragon! You battled the Dragon with your Sword but when the Dragon struck you, you did not have enough protective gear on thus you did not survive"
     //GAMEOVER
@@ -51,6 +52,18 @@ var fan_RD_LD_LD: String = "You finally come face to face with the Dragon! But y
 var fan_RD_LD_RD: String = "You finally come face to face with the Dragon! While you were fighting the Dragon landed a hit luckily for you the Shield was able to protect you and while you were blocking you can sense that the Enchanted Bow was ready to fire! Without a moment to lose you shoot your shot! The arrow aimed directly towards the dragons heart! Congratulation Dragonslayer you have slain the Dragon with your Shield and Bow! You return back to the village a hero to be remembered forever!"
 
 
+// ENDING SCENARIO
+var fantSwordEnding = ChoiceNode(text: fan_LD_RD_LD,
+                                  leftChoice: nil,
+                                  rightChoice: nil,
+                                  leftButtonTitle: nil,
+                                  rightButtonTitle: nil)
+
+var fantShieldEnding = ChoiceNode(text: fan_RD_LD_RD,
+                                 leftChoice: nil,
+                                 rightChoice: nil,
+                                 leftButtonTitle: nil,
+                                 rightButtonTitle: nil)
 
 // ALL DEATH SCENARIOS
 
@@ -86,37 +99,37 @@ var fantDeath2A = ChoiceNode(text: fan_LD_LD,
 
 
 
-
 // [Shield] -> [Wait Til Morning] -> [Enchanted Helmet] || [Enchanted Bow]
 var fantDecision3B = ChoiceNode(text: fan_RD_LD,
                                 leftChoice: fantDeath3B,
-                                rightChoice: nil,
+                                rightChoice: fantShieldEnding,
                                 leftButtonTitle: "Enchanted Helmet",
                                 rightButtonTitle: "Enchanted Bow")
 
 // [Shield] -> [Wait til Morning] || [Continue into the Night]
-var fantDecision2B = ChoiceNode(text: fan_RD,
-                                leftChoice: fantDecision3A,
-                                rightChoice: fantDeath2A,
+var fantDecisionShield = ChoiceNode(text: fan_RD,
+                                leftChoice: fantDecision3B,
+                                rightChoice: fantDeath2B,
                                 leftButtonTitle: "Wait til Morning",
                                 rightButtonTitle: "Continue into the Night")
 
 // [Sword] -> [Continue into the Night] -> [Enchanted Helmet] || [Enchanted Bow]
 var fantDecision3A = ChoiceNode(text: fan_LD_RD,
-                                leftChoice: nil,
+                                leftChoice: fantSwordEnding,
                                 rightChoice: fantDeath3A,
                                 leftButtonTitle: "Enchanted Helmet",
                                 rightButtonTitle: "Enchanted Bow")
 
 // [Sword] -> [Wait til Morning] || [Continue into the Night]
-var fantDecision2A = ChoiceNode(text: fan_LD,
+var fantDecisionSword = ChoiceNode(text: fan_LD,
                                 leftChoice: fantDeath2A,
-                                rightChoice: fantDecision3B,
+                                rightChoice: fantDecision3A,
                                 leftButtonTitle: "Wait til Morning",
                                 rightButtonTitle: "Continue into the Night")
 
+// [Intro]
 var fantIntroNode = ChoiceNode(text: fantIntroText1,
-                               leftChoice: fantDecision2A,
-                               rightChoice: fantDecision2B,
+                               leftChoice: fantDecisionSword,
+                               rightChoice: fantDecisionShield,
                                leftButtonTitle: "Sword",
                                rightButtonTitle: "Shield")
