@@ -17,6 +17,7 @@
 		4AD5C2B3282027CF00C88267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B2282027CF00C88267 /* AppDelegate.swift */; };
 		4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B4282027CF00C88267 /* SceneDelegate.swift */; };
 		4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5C2BB282027D000C88267 /* Assets.xcassets */; };
+		795AEE4228578D4E00E9DF22 /* TutorialStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AEE4128578D4E00E9DF22 /* TutorialStory.swift */; };
 		796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796C5B022847B008008ED937 /* space-chillout-14194.mp3 */; };
 		797B08B42825681C005F302C /* SciFiStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B32825681C005F302C /* SciFiStory.swift */; };
 		797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B5282575F9005F302C /* StoryPlayFunctions.swift */; };
@@ -41,6 +42,7 @@
 		4AD5C2B4282027CF00C88267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4AD5C2BB282027D000C88267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AD5C2C0282027D000C88267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795AEE4128578D4E00E9DF22 /* TutorialStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStory.swift; sourceTree = "<group>"; };
 		796C5B022847B008008ED937 /* space-chillout-14194.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "space-chillout-14194.mp3"; sourceTree = "<group>"; };
 		797B08B32825681C005F302C /* SciFiStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiStory.swift; sourceTree = "<group>"; };
 		797B08B5282575F9005F302C /* StoryPlayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayFunctions.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				4A6A975E284AC934001502BD /* WesternStory.swift */,
 				DEECC4E728256AB0005282A9 /* FantasyStory.swift */,
 				797B08B32825681C005F302C /* SciFiStory.swift */,
+				795AEE4128578D4E00E9DF22 /* TutorialStory.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */,
 				797B08BC2832A8C1005F302C /* Choices.swift in Sources */,
 				DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */,
+				795AEE4228578D4E00E9DF22 /* TutorialStory.swift in Sources */,
 				4A6A97812850E703001502BD /* SetParents.swift in Sources */,
 				4A3CA8B12822CE4B0072E0E9 /* PlayScreenViewController.swift in Sources */,
 				4A6A975F284AC934001502BD /* WesternStory.swift in Sources */,
