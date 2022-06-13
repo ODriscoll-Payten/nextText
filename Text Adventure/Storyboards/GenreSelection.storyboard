@@ -19,102 +19,93 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-dY-8Tg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYY-YN-lew">
-                                        <rect key="frame" x="0.0" y="-174" width="414" height="1500"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYY-YN-lew">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1420"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose You're Adventure!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyo-Dh-aDL">
-                                                <rect key="frame" x="0.0" y="0.0" width="406" height="66"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose You're Adventure!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyo-Dh-aDL">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
-                                                <rect key="frame" x="27" y="74" width="360" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
+                                                <rect key="frame" x="27" y="41" width="360" height="270"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="360" id="WEJ-VD-MOx"/>
+                                                    <constraint firstAttribute="height" constant="270" id="uUc-CM-bvX"/>
+                                                </constraints>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Fantasy">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="45" name="Futura-Medium"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                    <backgroundConfiguration key="background" image="FantasyImage" imageContentMode="scaleAspectFill"/>
+                                                    <attributedString key="attributedTitle"/>
+                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FantasyImage" translatesAutoresizingMaskIntoConstraints="NO" id="r4R-lf-h0I">
-                                                <rect key="frame" x="27" y="74" width="360" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
-                                                <rect key="frame" x="27" y="506" width="360" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
+                                                <rect key="frame" x="27" y="506" width="360" height="272"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="360" id="6Tp-Th-awG"/>
+                                                    <constraint firstAttribute="height" constant="270" id="ljF-QT-bLl"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Sci-Fi">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="45" name="Futura-Medium"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                    <backgroundConfiguration key="background" image="eclipse-g1311b2857_1920"/>
+                                                    <attributedString key="attributedTitle"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
-                                                <rect key="frame" x="27" y="953" width="360" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
+                                                <rect key="frame" x="27" y="941" width="360" height="270"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="360" id="NeA-Po-O51"/>
+                                                    <constraint firstAttribute="height" constant="270" id="bb4-xo-KzF"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Western">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="45" name="Futura-Medium"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                    <backgroundConfiguration key="background" image="westernMusic" imageContentMode="scaleAspectFill"/>
+                                                    <attributedString key="attributedTitle"/>
+                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eclipse-g1311b2857_1920" translatesAutoresizingMaskIntoConstraints="NO" id="6R9-IH-Esc">
-                                                <rect key="frame" x="27" y="506" width="360" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="westernMusic" translatesAutoresizingMaskIntoConstraints="NO" id="7IR-4z-QIB">
-                                                <rect key="frame" x="27" y="953" width="360" height="269"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1500" id="Ct9-54-Dqc"/>
+                                            <constraint firstItem="xED-zL-mHS" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" constant="27" id="8NB-VR-gAb"/>
+                                            <constraint firstItem="Vyo-Dh-aDL" firstAttribute="top" secondItem="pYY-YN-lew" secondAttribute="top" id="8nu-mQ-jkT"/>
+                                            <constraint firstAttribute="trailing" secondItem="SyA-fY-I8V" secondAttribute="trailing" constant="27" id="AE8-vs-NJo"/>
+                                            <constraint firstItem="Vyo-Dh-aDL" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" id="BwI-eZ-Ekh"/>
+                                            <constraint firstAttribute="height" constant="1420" id="Ede-Sj-6sh"/>
+                                            <constraint firstItem="jJA-9K-f1Z" firstAttribute="top" secondItem="Vyo-Dh-aDL" secondAttribute="bottom" id="I1g-BY-ZDR"/>
+                                            <constraint firstItem="SyA-fY-I8V" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" constant="27" id="Io2-eY-8mM"/>
+                                            <constraint firstItem="Vyo-Dh-aDL" firstAttribute="top" secondItem="pYY-YN-lew" secondAttribute="top" id="JIM-8P-egY"/>
+                                            <constraint firstItem="Vyo-Dh-aDL" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" id="MKf-HT-7p1"/>
+                                            <constraint firstItem="xED-zL-mHS" firstAttribute="top" secondItem="jJA-9K-f1Z" secondAttribute="bottom" constant="180" id="Rjz-EB-mtj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vyo-Dh-aDL" secondAttribute="trailing" id="VU8-L1-agQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vyo-Dh-aDL" secondAttribute="trailing" id="bo1-72-YbK"/>
+                                            <constraint firstAttribute="trailing" secondItem="jJA-9K-f1Z" secondAttribute="trailing" constant="27" id="btC-ux-FW3"/>
+                                            <constraint firstItem="jJA-9K-f1Z" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" constant="27" id="dPj-r0-xrj"/>
+                                            <constraint firstAttribute="trailing" secondItem="xED-zL-mHS" secondAttribute="trailing" constant="27" id="fUN-Bw-FGZ"/>
+                                            <constraint firstItem="jJA-9K-f1Z" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" constant="27" id="jbk-fR-9gR"/>
+                                            <constraint firstItem="xED-zL-mHS" firstAttribute="top" secondItem="jJA-9K-f1Z" secondAttribute="bottom" constant="180" id="kyB-0B-P65"/>
+                                            <constraint firstItem="jJA-9K-f1Z" firstAttribute="top" secondItem="Vyo-Dh-aDL" secondAttribute="bottom" id="ls9-wZ-ZDF"/>
+                                            <constraint firstAttribute="trailing" secondItem="jJA-9K-f1Z" secondAttribute="trailing" constant="27" id="n6Z-fh-6M7"/>
+                                            <constraint firstItem="SyA-fY-I8V" firstAttribute="top" secondItem="xED-zL-mHS" secondAttribute="bottom" constant="180" id="vDg-cO-7zX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -142,14 +133,11 @@
                         <outlet property="choseFantasyGenreButton" destination="jJA-9K-f1Z" id="8Qr-1K-p4a"/>
                         <outlet property="choseSciFiGenreButton" destination="xED-zL-mHS" id="Ayk-RA-GBE"/>
                         <outlet property="choseWesternGenreButton" destination="SyA-fY-I8V" id="V6H-W2-2vG"/>
-                        <outlet property="fantasyImage" destination="r4R-lf-h0I" id="Ney-A1-HS8"/>
-                        <outlet property="scifiImage" destination="6R9-IH-Esc" id="k94-59-Jiu"/>
-                        <outlet property="westernImage" destination="7IR-4z-QIB" id="DKP-Qu-hP2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.82608695652186" y="805.58035714285711"/>
+            <point key="canvasLocation" x="1089.8550724637682" y="757.36607142857144"/>
         </scene>
         <!--PlayScreen-->
         <scene sceneID="hnc-3p-hFn">
@@ -189,6 +177,12 @@
         <image name="westernMusic" width="2400" height="1764"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
