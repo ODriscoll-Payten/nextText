@@ -18,6 +18,7 @@
 		4AD5C2B5282027CF00C88267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B4282027CF00C88267 /* SceneDelegate.swift */; };
 		4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5C2BB282027D000C88267 /* Assets.xcassets */; };
 		795AEE4228578D4E00E9DF22 /* TutorialStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AEE4128578D4E00E9DF22 /* TutorialStory.swift */; };
+		795AEE4428579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */; };
 		796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796C5B022847B008008ED937 /* space-chillout-14194.mp3 */; };
 		797B08B42825681C005F302C /* SciFiStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B32825681C005F302C /* SciFiStory.swift */; };
 		797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B5282575F9005F302C /* StoryPlayFunctions.swift */; };
@@ -43,6 +44,7 @@
 		4AD5C2BB282027D000C88267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AD5C2C0282027D000C88267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795AEE4128578D4E00E9DF22 /* TutorialStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStory.swift; sourceTree = "<group>"; };
+		795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3"; sourceTree = "<group>"; };
 		796C5B022847B008008ED937 /* space-chillout-14194.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "space-chillout-14194.mp3"; sourceTree = "<group>"; };
 		797B08B32825681C005F302C /* SciFiStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiStory.swift; sourceTree = "<group>"; };
 		797B08B5282575F9005F302C /* StoryPlayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayFunctions.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				796C5B022847B008008ED937 /* space-chillout-14194.mp3 */,
 				DE588632284E481400599600 /* last-stand-108860.mp3 */,
 				DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */,
+				795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */,
 			);
 			path = "Text Adventure";
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */,
+				795AEE4428579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 in Resources */,
 				DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */,
 				796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */,
 				4A3CA8B52822D0E30072E0E9 /* TutorialScreen.storyboard in Resources */,

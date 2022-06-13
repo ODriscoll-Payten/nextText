@@ -11,6 +11,8 @@ import AVFoundation
 
 class GenreSelectionViewController: UIViewController {
     
+    var shouldTutorialShow = true
+    
     @IBOutlet weak var choseFantasyGenreButton: UIButton!
     @IBOutlet weak var choseWesternGenreButton: UIButton!
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
@@ -27,8 +29,7 @@ class GenreSelectionViewController: UIViewController {
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
-        
-      
+  
 //        choseFantasyGenreButton.layer.cornerRadius = 25
 //        choseSciFiGenreButton.layer.cornerRadius = 25
 //        choseWesternGenreButton.layer.cornerRadius = 25
@@ -55,6 +56,11 @@ class GenreSelectionViewController: UIViewController {
             
         } else if segue.identifier == "westernSelectedSegue"{
             playVC.currentStory = westernStory
+            
+        }else if segue.identifier == ""{
+            playVC.currentStory = tutorial
+            shouldTutorialShow = false
+            UserDefaults.standard.set(shouldTutorialShow, forKey: "mySwitch")
         }
     }
     

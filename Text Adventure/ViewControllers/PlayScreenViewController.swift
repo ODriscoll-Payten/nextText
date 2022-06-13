@@ -52,6 +52,10 @@ class PlayScreenViewController: UIViewController{
         playMusic()
         updateUI()
         skipButton.isEnabled = false
+        
+        if currentStory == tutorial {
+            
+        }
     }
     
     
