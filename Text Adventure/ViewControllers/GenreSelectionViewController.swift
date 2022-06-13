@@ -34,7 +34,7 @@ class GenreSelectionViewController: UIViewController {
         choseSciFiGenreButton.layer.cornerRadius = 25
         westernImage.layer.cornerRadius = 25
         choseWesternGenreButton.layer.cornerRadius = 25
-        
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
