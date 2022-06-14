@@ -150,6 +150,8 @@ class PlayScreenViewController: UIViewController{
             
         } else {
             backGroundPlayer.play()
-            muteButtonTapped.image = UIImage(systemName: "speaker.wave.3.fill")        }
+            muteButtonTapped.image = UIImage(systemName: "speaker.wave.3.fill")
+            
+        }
     }
 }
