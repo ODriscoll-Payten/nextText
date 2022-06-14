@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A3CA8AF2822CDB70072E0E9 /* GenreSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3CA8AE2822CDB70072E0E9 /* GenreSelectionViewController.swift */; };
 		4A3CA8B12822CE4B0072E0E9 /* PlayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */; };
-		4A3CA8B52822D0E30072E0E9 /* TutorialScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B42822D0E30072E0E9 /* TutorialScreen.storyboard */; };
 		4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B62822D1020072E0E9 /* GenreSelection.storyboard */; };
 		4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */; };
 		4A6A975F284AC934001502BD /* WesternStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A975E284AC934001502BD /* WesternStory.swift */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		4A3CA8AE2822CDB70072E0E9 /* GenreSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionViewController.swift; sourceTree = "<group>"; };
 		4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenViewController.swift; sourceTree = "<group>"; };
-		4A3CA8B42822D0E30072E0E9 /* TutorialScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TutorialScreen.storyboard; sourceTree = "<group>"; };
 		4A3CA8B62822D1020072E0E9 /* GenreSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenreSelection.storyboard; sourceTree = "<group>"; };
 		4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayScreen.storyboard; sourceTree = "<group>"; };
 		4A6A975E284AC934001502BD /* WesternStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternStory.swift; sourceTree = "<group>"; };
@@ -72,6 +70,7 @@
 			children = (
 				4A3CA8AE2822CDB70072E0E9 /* GenreSelectionViewController.swift */,
 				4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */,
+				4A3CA8BD2822D1AE0072E0E9 /* Delegate */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -88,7 +87,6 @@
 		4A3CA8BE2822D1CC0072E0E9 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				4A3CA8B42822D0E30072E0E9 /* TutorialScreen.storyboard */,
 				4A3CA8B62822D1020072E0E9 /* GenreSelection.storyboard */,
 				4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */,
 			);
@@ -139,7 +137,6 @@
 				4A3F65D02852532900B68A71 /* Functionality */,
 				4A3F65CE2852519000B68A71 /* Stories */,
 				4A3CA8BC2822D18E0072E0E9 /* ViewControllers */,
-				4A3CA8BD2822D1AE0072E0E9 /* Delegate */,
 				4A3CA8BE2822D1CC0072E0E9 /* Storyboards */,
 				4AD5C2BB282027D000C88267 /* Assets.xcassets */,
 				4AD5C2C0282027D000C88267 /* Info.plist */,
@@ -214,7 +211,6 @@
 				795AEE4428579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 in Resources */,
 				DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */,
 				796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */,
-				4A3CA8B52822D0E30072E0E9 /* TutorialScreen.storyboard in Resources */,
 				DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */,
 				4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */,
 				4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */,

@@ -11,21 +11,15 @@ import AVFoundation
 
 class GenreSelectionViewController: UIViewController {
     
-    var shouldTutorialShow = true
+    var shouldTutorialShow = false
+    
+    @IBOutlet weak var choseTutorialButton: UIButton!
     
     @IBOutlet weak var choseFantasyGenreButton: UIButton!
     @IBOutlet weak var choseWesternGenreButton: UIButton!
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
     
-    @IBOutlet weak var fantasyGenreDescription: UILabel!
-    @IBOutlet weak var scifiGenreDescription: UILabel!
-    @IBOutlet weak var westernGenreDescription: UILabel!
-    
-    
-    @IBOutlet weak var fantasyImage: UIImageView!
-    @IBOutlet weak var scifiImage: UIImageView!
-    @IBOutlet weak var westernImage: UIImageView!
-    
+
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -67,7 +61,7 @@ class GenreSelectionViewController: UIViewController {
         } else if segue.identifier == "westernSelectedSegue"{
             playVC.currentStory = westernStory
             
-        }else if segue.identifier == ""{
+        }else if segue.identifier == "tutorialSegue"{
             playVC.currentStory = tutorial
             shouldTutorialShow = false
             UserDefaults.standard.set(shouldTutorialShow, forKey: "tutorialOn?")

@@ -24,12 +24,32 @@ Defending the developers? Well… you haven’t even played the game yet- what i
 var tC2RD: String = """
 You nod placatingly at your phone, letting the narrator rant and rave so long you’ve gotten quite bored with the whole thing. In fact, the narrator goes on for so long about how detestable the developers are they never tell you how to play the game. This defeats the whole purpose of a tutorial. You never learn how to mute the music by pressing the button in the top right corner, or that when playing through a story you will be given choices which are displayed on the left and right buttons below.The narrator never tells you that if you ever reach the end of a story you will get the chance to start over with the try again button. But due to the narrator being substandard at his job- you don’t know any of this, and perhaps never will.
 """
-let tutorialLetTheNarratorBashFest = ChoiceNode(text: tC2RD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
+var tutorialLetTheNarratorBashFest = ChoiceNode(text: tC2RD,
+                                                leftChoice: nil,
+                                                rightChoice: nil,
+                                                leftButtonTitle: nil,
+                                                rightButtonTitle: nil)
 
-let chooseToDefendTheDevelopersTutorialChoice = ChoiceNode(text: tC2LD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
+var chooseToDefendTheDevelopersTutorialChoice = ChoiceNode(text: tC2LD,
+                                                           leftChoice: nil,
+                                                           rightChoice: nil,
+                                                           leftButtonTitle: nil,
+                                                           rightButtonTitle: nil)
 
-let tutorialForSomeReasonImGoingThroughTheTutorialChoice = ChoiceNode(text: tC1RD, leftChoice: chooseToDefendTheDevelopersTutorialChoice, rightChoice: tutorialLetTheNarratorBashFest, leftButtonTitle: "DEFEND THE DEVELOPERS", rightButtonTitle: "LET THE NARRATOR COMPLAIN")
+var tutorialForSomeReasonImGoingThroughTheTutorialChoice = ChoiceNode(text: tC1RD,
+                                                                      leftChoice: chooseToDefendTheDevelopersTutorialChoice,
+                                                                      rightChoice: tutorialLetTheNarratorBashFest,
+                                                                      leftButtonTitle: "DEFEND THE DEVELOPERS",
+                                                                      rightButtonTitle: "LET THE NARRATOR COMPLAIN")
 
-let tutorialDontNeedATutorialChoice = ChoiceNode(text: tC1LD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
+var tutorialDontNeedATutorialChoice = ChoiceNode(text: tC1LD,
+                                                 leftChoice: nil,
+                                                 rightChoice: nil,
+                                                 leftButtonTitle: nil,
+                                                 rightButtonTitle: nil)
 
-let tutorialStartNode = ChoiceNode(text: tutorialStart, leftChoice: tutorialDontNeedATutorialChoice, rightChoice: tutorialForSomeReasonImGoingThroughTheTutorialChoice, leftButtonTitle: "NO I DON’T NEED A TUTORIAL", rightButtonTitle: "YES, I WANNA GO THROUGH THE TUTORIAL")
+var tStartNode = ChoiceNode(text: tutorialStart,
+                            leftChoice: tutorialDontNeedATutorialChoice,
+                            rightChoice: tutorialForSomeReasonImGoingThroughTheTutorialChoice,
+                            leftButtonTitle: "NO I DON’T NEED A TUTORIAL",
+                            rightButtonTitle: "YES, I WANNA GO THROUGH THE TUTORIAL")
