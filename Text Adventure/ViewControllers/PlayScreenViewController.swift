@@ -53,8 +53,6 @@ class PlayScreenViewController: UIViewController{
         updateUI()
         skipButton.isEnabled = false
         
-        
-        
     }
     
     
@@ -88,7 +86,6 @@ class PlayScreenViewController: UIViewController{
                 rightButton.backgroundColor = .gray
             }
         }
-        
     }
     
     

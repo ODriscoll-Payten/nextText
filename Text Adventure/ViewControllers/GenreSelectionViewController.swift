@@ -33,6 +33,16 @@ class GenreSelectionViewController: UIViewController {
 //        choseFantasyGenreButton.layer.cornerRadius = 25
 //        choseSciFiGenreButton.layer.cornerRadius = 25
 //        choseWesternGenreButton.layer.cornerRadius = 25
+        if shouldTutorialShow == true{
+            choseFantasyGenreButton.isEnabled = false
+            choseWesternGenreButton.isEnabled = false
+            choseSciFiGenreButton.isEnabled = false
+            
+        } else if shouldTutorialShow == false{
+            choseFantasyGenreButton.isEnabled = true
+            choseWesternGenreButton.isEnabled = true
+            choseSciFiGenreButton.isEnabled = true
+        }
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
