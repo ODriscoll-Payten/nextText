@@ -17,4 +17,4 @@ let sciFiStory = Story(title: "Out Of Oxygen", image: "", musicFileName: "space-
 
 let fantasyStory = Story(title: "Fantasy", image: "", musicFileName: "FantasyMusic.mp3", startNode: fantIntroNode)
 
-let tutorial = Story(title: "Tutorial", image: "", musicFileName: "FantasyMusic.mp3", startNode: tutorialStart)
+let tutorial = Story(title: "Tutorial", image: "", musicFileName: "FantasyMusic.mp3", startNode: tutorialStartNode)

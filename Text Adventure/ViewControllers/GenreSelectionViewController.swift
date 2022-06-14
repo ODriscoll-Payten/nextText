@@ -60,7 +60,7 @@ class GenreSelectionViewController: UIViewController {
         }else if segue.identifier == ""{
             playVC.currentStory = tutorial
             shouldTutorialShow = false
-            UserDefaults.standard.set(shouldTutorialShow, forKey: "mySwitch")
+            UserDefaults.standard.set(shouldTutorialShow, forKey: "tutorialOn?")
         }
     }
     

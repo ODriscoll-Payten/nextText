@@ -53,9 +53,8 @@ class PlayScreenViewController: UIViewController{
         updateUI()
         skipButton.isEnabled = false
         
-        if currentStory == tutorial {
-            
-        }
+        
+        
     }
     
     
