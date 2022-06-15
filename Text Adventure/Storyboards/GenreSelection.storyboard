@@ -22,78 +22,76 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYY-YN-lew">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1420"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose You're Adventure!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyo-Dh-aDL">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-Jr-huY">
-                                                <rect key="frame" x="27" y="76" width="360" height="272"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
-                                                    <backgroundConfiguration key="background" image="tutorialPic" imageContentMode="scaleAspectFill"/>
-                                                    <attributedString key="attributedTitle"/>
-                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="tutorialSegue" id="2OF-Ac-dMy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
-                                                <rect key="frame" x="27" y="422" width="360" height="272"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
-                                                    <backgroundConfiguration key="background" image="FantasyImage" imageContentMode="scaleAspectFill"/>
-                                                    <attributedString key="attributedTitle"/>
-                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
-                                                <rect key="frame" x="27" y="777" width="360" height="272"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
-                                                    <backgroundConfiguration key="background" image="eclipse-g1311b2857_1920"/>
-                                                    <attributedString key="attributedTitle"/>
-                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
-                                                <rect key="frame" x="27" y="1118" width="360" height="270"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
-                                                    <backgroundConfiguration key="background" image="westernMusic" imageContentMode="scaleAspectFill"/>
-                                                    <attributedString key="attributedTitle"/>
-                                                    <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-aR-H3B">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1420"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-Jr-huY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                            <backgroundConfiguration key="background" image="tutorialPic" imageContentMode="scaleAspectFill"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="tLT-FI-Fcj" kind="show" identifier="tutorialSegue" id="2OF-Ac-dMy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
+                                                        <rect key="frame" x="0.0" y="382.5" width="414" height="272.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                            <backgroundConfiguration key="background" image="FantasyImage" imageContentMode="scaleAspectFill"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
+                                                        <rect key="frame" x="0.0" y="765" width="414" height="272.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                            <backgroundConfiguration key="background" image="eclipse-g1311b2857_1920"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
+                                                        <rect key="frame" x="0.0" y="1147.5" width="414" height="272.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                            <backgroundConfiguration key="background" image="westernMusic" imageContentMode="scaleAspectFill"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1420" id="Khg-Ng-74i"/>
+                                            <constraint firstItem="Pkd-aR-H3B" firstAttribute="leading" secondItem="pYY-YN-lew" secondAttribute="leading" id="Ifv-9j-96g"/>
+                                            <constraint firstAttribute="height" constant="1420" id="LUW-rv-ndz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pkd-aR-H3B" secondAttribute="trailing" id="UO7-Hq-aA2"/>
+                                            <constraint firstAttribute="bottom" secondItem="Pkd-aR-H3B" secondAttribute="bottom" id="Usk-co-AB3"/>
+                                            <constraint firstItem="Pkd-aR-H3B" firstAttribute="top" secondItem="pYY-YN-lew" secondAttribute="top" id="z4e-oU-ke5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -110,9 +108,14 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="dcl-dY-8Tg" secondAttribute="bottom" id="MCN-Hx-TwJ"/>
                             <constraint firstItem="dcl-dY-8Tg" firstAttribute="leading" secondItem="o1W-Jb-FZC" secondAttribute="leading" id="PDM-Zv-Z3D"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="top" secondItem="o1W-Jb-FZC" secondAttribute="top" id="PHb-K1-JZC"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="trailing" secondItem="o1W-Jb-FZC" secondAttribute="trailing" id="XzG-Xa-THv"/>
                             <constraint firstItem="dcl-dY-8Tg" firstAttribute="trailing" secondItem="o1W-Jb-FZC" secondAttribute="trailing" id="dX4-4Q-hpr"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="leading" secondItem="o1W-Jb-FZC" secondAttribute="leading" id="lcm-gE-fxv"/>
+                            <constraint firstItem="dcl-dY-8Tg" firstAttribute="top" secondItem="o1W-Jb-FZC" secondAttribute="top" id="miW-Ok-bEZ"/>
                             <constraint firstItem="dcl-dY-8Tg" firstAttribute="top" secondItem="o1W-Jb-FZC" secondAttribute="top" id="tdd-n5-SwH"/>
                             <constraint firstItem="pYY-YN-lew" firstAttribute="width" secondItem="gTe-qb-UAP" secondAttribute="width" id="vHg-iP-wEc"/>
+                            <constraint firstAttribute="bottom" secondItem="dcl-dY-8Tg" secondAttribute="bottom" id="zyR-Rh-9x4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a4w-ch-Yja"/>
@@ -158,7 +161,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2OF-Ac-dMy"/>
+        <segue reference="p4u-JM-ygB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="FantasyImage" width="960" height="671"/>

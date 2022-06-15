@@ -28,8 +28,8 @@ var tutorialLetTheNarratorBashFest = ChoiceNode(text: tC2RD, leftChoice: nil, ri
 
 var chooseToDefendTheDevelopersTutorialChoice = ChoiceNode(text: tC2LD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil,  rightButtonTitle: nil)
 
-var tutorialForSomeReasonImGoingThroughTheTutorialChoice = ChoiceNode(text: tC1RD, leftChoice: chooseToDefendTheDevelopersTutorialChoice, rightChoice: tutorialLetTheNarratorBashFest, leftButtonTitle: "DEFEND THE DEVELOPERS", rightButtonTitle: "LET THE NARRATOR COMPLAIN")
+var tutorialForSomeReasonImGoingThroughTheTutorialChoice = ChoiceNode(text: tC1RD, leftChoice: chooseToDefendTheDevelopersTutorialChoice, rightChoice: tutorialLetTheNarratorBashFest, leftButtonTitle: "SAY SHUT UP", rightButtonTitle: "STAY SILENT")
 
 var tutorialDontNeedATutorialChoice = ChoiceNode(text: tC1LD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
 
-var tStartNode = ChoiceNode(text: tutorialStart, leftChoice: tutorialDontNeedATutorialChoice, rightChoice: tutorialForSomeReasonImGoingThroughTheTutorialChoice, leftButtonTitle: "NO I DON’T NEED A TUTORIAL", rightButtonTitle: "YES, I WANNA GO THROUGH THE TUTORIAL")
+var tStartNode = ChoiceNode(text: tutorialStart, leftChoice: tutorialDontNeedATutorialChoice, rightChoice: tutorialForSomeReasonImGoingThroughTheTutorialChoice, leftButtonTitle: "I DON’T NEED A TUTORIAL", rightButtonTitle: "I WANT THE TUTORIAL")
