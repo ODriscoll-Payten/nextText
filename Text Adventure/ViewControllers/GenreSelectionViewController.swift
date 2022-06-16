@@ -17,15 +17,28 @@ class GenreSelectionViewController: UIViewController {
     @IBOutlet weak var choseWesternGenreButton: UIButton!
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
     
-    
-    
-    
     //    var backGroundPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        let welcomeAlertController = UIAlertController(title: "Text Adventure", message: "Welcome Back!", preferredStyle: .alert)
+
+        let backAction = UIAlertAction(title: "Good To Be Back", style: UIAlertAction.Style.cancel) {
+            UIAlertAction in
+            NSLog("Good To Be Back Pressed")
+        }
+        
+        welcomeAlertController.addAction(backAction)
+        
+        self.present(welcomeAlertController, animated: true, completion: nil)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     func hideTutotrial(){
