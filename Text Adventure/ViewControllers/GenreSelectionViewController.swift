@@ -17,9 +17,10 @@ class GenreSelectionViewController: UIViewController {
     @IBOutlet weak var choseWesternGenreButton: UIButton!
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
     
-        
     
-   
+    
+    
+    //    var backGroundPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
@@ -34,7 +35,6 @@ class GenreSelectionViewController: UIViewController {
         choseWesternGenreButton.isHidden = isShowingTutorial
         choseTutorialButton.isHidden = !isShowingTutorial
     }
-    
     
     @IBAction func unwindToGenreSelection(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
