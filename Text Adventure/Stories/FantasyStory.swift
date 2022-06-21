@@ -57,13 +57,17 @@ var fantSwordEnding = ChoiceNode(text: fan_LD_RD_LD,
                                   leftChoice: nil,
                                   rightChoice: nil,
                                   leftButtonTitle: nil,
-                                  rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+                                  rightButtonTitle: nil,
+                                 isGoodEnd: true,
+                                 isBadEnd: nil)
 
 var fantShieldEnding = ChoiceNode(text: fan_RD_LD_RD,
                                  leftChoice: nil,
                                  rightChoice: nil,
                                  leftButtonTitle: nil,
-                                 rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+                                 rightButtonTitle: nil,
+                                isGoodEnd: true,
+                                isBadEnd: nil)
 
 // ALL DEATH SCENARIOS
 
@@ -72,21 +76,27 @@ var fantDeath3B = ChoiceNode(text: fan_RD_LD_LD,
                              leftChoice: nil,
                              rightChoice: nil,
                              leftButtonTitle: nil,
-                             rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+                             rightButtonTitle: nil,
+                             isGoodEnd: nil,
+                             isBadEnd: true)
 
 // [Sword] -> [Continue into the Night] -> Enchanted Bow
 var fantDeath3A = ChoiceNode(text: fan_LD_RD_RD,
                              leftChoice: nil,
                              rightChoice: nil,
                              leftButtonTitle: nil,
-                             rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+                             rightButtonTitle: nil,
+                             isGoodEnd: nil,
+                             isBadEnd: true)
 
 // [Shield] -> [Continue into the Night]
 var fantDeath2B = ChoiceNode(text: fan_RD_RD,
                              leftChoice: nil,
                              rightChoice: nil,
                              leftButtonTitle: nil,
-                             rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+                             rightButtonTitle: nil,
+                             isGoodEnd: nil,
+                             isBadEnd: true)
 
 
 // [Sword] -> [Wait til Morning]
@@ -94,9 +104,9 @@ var fantDeath2A = ChoiceNode(text: fan_LD_LD,
                              leftChoice: nil,
                              rightChoice: nil,
                              leftButtonTitle: nil,
-                             rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
-
-
+                             rightButtonTitle: nil,
+                             isGoodEnd: nil,
+                             isBadEnd: true)
 
 
 // [Shield] -> [Wait Til Morning] -> [Enchanted Helmet] || [Enchanted Bow]
@@ -104,32 +114,42 @@ var fantDecision3B = ChoiceNode(text: fan_RD_LD,
                                 leftChoice: fantDeath3B,
                                 rightChoice: fantShieldEnding,
                                 leftButtonTitle: "Enchanted Helmet",
-                                rightButtonTitle: "Enchanted Bow", isGoodEnd: nil, isBadEnd: nil)
+                                rightButtonTitle: "Enchanted Bow",
+                                isGoodEnd: nil,
+                                isBadEnd: nil)
 
 // [Shield] -> [Wait til Morning] || [Continue into the Night]
 var fantDecisionShield = ChoiceNode(text: fan_RD,
                                 leftChoice: fantDecision3B,
                                 rightChoice: fantDeath2B,
                                 leftButtonTitle: "Wait til Morning",
-                                rightButtonTitle: "Continue into the Night", isGoodEnd: nil, isBadEnd: nil)
+                                rightButtonTitle: "Continue into the Night",
+                                isGoodEnd: nil,
+                                isBadEnd: nil)
 
 // [Sword] -> [Continue into the Night] -> [Enchanted Helmet] || [Enchanted Bow]
 var fantDecision3A = ChoiceNode(text: fan_LD_RD,
                                 leftChoice: fantSwordEnding,
                                 rightChoice: fantDeath3A,
                                 leftButtonTitle: "Enchanted Helmet",
-                                rightButtonTitle: "Enchanted Bow", isGoodEnd: nil, isBadEnd: nil)
+                                rightButtonTitle: "Enchanted Bow",
+                                isGoodEnd: nil,
+                                isBadEnd: nil)
 
 // [Sword] -> [Wait til Morning] || [Continue into the Night]
 var fantDecisionSword = ChoiceNode(text: fan_LD,
                                 leftChoice: fantDeath2A,
                                 rightChoice: fantDecision3A,
                                 leftButtonTitle: "Wait til Morning",
-                                rightButtonTitle: "Continue into the Night", isGoodEnd: nil, isBadEnd: nil)
+                                rightButtonTitle: "Continue into the Night",
+                                isGoodEnd: nil,
+                                isBadEnd: nil)
 
 // [Intro]
 var fantIntroNode = ChoiceNode(text: fantIntroText1,
                                leftChoice: fantDecisionSword,
                                rightChoice: fantDecisionShield,
                                leftButtonTitle: "Sword",
-                               rightButtonTitle: "Shield", isGoodEnd: nil, isBadEnd: nil)
+                               rightButtonTitle: "Shield",
+                               isGoodEnd: nil,
+                               isBadEnd: nil)
