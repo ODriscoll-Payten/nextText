@@ -26,7 +26,7 @@ You nod placatingly at your phone, letting the narrator rant and rave so long yo
 """
 var tutorialLetTheNarratorBashFest = ChoiceNode(text: tC2RD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: true)
 
-var chooseToDefendTheDevelopersTutorialChoice = ChoiceNode(text: tC2LD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil,  rightButtonTitle: true, isGoodEnd: nil, isBadEnd: nil)
+var chooseToDefendTheDevelopersTutorialChoice = ChoiceNode(text: tC2LD, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil,  rightButtonTitle: nil, isGoodEnd: true, isBadEnd: nil)
 
 var tutorialForSomeReasonImGoingThroughTheTutorialChoice = ChoiceNode(text: tC1RD, leftChoice: chooseToDefendTheDevelopersTutorialChoice, rightChoice: tutorialLetTheNarratorBashFest, leftButtonTitle: "SAY SHUT UP", rightButtonTitle: "STAY SILENT", isGoodEnd: nil, isBadEnd: nil)
 
