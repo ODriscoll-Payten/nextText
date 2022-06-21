@@ -30,7 +30,19 @@ class GenreSelectionViewController: UIViewController {
             NSLog("Good To Be Back Pressed")
         }
         
+        let tutorialAction = UIAlertAction(title: "Tutorial", style: UIAlertAction.Style.destructive) {
+            UIAlertAction in
+            NSLog("Tutorial Pressed")
+            if self.choseTutorialButton.isHidden == true{
+                self.choseTutorialButton.isHidden = false
+            }
+        }
+        
+        
+        welcomeAlertController.addAction(tutorialAction)
         welcomeAlertController.addAction(backAction)
+        
+
         
         self.present(welcomeAlertController, animated: true, completion: nil)
         
@@ -39,8 +51,6 @@ class GenreSelectionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        var isShowing = UserDefaults.standard.isShowingTutorial
-        
     }
     
     
