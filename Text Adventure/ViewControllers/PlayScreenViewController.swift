@@ -78,7 +78,8 @@ class PlayScreenViewController: UIViewController{
             if currentChoice?.leftChoice == nil && currentChoice?.rightChoice == nil{
                 skipButton.isEnabled = true
                 if skipButton.isEnabled == true{
-                    skipButton.setTitle("Try Again Bozo", for: .normal)
+                    skipButton.setTitle("You Died ☠️", for: .normal)
+                    shake()
                 }
                 leftButton.isEnabled = false
                 rightButton.isEnabled = false
@@ -108,7 +109,47 @@ class PlayScreenViewController: UIViewController{
         }
     }
     
+    func leftBounce() {
+        UIView.animate(withDuration: 0.3,delay: 0, options: [.curveLinear], animations: {
+            let bounce = CGAffineTransform(scaleX: 3, y: 3)
+            self.leftButton.transform = bounce
+            self.leftButton.transform = CGAffineTransform.identity
+        })
+    }
     
+    func rightBounce() {
+        UIView.animate(withDuration: 0.3,delay: 0, options: [.curveLinear], animations: {
+            let bounce = CGAffineTransform(scaleX: 3, y: 3)
+            self.rightButton.transform = bounce
+            self.rightButton.transform = CGAffineTransform.identity
+        })
+    }
+    
+    func shake() {
+        UIView.animate(withDuration: 0.5, animations: {
+            let moveRight = CGAffineTransform(translationX: 40.0, y: 0.0)
+            let bounce = CGAffineTransform(scaleX: 2.5, y: 2.5)
+            
+            self.skipButton.transform = bounce
+            self.skipButton.transform = moveRight
+            
+            self.leftButton.transform = CGAffineTransform.identity
+        }) {(_) in
+            UIView.animate(withDuration: 0.6, animations: {
+                let moveLeft = CGAffineTransform(translationX: -20.0, y: 0.0)
+            
+                self.skipButton.transform = moveLeft
+                
+                self.skipButton.transform = CGAffineTransform.identity
+            }, completion: {(_) in
+                UIView.animate(withDuration: 0.3, animations: {
+                    let moveCenter = CGAffineTransform(translationX: 0.0, y: 0.0)
+                    self.skipButton.transform = moveCenter
+                    self.skipButton.transform = CGAffineTransform.identity
+                })
+            })
+        }
+    }
     
     @IBAction func unwindToPlayScreen(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
@@ -120,6 +161,7 @@ class PlayScreenViewController: UIViewController{
         if let leftChoice = choices.last?.leftChoice{
             choices.append(leftChoice)
         }
+        leftBounce()
         updateUI()
     }
     
@@ -129,6 +171,7 @@ class PlayScreenViewController: UIViewController{
         {
             choices.append(rightChoice)
         }
+        rightBounce()
         updateUI()
     }
     
