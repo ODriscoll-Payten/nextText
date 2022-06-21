@@ -153,3 +153,4 @@ var fantIntroNode = ChoiceNode(text: fantIntroText1,
                                rightButtonTitle: "Shield",
                                isGoodEnd: nil,
                                isBadEnd: nil)
+
