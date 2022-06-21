@@ -35,24 +35,24 @@ var sC2Rd = "You decide to keep walking, you’ll be going under soon and you di
 
 
 
-let youDecideToListenToHimNode = ChoiceNode (text: sC3Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle:  nil)
+let youDecideToListenToHimNode = ChoiceNode (text: sC3Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle:  nil, isGoodEnd: true, isBadEnd: nil)
 
 
-let youGetAwayFromThatDirtyWeirdo = ChoiceNode (text: sC3Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle:  nil)
+let youGetAwayFromThatDirtyWeirdo = ChoiceNode (text: sC3Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle:  nil, isGoodEnd: nil, isBadEnd: true)
 
 
 ///the lets grab a coffee choice
-let sciFiNodeGrabACoffee = ChoiceNode (text: sC2Ld, leftChoice: youGetAwayFromThatDirtyWeirdo, rightChoice: youDecideToListenToHimNode, leftButtonTitle: "BREAK AWAY", rightButtonTitle:  "LISTEN TO HIM")
+let sciFiNodeGrabACoffee = ChoiceNode (text: sC2Ld, leftChoice: youGetAwayFromThatDirtyWeirdo, rightChoice: youDecideToListenToHimNode, leftButtonTitle: "BREAK AWAY", rightButtonTitle:  "LISTEN TO HIM", isGoodEnd: nil, isBadEnd: nil)
 
 //you end up survivng with the crew
-let iWannaSeeEvenMoreNode = ChoiceNode (text: sC2Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle:  nil)
+let iWannaSeeEvenMoreNode = ChoiceNode (text: sC2Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle:  nil, isGoodEnd: true, isBadEnd: nil)
 
 ///walk around option choice one
-let sciFiNodeWalkAround = ChoiceNode (text: sC1Rd, leftChoice: sciFiNodeGrabACoffee, rightChoice: iWannaSeeEvenMoreNode, leftButtonTitle: "LET'S GRAB A COFFEE", rightButtonTitle:  "I WANNA SEE MORE OF THE SHIP")
+let sciFiNodeWalkAround = ChoiceNode (text: sC1Rd, leftChoice: sciFiNodeGrabACoffee, rightChoice: iWannaSeeEvenMoreNode, leftButtonTitle: "LET'S GRAB A COFFEE", rightButtonTitle:  "I WANNA SEE MORE OF THE SHIP", isGoodEnd: nil, isBadEnd: nil)
 
 ///intro death choice return to pod
-let sciFiIntroDeathNode = ChoiceNode(text: sC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil)
+let sciFiIntroDeathNode = ChoiceNode(text: sC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: true)
 
-let sciFiStartNode = ChoiceNode(text: sciFiStart, leftChoice: sciFiIntroDeathNode , rightChoice: sciFiNodeWalkAround, leftButtonTitle: "RETURN TO POD", rightButtonTitle: "WALK AROUND")
+let sciFiStartNode = ChoiceNode(text: sciFiStart, leftChoice: sciFiIntroDeathNode , rightChoice: sciFiNodeWalkAround, leftButtonTitle: "RETURN TO POD", rightButtonTitle: "WALK AROUND", isGoodEnd: nil, isBadEnd: nil)
 
 

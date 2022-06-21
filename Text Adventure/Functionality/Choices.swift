@@ -13,14 +13,19 @@ class ChoiceNode{
     var parent: ChoiceNode?
     let leftButtonTitle: String?
     let rightButtonTitle: String?
+    let isGoodEnd: Bool?
+    let isBadEnd: Bool?
     
-    init(text: String, leftChoice: ChoiceNode?, rightChoice: ChoiceNode?, leftButtonTitle: String?, rightButtonTitle: String?) {
+    
+    init(text: String, leftChoice: ChoiceNode?, rightChoice: ChoiceNode?, leftButtonTitle: String?, rightButtonTitle: String?, isGoodEnd:Bool?, isBadEnd:Bool?) {
     
         self.text = text
         self.leftChoice = leftChoice
         self.rightChoice = rightChoice
         self.leftButtonTitle = leftButtonTitle
         self.rightButtonTitle = rightButtonTitle
+        self.isGoodEnd = isGoodEnd
+        self.isBadEnd = isBadEnd
     }
 }
 
