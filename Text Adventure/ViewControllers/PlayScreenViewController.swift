@@ -79,7 +79,7 @@ class PlayScreenViewController: UIViewController{
                 skipButton.isEnabled = true
                 if skipButton.isEnabled == true{
                     if currentChoice?.isBadEnd == true {
-                        skipButton.setTitle("YOU DIED - TRY AGAIN", for: .normal)
+                        skipButton.setTitle("YOU LOST - TRY AGAIN", for: .normal)
                     } else if currentChoice?.isGoodEnd == true {
                         skipButton.setTitle("YOU WON - TRY AGAIN", for: .normal)
                     }
