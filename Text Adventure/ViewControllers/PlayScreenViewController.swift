@@ -78,7 +78,11 @@ class PlayScreenViewController: UIViewController{
             if currentChoice?.leftChoice == nil && currentChoice?.rightChoice == nil{
                 skipButton.isEnabled = true
                 if skipButton.isEnabled == true{
-                    skipButton.setTitle("You Died ☠️", for: .normal)
+                    if currentChoice?.isBadEnd == true {
+                        skipButton.setTitle("YOU DIED - TRY AGAIN", for: .normal)
+                    } else if currentChoice?.isGoodEnd == true {
+                        skipButton.setTitle("YOU WON - TRY AGAIN", for: .normal)
+                    }
                     shake()
                 }
                 leftButton.isEnabled = false
