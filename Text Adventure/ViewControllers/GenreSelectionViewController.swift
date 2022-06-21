@@ -17,14 +17,14 @@ class GenreSelectionViewController: UIViewController {
     @IBOutlet weak var choseWesternGenreButton: UIButton!
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
     
-    //    var backGroundPlayer = AVAudioPlayer()
     
+    //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         let welcomeAlertController = UIAlertController(title: "Text Adventure", message: "Welcome Back!", preferredStyle: .alert)
-
+        
         let backAction = UIAlertAction(title: "Good To Be Back", style: UIAlertAction.Style.cancel) {
             UIAlertAction in
             NSLog("Good To Be Back Pressed")
@@ -39,7 +39,10 @@ class GenreSelectionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        var isShowing = UserDefaults.standard.isShowingTutorial
+        
     }
+    
     
     func hideTutotrial(){
         let isShowingTutorial = UserDefaults.standard.isShowingTutorial
@@ -72,9 +75,7 @@ class GenreSelectionViewController: UIViewController {
             
         }else if segue.identifier == "tutorialSegue"{
             playVC.currentStory = tutorial
-            
             UserDefaults.standard.isShowingTutorial = false
-            
             hideTutotrial()
         }
     }
