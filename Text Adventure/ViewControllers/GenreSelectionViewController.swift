@@ -18,6 +18,10 @@ class GenreSelectionViewController: UIViewController {
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
     
     
+    @IBOutlet weak var choseHorrorGenreButton: UIButton!
+    
+    
+    
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
