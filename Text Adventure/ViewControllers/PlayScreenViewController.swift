@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
-class PlayScreenViewController: UIViewController{
+class PlayScreenViewController: UIViewController, UITextViewDelegate{
     
     //var story = sciFiStory
     var choices = [ChoiceNode]()
@@ -37,7 +37,11 @@ class PlayScreenViewController: UIViewController{
     
     @IBOutlet var vertStack: UIStackView!
     
-    @IBOutlet var storyTextView: UITextView!
+    @IBOutlet var storyTextView: UITextView! {
+        didSet {
+            storyTextView.delegate = self
+        }
+    }
     
     @IBOutlet var arrow: UIImageView!
     
@@ -63,6 +67,14 @@ class PlayScreenViewController: UIViewController{
         vertStack.setCustomSpacing(10, after: storyTextView)
         
         vertStack.setCustomSpacing(50, after: arrow)
+        
+        arrowAnimation()
+        
+        if viewDidScroll() {
+            arrow.isHidden = true
+        } else {
+            arrow.isHidden = false
+        }
         
         
     }
@@ -108,14 +120,16 @@ class PlayScreenViewController: UIViewController{
     }
     
     
-    @objc func viewDidScroll() {
+    @objc func viewDidScroll() -> Bool {
 
         if (storyTextView.contentOffset.y >= storyTextView.contentSize.height - storyTextView.frame.size.height) {
 
-            skipButton.setTitle("its working payten", for: .normal) 
+            return true
 
+        } else {
+            return false
         }
-            }
+    }
 
     
     
@@ -182,7 +196,7 @@ class PlayScreenViewController: UIViewController{
     }
     
     func arrowAnimation() {
-        UIView.animate(withDuration: 0.5, animations:{
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse], animations:{
             let moveDown = CGAffineTransform(translationX: 0.0, y: 30)
             self.arrow.transform = moveDown
     }) { (_) in
@@ -192,6 +206,14 @@ class PlayScreenViewController: UIViewController{
         })
     }
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if viewDidScroll() {
+            arrow.isHidden = true
+        } else {
+            arrow.isHidden = false
+        }
     }
     
     @IBAction func unwindToPlayScreen(_ unwindSegue: UIStoryboardSegue) {
@@ -205,7 +227,6 @@ class PlayScreenViewController: UIViewController{
             choices.append(leftChoice)
         }
         leftBounce()
-        arrowAnimation()
         updateUI()
     }
     
