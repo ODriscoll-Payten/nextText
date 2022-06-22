@@ -11,6 +11,7 @@
 		4A3CA8B12822CE4B0072E0E9 /* PlayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */; };
 		4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B62822D1020072E0E9 /* GenreSelection.storyboard */; };
 		4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */; };
+		4A3F65D6286226DA00B68A71 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A3F65D5286226DA00B68A71 /* downArrow.png */; };
 		4A6A975F284AC934001502BD /* WesternStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A975E284AC934001502BD /* WesternStory.swift */; };
 		4A6A97812850E703001502BD /* SetParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6A97802850E703001502BD /* SetParents.swift */; };
 		4AD5C2B3282027CF00C88267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5C2B2282027CF00C88267 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		4A3CA8B02822CE4B0072E0E9 /* PlayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayScreenViewController.swift; sourceTree = "<group>"; };
 		4A3CA8B62822D1020072E0E9 /* GenreSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenreSelection.storyboard; sourceTree = "<group>"; };
 		4A3CA8B82822D1190072E0E9 /* PlayScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayScreen.storyboard; sourceTree = "<group>"; };
+		4A3F65D5286226DA00B68A71 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
 		4A6A975E284AC934001502BD /* WesternStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternStory.swift; sourceTree = "<group>"; };
 		4A6A97802850E703001502BD /* SetParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetParents.swift; sourceTree = "<group>"; };
 		4AD5C2AF282027CF00C88267 /* Text Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 				DE77A192282B455200FD67DF /* FantasyMusic.mp3 */,
 				796C5B022847B008008ED937 /* space-chillout-14194.mp3 */,
 				DE588632284E481400599600 /* last-stand-108860.mp3 */,
+				4A3F65D5286226DA00B68A71 /* downArrow.png */,
 				DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */,
 				795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */,
 			);
@@ -252,7 +255,7 @@
 				DEBE21AC2863607300D6293E /* yeehaw.jpeg in Resources */,
 				DEBE21AA2863607300D6293E /* sciFi.jpeg in Resources */,
 				DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */,
-				DEBE21B2286361C900D6293E /* TutorialBackground.jpeg in Resources */,
+				4A3F65D6286226DA00B68A71 /* downArrow.png in Resources */,
 				796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */,
 				DEBE21B02863607300D6293E /* yeehaw1.jpeg in Resources */,
 				DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */,
