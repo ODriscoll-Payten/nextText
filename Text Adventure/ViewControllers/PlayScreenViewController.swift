@@ -52,7 +52,6 @@ class PlayScreenViewController: UIViewController{
         playMusic()
         updateUI()
         skipButton.isEnabled = false
-        
     }
     
     
@@ -91,6 +90,12 @@ class PlayScreenViewController: UIViewController{
                 rightButton.backgroundColor = .gray
             }
         }
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: currentStory!.image)
+        backgroundImage.contentMode = .scaleToFill
+        view.insertSubview(backgroundImage, at: 0)
+        
     }
     
     
@@ -131,7 +136,7 @@ class PlayScreenViewController: UIViewController{
     
     func shake() {
         UIView.animate(withDuration: 0.5, animations: {
-            let moveRight = CGAffineTransform(translationX: 40.0, y: 0.0)
+            let moveRight = CGAffineTransform(translationX: 20.0, y: 0.0)
             let bounce = CGAffineTransform(scaleX: 2.5, y: 2.5)
             
             self.skipButton.transform = bounce

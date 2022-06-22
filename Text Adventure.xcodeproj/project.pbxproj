@@ -27,6 +27,17 @@
 		DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */; };
 		DE588633284E481400599600 /* last-stand-108860.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE588632284E481400599600 /* last-stand-108860.mp3 */; };
 		DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE77A192282B455200FD67DF /* FantasyMusic.mp3 */; };
+		DEBE21A02862BF3B00D6293E /* fantIMG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE219F2862BF3B00D6293E /* fantIMG.jpeg */; };
+		DEBE21A92863607300D6293E /* Western.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A12863607300D6293E /* Western.jpeg */; };
+		DEBE21AA2863607300D6293E /* sciFi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A22863607300D6293E /* sciFi.jpeg */; };
+		DEBE21AB2863607300D6293E /* yeehaw2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A32863607300D6293E /* yeehaw2.jpeg */; };
+		DEBE21AC2863607300D6293E /* yeehaw.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A42863607300D6293E /* yeehaw.jpeg */; };
+		DEBE21AD2863607300D6293E /* sciFi1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A52863607300D6293E /* sciFi1.jpeg */; };
+		DEBE21AE2863607300D6293E /* yeeyaw3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A62863607300D6293E /* yeeyaw3.jpeg */; };
+		DEBE21AF2863607300D6293E /* sciFi2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A72863607300D6293E /* sciFi2.jpeg */; };
+		DEBE21B02863607300D6293E /* yeehaw1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21A82863607300D6293E /* yeehaw1.jpeg */; };
+		DEBE21B2286361C900D6293E /* TutorialBackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21B1286361C900D6293E /* TutorialBackground.jpeg */; };
+		DEBE21B42863685100D6293E /* yeehaw4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DEBE21B32863685100D6293E /* yeehaw4.jpeg */; };
 		DEECC4E828256AB0005282A9 /* FantasyStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECC4E728256AB0005282A9 /* FantasyStory.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +64,17 @@
 		DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FantasyImage.jpeg; sourceTree = "<group>"; };
 		DE588632284E481400599600 /* last-stand-108860.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "last-stand-108860.mp3"; sourceTree = "<group>"; };
 		DE77A192282B455200FD67DF /* FantasyMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FantasyMusic.mp3; sourceTree = "<group>"; };
+		DEBE219F2862BF3B00D6293E /* fantIMG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fantIMG.jpeg; sourceTree = "<group>"; };
+		DEBE21A12863607300D6293E /* Western.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Western.jpeg; sourceTree = "<group>"; };
+		DEBE21A22863607300D6293E /* sciFi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sciFi.jpeg; sourceTree = "<group>"; };
+		DEBE21A32863607300D6293E /* yeehaw2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeehaw2.jpeg; sourceTree = "<group>"; };
+		DEBE21A42863607300D6293E /* yeehaw.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeehaw.jpeg; sourceTree = "<group>"; };
+		DEBE21A52863607300D6293E /* sciFi1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sciFi1.jpeg; sourceTree = "<group>"; };
+		DEBE21A62863607300D6293E /* yeeyaw3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeeyaw3.jpeg; sourceTree = "<group>"; };
+		DEBE21A72863607300D6293E /* sciFi2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sciFi2.jpeg; sourceTree = "<group>"; };
+		DEBE21A82863607300D6293E /* yeehaw1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeehaw1.jpeg; sourceTree = "<group>"; };
+		DEBE21B1286361C900D6293E /* TutorialBackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TutorialBackground.jpeg; sourceTree = "<group>"; };
+		DEBE21B32863685100D6293E /* yeehaw4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yeehaw4.jpeg; sourceTree = "<group>"; };
 		DEECC4E728256AB0005282A9 /* FantasyStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +144,17 @@
 			isa = PBXGroup;
 			children = (
 				4AD5C2B1282027CF00C88267 /* Text Adventure */,
+				DEBE219F2862BF3B00D6293E /* fantIMG.jpeg */,
+				DEBE21A22863607300D6293E /* sciFi.jpeg */,
+				DEBE21A52863607300D6293E /* sciFi1.jpeg */,
+				DEBE21A72863607300D6293E /* sciFi2.jpeg */,
+				DEBE21A12863607300D6293E /* Western.jpeg */,
+				DEBE21A42863607300D6293E /* yeehaw.jpeg */,
+				DEBE21A82863607300D6293E /* yeehaw1.jpeg */,
+				DEBE21A32863607300D6293E /* yeehaw2.jpeg */,
+				DEBE21A62863607300D6293E /* yeeyaw3.jpeg */,
+				DEBE21B1286361C900D6293E /* TutorialBackground.jpeg */,
+				DEBE21B32863685100D6293E /* yeehaw4.jpeg */,
 				4AD5C2B0282027CF00C88267 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -210,14 +243,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE21A92863607300D6293E /* Western.jpeg in Resources */,
+				DEBE21AB2863607300D6293E /* yeehaw2.jpeg in Resources */,
 				4A3CA8B92822D1190072E0E9 /* PlayScreen.storyboard in Resources */,
 				795AEE4428579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 in Resources */,
+				DEBE21AD2863607300D6293E /* sciFi1.jpeg in Resources */,
+				DEBE21AE2863607300D6293E /* yeeyaw3.jpeg in Resources */,
+				DEBE21AC2863607300D6293E /* yeehaw.jpeg in Resources */,
+				DEBE21AA2863607300D6293E /* sciFi.jpeg in Resources */,
 				DE77A193282B455200FD67DF /* FantasyMusic.mp3 in Resources */,
+				DEBE21B2286361C900D6293E /* TutorialBackground.jpeg in Resources */,
 				796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */,
+				DEBE21B02863607300D6293E /* yeehaw1.jpeg in Resources */,
 				DE4BC4D52847C4B000093FA2 /* FantasyImage.jpeg in Resources */,
+				DEBE21B42863685100D6293E /* yeehaw4.jpeg in Resources */,
 				4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */,
 				4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */,
 				DE588633284E481400599600 /* last-stand-108860.mp3 in Resources */,
+				DEBE21A02862BF3B00D6293E /* fantIMG.jpeg in Resources */,
+				DEBE21AF2863607300D6293E /* sciFi2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
