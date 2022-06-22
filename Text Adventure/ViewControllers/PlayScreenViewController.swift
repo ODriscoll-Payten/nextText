@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
-class PlayScreenViewController: UIViewController{
+class PlayScreenViewController: UIViewController, UITextViewDelegate{
     
     //var story = sciFiStory
     var choices = [ChoiceNode]()
@@ -31,8 +31,19 @@ class PlayScreenViewController: UIViewController{
     var playBMusic = false
     
     
+   
+
     
-    @IBOutlet weak var storyTextView: UITextView!
+    
+    @IBOutlet var vertStack: UIStackView!
+    
+    @IBOutlet var storyTextView: UITextView! {
+        didSet {
+            storyTextView.delegate = self
+        }
+    }
+    
+    @IBOutlet var arrow: UIImageView!
     
     @IBOutlet weak var leftButton: UIButton!
     
@@ -53,6 +64,19 @@ class PlayScreenViewController: UIViewController{
         updateUI()
         skipButton.isEnabled = false
         
+        vertStack.setCustomSpacing(10, after: storyTextView)
+        
+        vertStack.setCustomSpacing(50, after: arrow)
+        
+        arrowAnimation()
+        
+        if viewDidScroll() {
+            arrow.isHidden = true
+        } else {
+            arrow.isHidden = false
+        }
+        
+        
     }
     
     
@@ -61,7 +85,9 @@ class PlayScreenViewController: UIViewController{
     }
     
     
+    
     func updateUI(){
+        viewDidScroll()
         var currentStoryText = ""
         for choice in choices {
             currentStoryText += choice.text
@@ -92,6 +118,20 @@ class PlayScreenViewController: UIViewController{
             }
         }
     }
+    
+    
+    @objc func viewDidScroll() -> Bool {
+
+        if (storyTextView.contentOffset.y >= storyTextView.contentSize.height - storyTextView.frame.size.height) {
+
+            return true
+
+        } else {
+            return false
+        }
+    }
+
+    
     
     
     // Func that plays the Music
@@ -155,6 +195,27 @@ class PlayScreenViewController: UIViewController{
         }
     }
     
+    func arrowAnimation() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse], animations:{
+            let moveDown = CGAffineTransform(translationX: 0.0, y: 30)
+            self.arrow.transform = moveDown
+    }) { (_) in
+        UIView.animate(withDuration: 0.5, animations: {
+            self.arrow.transform = CGAffineTransform.identity
+            
+        })
+    }
+        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if viewDidScroll() {
+            arrow.isHidden = true
+        } else {
+            arrow.isHidden = false
+        }
+    }
+    
     @IBAction func unwindToPlayScreen(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
@@ -201,4 +262,7 @@ class PlayScreenViewController: UIViewController{
             
         }
     }
+    
+    
+    
 }
