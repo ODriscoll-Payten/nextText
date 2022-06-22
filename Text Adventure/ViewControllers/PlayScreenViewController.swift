@@ -31,8 +31,15 @@ class PlayScreenViewController: UIViewController{
     var playBMusic = false
     
     
+   
+
     
-    @IBOutlet weak var storyTextView: UITextView!
+    
+    @IBOutlet var vertStack: UIStackView!
+    
+    @IBOutlet var storyTextView: UITextView!
+    
+    @IBOutlet var arrow: UIImageView!
     
     @IBOutlet weak var leftButton: UIButton!
     
@@ -53,6 +60,11 @@ class PlayScreenViewController: UIViewController{
         updateUI()
         skipButton.isEnabled = false
         
+        vertStack.setCustomSpacing(10, after: storyTextView)
+        
+        vertStack.setCustomSpacing(50, after: arrow)
+        
+        
     }
     
     
@@ -61,7 +73,9 @@ class PlayScreenViewController: UIViewController{
     }
     
     
+    
     func updateUI(){
+        viewDidScroll()
         var currentStoryText = ""
         for choice in choices {
             currentStoryText += choice.text
@@ -92,6 +106,18 @@ class PlayScreenViewController: UIViewController{
             }
         }
     }
+    
+    
+    @objc func viewDidScroll() {
+
+        if (storyTextView.contentOffset.y >= storyTextView.contentSize.height - storyTextView.frame.size.height) {
+
+            skipButton.setTitle("its working payten", for: .normal) 
+
+        }
+            }
+
+    
     
     
     // Func that plays the Music
@@ -155,6 +181,19 @@ class PlayScreenViewController: UIViewController{
         }
     }
     
+    func arrowAnimation() {
+        UIView.animate(withDuration: 0.5, animations:{
+            let moveDown = CGAffineTransform(translationX: 0.0, y: 30)
+            self.arrow.transform = moveDown
+    }) { (_) in
+        UIView.animate(withDuration: 0.5, animations: {
+            self.arrow.transform = CGAffineTransform.identity
+            
+        })
+    }
+        
+    }
+    
     @IBAction func unwindToPlayScreen(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
@@ -166,6 +205,7 @@ class PlayScreenViewController: UIViewController{
             choices.append(leftChoice)
         }
         leftBounce()
+        arrowAnimation()
         updateUI()
     }
     
@@ -201,4 +241,7 @@ class PlayScreenViewController: UIViewController{
             
         }
     }
+    
+    
+    
 }
