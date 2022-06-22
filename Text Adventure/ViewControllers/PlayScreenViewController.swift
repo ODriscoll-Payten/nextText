@@ -57,16 +57,16 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        arrow.isHidden = true
         muteButtonTapped.image = UIImage(systemName: "speaker.wave.3.fill")
         choices.append(currentStory!.startNode)
         playMusic()
         updateUI()
         skipButton.isEnabled = false
         
-        vertStack.setCustomSpacing(10, after: storyTextView)
+        vertStack.setCustomSpacing(70, after: storyTextView)
         
-        vertStack.setCustomSpacing(50, after: arrow)
+        
         
         arrowAnimation()
         
@@ -128,7 +128,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
     
     @objc func viewDidScroll() -> Bool {
 
-        if (storyTextView.contentOffset.y >= storyTextView.contentSize.height - storyTextView.frame.size.height) {
+        if (storyTextView.contentOffset.y >= storyTextView.contentSize.height - CGFloat(40) - storyTextView.frame.size.height) {
 
             return true
 

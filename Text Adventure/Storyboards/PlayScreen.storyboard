@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-u2-qNW">
-                                <rect key="frame" x="0.0" y="88" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="650"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JcT-am-wf6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="344"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="412.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="414" id="MLt-h4-SxI"/>
@@ -30,15 +31,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5M9-mx-9Tc">
-                                        <rect key="frame" x="0.0" y="415" width="414" height="18"/>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
-                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-Eg-3MU">
-                                        <rect key="frame" x="0.0" y="504" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="482.5" width="414" height="49"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNu-6q-7VY">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="49"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Left"/>
                                                 <connections>
@@ -46,7 +43,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0o-6H-mfn">
-                                                <rect key="frame" x="227" y="0.0" width="187" height="50"/>
+                                                <rect key="frame" x="227" y="0.0" width="187" height="49"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Right"/>
                                                 <connections>
@@ -56,7 +53,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-ua-0lr">
-                                        <rect key="frame" x="0.0" y="624" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="601.5" width="414" height="48.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled"/>
                                         <connections>
@@ -70,14 +67,26 @@
                                     <constraint firstAttribute="trailing" secondItem="sRN-Eg-3MU" secondAttribute="trailing" id="riJ-m7-ZWw"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5M9-mx-9Tc">
+                                <rect key="frame" x="0.0" y="514" width="414" height="38"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5M9-mx-9Tc" secondAttribute="height" multiplier="207:20" id="62W-Js-o2q"/>
+                                    <constraint firstAttribute="height" constant="40" id="DC5-f4-j3x"/>
+                                    <constraint firstAttribute="width" constant="414" id="r8f-el-hAD"/>
+                                </constraints>
+                                <imageReference key="image" image="arrow.down" catalog="system" symbolScale="medium"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zjD-sA-wZK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8Je-u2-qNW" firstAttribute="leading" secondItem="zjD-sA-wZK" secondAttribute="leading" id="0ZB-zp-nw3"/>
+                            <constraint firstItem="zjD-sA-wZK" firstAttribute="bottom" secondItem="5M9-mx-9Tc" secondAttribute="bottom" constant="285" id="ClO-ef-3xB"/>
                             <constraint firstItem="sRN-Eg-3MU" firstAttribute="height" secondItem="STW-oW-PGe" secondAttribute="height" multiplier="0.0558036" id="Qaq-G5-cLm"/>
                             <constraint firstAttribute="trailing" secondItem="8Je-u2-qNW" secondAttribute="trailing" id="RiX-oj-xak"/>
                             <constraint firstItem="8Je-u2-qNW" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" id="Y8s-4d-DxK"/>
+                            <constraint firstItem="5M9-mx-9Tc" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" constant="425" id="YN3-Fu-caU"/>
                             <constraint firstItem="zjD-sA-wZK" firstAttribute="bottom" secondItem="8Je-u2-qNW" secondAttribute="bottom" constant="100" id="vaY-Qg-dwd"/>
                         </constraints>
                     </view>

@@ -226,11 +226,11 @@ let westernDiedToEnforcerNode = ChoiceNode(text: wC3Ld, leftChoice: nil, rightCh
 
 let westernNode2 = ChoiceNode(/*deathText: wC3Ld, endingText: nil,*/ text: wC2Ld, leftChoice: westernDiedToEnforcerNode, rightChoice: westernNode3, leftButtonTitle: "Solve things with violence", rightButtonTitle: "Explain that you were robbed", isGoodEnd: nil, isBadEnd: nil )
 
-let westernStayOnTrainNode = ChoiceNode(text: wC2Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+let westernStayOnTrainNode = ChoiceNode(text: wC2Rd, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: true, isBadEnd: nil)
 
 let westernNode1 = ChoiceNode (/*deathText: nil, endingText: wC2Rd,*/text: wC1Rd, leftChoice: westernNode2, rightChoice: westernStayOnTrainNode, leftButtonTitle: "Exit the train", rightButtonTitle: "Stay on the train", isGoodEnd: nil, isBadEnd: nil)
 
-let westernIntroDeathNode = ChoiceNode(text: wC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: nil)
+let westernIntroDeathNode = ChoiceNode(text: wC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: true)
 
 let westernIntroNode = ChoiceNode(/*deathText: wC1Ld, endingText: nil ,*/text: westernStart, leftChoice: westernIntroDeathNode , rightChoice: westernNode1 , leftButtonTitle: "Spit in the bag", rightButtonTitle: "Hand over your valuables", isGoodEnd: nil, isBadEnd: nil)
 
