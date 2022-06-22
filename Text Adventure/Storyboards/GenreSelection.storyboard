@@ -40,7 +40,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -54,7 +54,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xED-zL-mHS">
-                                                        <rect key="frame" x="0.0" y="510" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="382.5" width="414" height="272.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -69,7 +69,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-fY-I8V">
-                                                        <rect key="frame" x="0.0" y="1020" width="414" height="400"/>
+                                                        <rect key="frame" x="0.0" y="765" width="414" height="272.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -80,6 +80,20 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtg-Yy-2o0">
+                                                        <rect key="frame" x="0.0" y="1147.5" width="414" height="272.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
+                                                            <backgroundConfiguration key="background" image="knife-g25e7a2b79_1920" imageContentMode="scaleAspectFill"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="tLT-FI-Fcj" kind="show" identifier="horrorSelectedSegue" id="qxX-Dl-XzC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -122,6 +136,7 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="choseFantasyGenreButton" destination="jJA-9K-f1Z" id="8Qr-1K-p4a"/>
+                        <outlet property="choseHorrorGenreButton" destination="qtg-Yy-2o0" id="kR3-Ys-VED"/>
                         <outlet property="choseSciFiGenreButton" destination="xED-zL-mHS" id="Ayk-RA-GBE"/>
                         <outlet property="choseTutorialButton" destination="5IQ-Jr-huY" id="48i-FF-8XZ"/>
                         <outlet property="choseWesternGenreButton" destination="SyA-fY-I8V" id="V6H-W2-2vG"/>
@@ -161,11 +176,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="p4u-JM-ygB"/>
+        <segue reference="qxX-Dl-XzC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="FantasyImage" width="960" height="671"/>
         <image name="eclipse-g1311b2857_1920" width="1920" height="1269"/>
+        <image name="knife-g25e7a2b79_1920" width="1280" height="1920"/>
         <image name="tutorialPic" width="1920" height="1440"/>
         <image name="westernMusic" width="2400" height="1764"/>
         <systemColor name="systemBackgroundColor">

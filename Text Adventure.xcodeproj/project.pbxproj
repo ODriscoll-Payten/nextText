@@ -20,6 +20,8 @@
 		795AEE4228578D4E00E9DF22 /* TutorialStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AEE4128578D4E00E9DF22 /* TutorialStory.swift */; };
 		795AEE4428579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */; };
 		795AEE46285A294300E9DF22 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AEE45285A294300E9DF22 /* UserDefaultExtension.swift */; };
+		7966748E2863619800AE0593 /* HorrorStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7966748D2863619800AE0593 /* HorrorStory.swift */; };
+		7966749028636B6400AE0593 /* near-danger-10375.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7966748F28636B6300AE0593 /* near-danger-10375.mp3 */; };
 		796C5B032847B008008ED937 /* space-chillout-14194.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796C5B022847B008008ED937 /* space-chillout-14194.mp3 */; };
 		797B08B42825681C005F302C /* SciFiStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B32825681C005F302C /* SciFiStory.swift */; };
 		797B08B6282575F9005F302C /* StoryPlayFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B08B5282575F9005F302C /* StoryPlayFunctions.swift */; };
@@ -58,6 +60,8 @@
 		795AEE4128578D4E00E9DF22 /* TutorialStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStory.swift; sourceTree = "<group>"; };
 		795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3"; sourceTree = "<group>"; };
 		795AEE45285A294300E9DF22 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
+		7966748D2863619800AE0593 /* HorrorStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorStory.swift; sourceTree = "<group>"; };
+		7966748F28636B6300AE0593 /* near-danger-10375.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "near-danger-10375.mp3"; sourceTree = "<group>"; };
 		796C5B022847B008008ED937 /* space-chillout-14194.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "space-chillout-14194.mp3"; sourceTree = "<group>"; };
 		797B08B32825681C005F302C /* SciFiStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciFiStory.swift; sourceTree = "<group>"; };
 		797B08B5282575F9005F302C /* StoryPlayFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPlayFunctions.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				DEECC4E728256AB0005282A9 /* FantasyStory.swift */,
 				797B08B32825681C005F302C /* SciFiStory.swift */,
 				795AEE4128578D4E00E9DF22 /* TutorialStory.swift */,
+				7966748D2863619800AE0593 /* HorrorStory.swift */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				4A3F65D5286226DA00B68A71 /* downArrow.png */,
 				DE4BC4D42847C4B000093FA2 /* FantasyImage.jpeg */,
 				795AEE4328579A3F00E9DF22 /* peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3 */,
+				7966748F28636B6300AE0593 /* near-danger-10375.mp3 */,
 			);
 			path = "Text Adventure";
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 				DEBE21B42863685100D6293E /* yeehaw4.jpeg in Resources */,
 				4A3CA8B72822D1020072E0E9 /* GenreSelection.storyboard in Resources */,
 				4AD5C2BC282027D000C88267 /* Assets.xcassets in Resources */,
+				7966749028636B6400AE0593 /* near-danger-10375.mp3 in Resources */,
 				DE588633284E481400599600 /* last-stand-108860.mp3 in Resources */,
 				DEBE21A02862BF3B00D6293E /* fantIMG.jpeg in Resources */,
 				DEBE21AF2863607300D6293E /* sciFi2.jpeg in Resources */,
@@ -286,6 +293,7 @@
 				795AEE4228578D4E00E9DF22 /* TutorialStory.swift in Sources */,
 				4A6A97812850E703001502BD /* SetParents.swift in Sources */,
 				4A3CA8B12822CE4B0072E0E9 /* PlayScreenViewController.swift in Sources */,
+				7966748E2863619800AE0593 /* HorrorStory.swift in Sources */,
 				4A6A975F284AC934001502BD /* WesternStory.swift in Sources */,
 				797B08B82832A823005F302C /* Story.swift in Sources */,
 			);
