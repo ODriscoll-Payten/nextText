@@ -163,25 +163,35 @@ The paramedics were able to stabilize you on the way to the hospital- and the do
 It was probably the scariest thing that will ever happen to you- but you made it out with your life and your sisters.
 
 """
+///Buy her time
+let horrorNodeBuyYourSisterTime = ChoiceNode (text:hC5Ld , leftChoice:nil , rightChoice:nil , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: true, isBadEnd: nil)
 
-let horrorNode = ChoiceNode (text: , leftChoice: , rightChoice: , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: nil)
+
+///leave your sister
+let horrorNodeLeaveYourSister = ChoiceNode (text:hC5Ld , leftChoice: nil, rightChoice:nil , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: true)
+
+///ignore your message
+let horrorNodeIgnoreAnonMessage = ChoiceNode (text:hC4Rd , leftChoice: nil , rightChoice:nil , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: true, isBadEnd: nil)
+
+///check the message
+let horrorNodeCheckAnonMessage = ChoiceNode (text:hC4Ld , leftChoice:nil , rightChoice:nil , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: true)
 
 
 ///leave your bat
-let horrorNode = ChoiceNode (text: , leftChoice: , rightChoice: , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: nil)
+let horrorNodeLeaveBat = ChoiceNode (text: hC3Rd , leftChoice:nil , rightChoice:nil , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: true, isBadEnd: nil)
 
 ///bring your bat with you
-let horrorNode = ChoiceNode (text: hC3Ld , leftChoice: , rightChoice: , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: nil)
+let horrorNodeTakeBAt = ChoiceNode (text: hC3Ld , leftChoice: horrorNodeLeaveYourSister , rightChoice:horrorNodeBuyYourSisterTime , leftButtonTitle: "SAve YOURSELF", rightButtonTitle:  "SAVE YOUR SISTER", isGoodEnd: nil, isBadEnd: nil)
 
 ///check your computer
-let horrorNode = ChoiceNode (text: hC2Rd , leftChoice: , rightChoice: , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: nil)
+let horrorNodeCheckComputer = ChoiceNode (text: hC2Rd , leftChoice:horrorNodeCheckAnonMessage , rightChoice: horrorNodeIgnoreAnonMessage , leftButtonTitle: "CHECK MESSAGE", rightButtonTitle:  "LEAVE MESSAGE", isGoodEnd: nil, isBadEnd: nil)
 
 
 ///go to check the hallway
-let horrorNode = ChoiceNode (text: hC2Ld , leftChoice: , rightChoice: , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: nil)
+let horrorNodeCheckHallway = ChoiceNode (text: hC2Ld , leftChoice:horrorNodeTakeBAt , rightChoice: horrorNodeLeaveBat , leftButtonTitle: "TAKE BAT", rightButtonTitle:  "LEAVE BAT", isGoodEnd: nil, isBadEnd: nil)
 
 ///go to close the window
-let horrorNodeCloseWindow = ChoiceNode (text: hC1Rd, leftChoice: , rightChoice: , leftButtonTitle: "", rightButtonTitle:  "", isGoodEnd: nil, isBadEnd: nil)
+let horrorNodeCloseWindow = ChoiceNode (text: hC1Rd, leftChoice: horrorNodeCheckHallway , rightChoice: horrorNodeCheckComputer, leftButtonTitle: "CHECK HAll", rightButtonTitle:  "CHECK COMPUTER", isGoodEnd: nil, isBadEnd: nil)
 
 ///intro death choice return to bed
 let horrorIntroDeathNode = ChoiceNode(text: hC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: true)
