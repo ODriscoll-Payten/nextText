@@ -2,19 +2,19 @@
 //  StartScreenViewController.swift
 //  Text Adventure
 //
-//  Created by Payten O'Driscoll on 5/4/22.
+//  Created by Katy Dunn on 6/22/22.
 //
 
-import Foundation
-import UIKit
+import SwiftUI
 
-class StartScreenViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+struct StartScreenViewController: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
-    
-    
-    
+}
+
+struct StartScreenViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        StartScreenViewController()
+    }
 }

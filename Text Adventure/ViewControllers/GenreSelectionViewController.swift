@@ -18,6 +18,10 @@ class GenreSelectionViewController: UIViewController {
     @IBOutlet weak var choseSciFiGenreButton: UIButton!
     
     
+    @IBOutlet weak var choseHorrorGenreButton: UIButton!
+    
+    
+    
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -86,6 +90,10 @@ class GenreSelectionViewController: UIViewController {
         }else if segue.identifier == "tutorialSegue"{
             playVC.currentStory = tutorial
             UserDefaults.standard.isShowingTutorial = false
+            hideTutotrial()
+            
+        }else if segue.identifier == "horrorSelectedSegue"{
+            playVC.currentStory = horrorStory
             hideTutotrial()
         }
     }
