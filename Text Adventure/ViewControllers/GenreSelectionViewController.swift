@@ -91,6 +91,10 @@ class GenreSelectionViewController: UIViewController {
             playVC.currentStory = tutorial
             UserDefaults.standard.isShowingTutorial = false
             hideTutotrial()
+            
+        }else if segue.identifier == "horrorSelectedSegue"{
+            playVC.currentStory = horrorStory
+            hideTutotrial()
         }
     }
 }//end

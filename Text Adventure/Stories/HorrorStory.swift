@@ -196,4 +196,4 @@ let horrorNodeCloseWindow = ChoiceNode (text: hC1Rd, leftChoice: horrorNodeCheck
 ///intro death choice return to bed
 let horrorIntroDeathNode = ChoiceNode(text: hC1Ld, leftChoice: nil, rightChoice: nil, leftButtonTitle: nil, rightButtonTitle: nil, isGoodEnd: nil, isBadEnd: true)
 
-let horrorStartNode = ChoiceNode(text: sciFiStart, leftChoice: sciFiIntroDeathNode , rightChoice: sciFiNodeWalkAround, leftButtonTitle: "RETURN TO POD", rightButtonTitle: "WALK AROUND", isGoodEnd: nil, isBadEnd: nil)
+let horrorStartNode = ChoiceNode(text: horrorStart, leftChoice: horrorIntroDeathNode , rightChoice: horrorNodeCloseWindow, leftButtonTitle: "BACK TO BED", rightButtonTitle: "CLOSE WINDOW", isGoodEnd: nil, isBadEnd: nil)
