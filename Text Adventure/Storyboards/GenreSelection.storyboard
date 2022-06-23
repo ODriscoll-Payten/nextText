@@ -46,7 +46,15 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="FantasyImage" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle"/>
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Knight, Castles and Dragons">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="1" green="0.99006350032739721" blue="0.99435261433812627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" metaFont="system" size="71"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                             <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -60,7 +68,15 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="eclipse-g1311b2857_1920"/>
-                                                            <attributedString key="attributedTitle"/>
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Out of Oxygen">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.99086265705601351" green="1" blue="0.96398726212849195" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" metaFont="system" size="59"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                                             <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                         </buttonConfiguration>
@@ -75,7 +91,15 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="westernMusic" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle"/>
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="The Train">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.95747878560312472" green="1" blue="0.90375632170812725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" metaFont="system" size="66"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                             <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -89,7 +113,15 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="knife-g25e7a2b79_1920" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle"/>
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Inside">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="1" green="0.98758338784444621" blue="0.98032685332371639" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" metaFont="system" size="117"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
                                                             <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -144,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="727"/>
+            <point key="canvasLocation" x="75" y="731"/>
         </scene>
         <!--PlayScreen-->
         <scene sceneID="hnc-3p-hFn">
