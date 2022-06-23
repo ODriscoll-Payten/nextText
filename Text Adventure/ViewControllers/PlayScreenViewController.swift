@@ -84,6 +84,37 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         playBackGroundMusic(fileNamed: currentStory!.musicFileName)
     }
     
+    func confetti(){
+        let layer = CAEmitterLayer()
+        
+        // starting point for Confetti
+        layer.emitterPosition = CGPoint(x: view.center.x, y: -50)
+        
+        // this determines what color it is.
+        let colors: [UIColor] = [.systemRed, .systemOrange, .systemYellow, .systemGreen, .systemCyan, .systemBlue, .systemIndigo, .systemPurple]
+        
+        let cells : [CAEmitterCell] = colors.compactMap {
+        let cell = CAEmitterCell()
+        // size
+        cell.scale = 0.03
+        // which directions it goes rn in a circle
+        cell.emissionRange = .pi * 2
+        // how long it last
+        cell.lifetime = 10
+        // how often they are spawning
+        cell.birthRate = 50
+        // how far they are going from point of origin
+        cell.velocity = 150
+        // color we have it so its represents itself
+        cell.color = $0.cgColor
+        cell.contents = UIImage(named: "whiteIMG.jpeg")!.cgImage
+        return cell
+        }
+        
+        layer.emitterCells = cells
+        
+        view.layer.addSublayer(layer)
+    }
     
     
     func updateUI(){
@@ -108,6 +139,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
                         skipButton.setTitle("YOU LOST - TRY AGAIN", for: .normal)
                     } else if currentChoice?.isGoodEnd == true {
                         skipButton.setTitle("YOU WON - TRY AGAIN", for: .normal)
+                        confetti()
                     }
                     shake()
                 }
