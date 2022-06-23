@@ -67,7 +67,7 @@
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
-                                                            <backgroundConfiguration key="background" image="eclipse-g1311b2857_1920"/>
+                                                            <backgroundConfiguration key="background" image="galaxy-gd63c4b49f_1920"/>
                                                             <attributedString key="attributedTitle">
                                                                 <fragment content="Out of Oxygen">
                                                                     <attributes>
@@ -194,7 +194,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="FantasyImage" width="960" height="671"/>
-        <image name="eclipse-g1311b2857_1920" width="1920" height="1269"/>
+        <image name="galaxy-gd63c4b49f_1920" width="1920" height="1380"/>
         <image name="knife-g25e7a2b79_1920" width="1280" height="1920"/>
         <image name="tutorialPic" width="1920" height="1440"/>
         <image name="westernMusic" width="2400" height="1764"/>
