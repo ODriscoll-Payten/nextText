@@ -53,7 +53,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
     
     @IBOutlet weak var muteButtonTapped: UIBarButtonItem!
     
-    
+    var confettiLayer: CAEmitterLayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,6 +114,8 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         layer.emitterCells = cells
         
         view.layer.addSublayer(layer)
+        
+        confettiLayer = layer
     }
     
     
@@ -283,6 +285,8 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         choices.removeAll()
         choices.append(currentStory!.startNode)
         updateUI()
+        
+        confettiLayer?.removeFromSuperlayer()
     }
     
     
