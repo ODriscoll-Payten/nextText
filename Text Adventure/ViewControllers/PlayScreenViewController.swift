@@ -156,6 +156,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         backgroundImage.image = UIImage(named: currentStory!.image)
         backgroundImage.contentMode = .scaleToFill
         view.insertSubview(backgroundImage, at: 0)
+        backgroundImage.alpha = 0.5
         
     }
     
