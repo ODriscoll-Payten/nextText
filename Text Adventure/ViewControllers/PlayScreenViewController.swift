@@ -76,9 +76,15 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
             arrow.isHidden = false
         }
         
-        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: currentStory!.image)
+        backgroundImage.contentMode = .scaleToFill
+        view.insertSubview(backgroundImage, at: 0)
+        backgroundImage.alpha = 0.65
+    }
     
     func playMusic(){
         playBackGroundMusic(fileNamed: currentStory!.musicFileName)
@@ -151,12 +157,6 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
                 rightButton.backgroundColor = .gray
             }
         }
-        
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: currentStory!.image)
-        backgroundImage.contentMode = .scaleToFill
-        view.insertSubview(backgroundImage, at: 0)
-        
     }
     
     
