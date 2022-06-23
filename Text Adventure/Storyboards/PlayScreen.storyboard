@@ -68,14 +68,15 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5M9-mx-9Tc">
-                                <rect key="frame" x="0.0" y="489" width="414" height="38"/>
+                                <rect key="frame" x="0.0" y="517" width="414" height="8"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="5M9-mx-9Tc" secondAttribute="height" multiplier="207:20" id="62W-Js-o2q"/>
-                                    <constraint firstAttribute="height" constant="40" id="DC5-f4-j3x"/>
+                                    <constraint firstAttribute="width" secondItem="5M9-mx-9Tc" secondAttribute="height" multiplier="207:20" constant="274.27499999999998" id="62W-Js-o2q"/>
+                                    <constraint firstAttribute="height" constant="13.5" id="DC5-f4-j3x"/>
                                     <constraint firstAttribute="width" constant="414" id="r8f-el-hAD"/>
                                 </constraints>
-                                <imageReference key="image" image="arrow.down" catalog="system" symbolScale="medium"/>
+                                <imageReference key="image" image="arrow.down" catalog="system" symbolScale="small"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zjD-sA-wZK"/>
@@ -86,7 +87,7 @@
                             <constraint firstItem="sRN-Eg-3MU" firstAttribute="height" secondItem="STW-oW-PGe" secondAttribute="height" multiplier="0.0558036" id="Qaq-G5-cLm"/>
                             <constraint firstAttribute="trailing" secondItem="8Je-u2-qNW" secondAttribute="trailing" id="RiX-oj-xak"/>
                             <constraint firstItem="8Je-u2-qNW" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" id="Y8s-4d-DxK"/>
-                            <constraint firstItem="5M9-mx-9Tc" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" constant="400" id="YN3-Fu-caU"/>
+                            <constraint firstItem="5M9-mx-9Tc" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" constant="426.5" id="YN3-Fu-caU"/>
                             <constraint firstItem="5M9-mx-9Tc" firstAttribute="leading" secondItem="zjD-sA-wZK" secondAttribute="leading" id="hfw-wC-txR"/>
                             <constraint firstItem="5M9-mx-9Tc" firstAttribute="trailing" secondItem="zjD-sA-wZK" secondAttribute="trailing" id="v7e-R9-BYo"/>
                             <constraint firstItem="zjD-sA-wZK" firstAttribute="bottom" secondItem="8Je-u2-qNW" secondAttribute="bottom" constant="100" id="vaY-Qg-dwd"/>
