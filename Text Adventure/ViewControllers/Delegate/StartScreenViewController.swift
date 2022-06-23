@@ -15,7 +15,6 @@ class StartScreenViewController: UIViewController {
         startScreenBackgroundImage.image = UIImage(named:"CoverImageOne")
         startScreenBackgroundImage.contentMode = .scaleToFill
         view.insertSubview(startScreenBackgroundImage, at: 0)
-        
     }
     
     
