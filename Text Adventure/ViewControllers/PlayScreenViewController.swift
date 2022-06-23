@@ -287,6 +287,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         updateUI()
         
         confettiLayer?.removeFromSuperlayer()
+        skipButton.setTitle("", for: .normal)
     }
     
     
