@@ -25,31 +25,7 @@ class GenreSelectionViewController: UIViewController {
     //    var backGroundPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        let welcomeAlertController = UIAlertController(title: "Text Adventure", message: "Welcome Back!", preferredStyle: .alert)
-        
-        let backAction = UIAlertAction(title: "Good To Be Back", style: UIAlertAction.Style.cancel) {
-            UIAlertAction in
-            NSLog("Good To Be Back Pressed")
-        }
-        
-        let tutorialAction = UIAlertAction(title: "Tutorial", style: UIAlertAction.Style.destructive) {
-            UIAlertAction in
-            NSLog("Tutorial Pressed")
-            if self.choseTutorialButton.isHidden == true{
-                self.choseTutorialButton.isHidden = false
-            }
-        }
-        
-        
-        welcomeAlertController.addAction(tutorialAction)
-        welcomeAlertController.addAction(backAction)
-        
-
-        
-        self.present(welcomeAlertController, animated: true, completion: nil)
-        
         // Do any additional setup after loading the view.
     }
     

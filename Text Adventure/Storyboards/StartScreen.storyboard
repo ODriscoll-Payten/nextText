@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start Screen View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="StartScreenViewController" customModule="Text_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="fC6-Zb-yKg" kind="presentation" id="vwt-Oe-IUU"/>
+                                    <segue destination="fC6-Zb-yKg" kind="show" id="vwt-Oe-IUU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,7 +52,9 @@
         <!--GenreSelection-->
         <scene sceneID="rWY-fM-Pbl">
             <objects>
-                <viewControllerPlaceholder storyboardName="GenreSelection" id="fC6-Zb-yKg" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="GenreSelection" id="fC6-Zb-yKg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LgF-T8-W4b"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDw-nx-2R9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="747" y="54"/>
