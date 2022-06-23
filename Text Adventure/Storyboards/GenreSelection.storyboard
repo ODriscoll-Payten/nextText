@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s98-RR-phR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9le-1a-bZg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-dY-8Tg">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYY-YN-lew">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1420"/>
@@ -41,20 +41,13 @@
                                                     </button>
                                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="FantasyImage" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="Knights, Castles and Dragons">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.97835372783742391" green="0.97732388784230362" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="63"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="tLT-FI-Fcj" kind="show" identifier="fantasySelectedSegue" id="LCh-u9-etd"/>
@@ -67,18 +60,9 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="eclipse-g1311b2857_1920"/>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="Out of oxygen">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.92867724597630141" green="1" blue="0.91574783160421325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="60"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
+                                                            <attributedString key="attributedTitle"/>
                                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="tLT-FI-Fcj" kind="show" identifier="sciFiSelectedSegue" id="QaC-KG-5Ek"/>
@@ -91,17 +75,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="westernMusic" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="Western Train">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.94629709331628686" green="1" blue="0.94778444703659581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="66"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="tLT-FI-Fcj" kind="show" identifier="westernSelectedSegue" id="p4u-JM-ygB"/>
@@ -114,16 +89,8 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="knife-g25e7a2b79_1920" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="Inside">
-                                                                    <attributes>
-                                                                        <font key="NSFont" metaFont="system" size="97"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <attributedString key="attributedTitle"/>
+                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemFillColor"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="tLT-FI-Fcj" kind="show" identifier="horrorSelectedSegue" id="qxX-Dl-XzC"/>
@@ -177,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="806"/>
+            <point key="canvasLocation" x="25" y="727"/>
         </scene>
         <!--PlayScreen-->
         <scene sceneID="hnc-3p-hFn">
@@ -188,24 +155,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MaC-Nf-VwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="25" y="1199"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cd4-jO-iNJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s98-RR-phR" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XXZ-Ao-FEw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9le-1a-bZg" kind="relationship" relationship="rootViewController" id="ZR7-iN-5Yc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsa-fx-iTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="805.58035714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -222,6 +171,9 @@
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
