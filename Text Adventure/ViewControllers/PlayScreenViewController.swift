@@ -33,6 +33,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
     
    
 
+    @IBOutlet var confettiView: UIView!
     
     
     @IBOutlet var vertStack: UIStackView!
@@ -119,7 +120,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         
         layer.emitterCells = cells
         
-        view.layer.addSublayer(layer)
+        confettiView.layer.addSublayer(layer)
         
         confettiLayer = layer
     }

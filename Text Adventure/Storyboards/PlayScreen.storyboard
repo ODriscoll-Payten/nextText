@@ -17,12 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTO-AL-JQQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-u2-qNW">
                                 <rect key="frame" x="0.0" y="88" width="414" height="625"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JcT-am-wf6">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="390.5"/>
-                                        <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="414" id="MLt-h4-SxI"/>
                                         </constraints>
@@ -83,12 +87,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8Je-u2-qNW" firstAttribute="leading" secondItem="zjD-sA-wZK" secondAttribute="leading" id="0ZB-zp-nw3"/>
+                            <constraint firstItem="VTO-AL-JQQ" firstAttribute="trailing" secondItem="zjD-sA-wZK" secondAttribute="trailing" id="9hD-mE-zk7"/>
+                            <constraint firstItem="VTO-AL-JQQ" firstAttribute="top" secondItem="STW-oW-PGe" secondAttribute="top" id="A9x-Sq-8Vq"/>
                             <constraint firstItem="zjD-sA-wZK" firstAttribute="bottom" secondItem="5M9-mx-9Tc" secondAttribute="bottom" constant="285" id="ClO-ef-3xB"/>
+                            <constraint firstAttribute="bottom" secondItem="VTO-AL-JQQ" secondAttribute="bottom" id="EQk-Au-c7T"/>
                             <constraint firstItem="sRN-Eg-3MU" firstAttribute="height" secondItem="STW-oW-PGe" secondAttribute="height" multiplier="0.0558036" id="Qaq-G5-cLm"/>
                             <constraint firstAttribute="trailing" secondItem="8Je-u2-qNW" secondAttribute="trailing" id="RiX-oj-xak"/>
                             <constraint firstItem="8Je-u2-qNW" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" id="Y8s-4d-DxK"/>
                             <constraint firstItem="5M9-mx-9Tc" firstAttribute="top" secondItem="zjD-sA-wZK" secondAttribute="top" constant="426.5" id="YN3-Fu-caU"/>
                             <constraint firstItem="5M9-mx-9Tc" firstAttribute="leading" secondItem="zjD-sA-wZK" secondAttribute="leading" id="hfw-wC-txR"/>
+                            <constraint firstItem="VTO-AL-JQQ" firstAttribute="leading" secondItem="zjD-sA-wZK" secondAttribute="leading" id="knh-nM-0wb"/>
                             <constraint firstItem="5M9-mx-9Tc" firstAttribute="trailing" secondItem="zjD-sA-wZK" secondAttribute="trailing" id="v7e-R9-BYo"/>
                             <constraint firstItem="zjD-sA-wZK" firstAttribute="bottom" secondItem="8Je-u2-qNW" secondAttribute="bottom" constant="100" id="vaY-Qg-dwd"/>
                         </constraints>
@@ -104,6 +112,7 @@
                     <connections>
                         <outlet property="VertStack" destination="8Je-u2-qNW" id="uFD-eQ-SHw"/>
                         <outlet property="arrow" destination="5M9-mx-9Tc" id="6a4-fh-l0v"/>
+                        <outlet property="confettiView" destination="VTO-AL-JQQ" id="4gs-HG-bfb"/>
                         <outlet property="leftButton" destination="YNu-6q-7VY" id="OeJ-p4-M43"/>
                         <outlet property="muteButtonTapped" destination="NBI-4A-pAr" id="riX-oq-0Rf"/>
                         <outlet property="rightButton" destination="d0o-6H-mfn" id="uSF-tB-lzO"/>
