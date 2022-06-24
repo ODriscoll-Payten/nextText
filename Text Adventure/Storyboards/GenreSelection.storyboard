@@ -92,10 +92,10 @@
                                                         <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
                                                             <backgroundConfiguration key="background" image="westernMusic" imageContentMode="scaleAspectFill"/>
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="The Train">
+                                                                <fragment content="Statesville">
                                                                     <attributes>
-                                                                        <color key="NSColor" red="0.95747878560312472" green="1" blue="0.90375632170812725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" metaFont="system" size="66"/>
+                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                        <font key="NSFont" metaFont="system" size="92"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
