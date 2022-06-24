@@ -108,7 +108,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         // how long it last
         cell.lifetime = 10
         // how often they are spawning
-        cell.birthRate = 50
+        cell.birthRate = 20
         // how far they are going from point of origin
         cell.velocity = 150
         // color we have it so its represents itself
@@ -168,10 +168,18 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
 
         } else {
             return false
+            
         }
     }
 
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if viewDidScroll() {
+            arrow.isHidden = true
+        } else {
+            arrow.isHidden = false
+        }
+        
+    }
     
     
     // Func that plays the Music
@@ -248,13 +256,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if viewDidScroll() {
-            arrow.isHidden = true
-        } else {
-            arrow.isHidden = false
-        }
-    }
+   
     
     @IBAction func unwindToPlayScreen(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
