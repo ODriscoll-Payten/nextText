@@ -40,16 +40,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNu-6q-7VY">
                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="47"/>
+                                                <color key="tintColor" red="0.87450981139999995" green="0.89803922179999995" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Left"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Left">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="leftButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="hcU-HI-zKy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0o-6H-mfn">
                                                 <rect key="frame" x="227" y="0.0" width="187" height="47"/>
+                                                <color key="tintColor" red="0.87121838193398926" green="0.89678188402991721" blue="0.92404236818585861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Right"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Right">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="rightButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="GSC-kT-F78"/>
                                                 </connections>
@@ -58,8 +64,11 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-ua-0lr">
                                         <rect key="frame" x="0.0" y="577.5" width="414" height="47.5"/>
+                                        <color key="tintColor" red="0.87450981139999995" green="0.89803922179999995" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="skipButtonTapped:" destination="8qv-db-ecK" eventType="touchUpInside" id="ege-tl-ndM"/>
                                         </connections>

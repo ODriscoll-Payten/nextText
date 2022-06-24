@@ -11,7 +11,8 @@ import AVFoundation
 
 class GenreSelectionViewController: UIViewController {
     
-    @IBOutlet weak var choseTutorialButton: UIButton!
+
+    @IBOutlet var tutorialButton: UIBarButtonItem!
     
     @IBOutlet weak var choseFantasyGenreButton: UIButton!
     @IBOutlet weak var choseWesternGenreButton: UIButton!
@@ -34,17 +35,11 @@ class GenreSelectionViewController: UIViewController {
     }
     
     
-    func hideTutotrial(){
-        let isShowingTutorial = UserDefaults.standard.isShowingTutorial
-        choseSciFiGenreButton.isHidden = isShowingTutorial
-        choseFantasyGenreButton.isHidden = isShowingTutorial
-        choseWesternGenreButton.isHidden = isShowingTutorial
-        choseTutorialButton.isHidden = !isShowingTutorial
-    }
+  
     
     @IBAction func unwindToGenreSelection(_ unwindSegue: UIStoryboardSegue) {
         let sourceViewController = unwindSegue.source
-        hideTutotrial()
+        
         // Use data from the view controller which initiated the unwind segue
     }
     
@@ -53,24 +48,23 @@ class GenreSelectionViewController: UIViewController {
         guard let playVC = segue.destination as? PlayScreenViewController else { return}
         if segue.identifier == "fantasySelectedSegue"{
             playVC.currentStory = fantasyStory
-            hideTutotrial()
+            
             
         } else if segue.identifier == "sciFiSelectedSegue"{
             playVC.currentStory = sciFiStory
-            hideTutotrial()
+            
             
         } else if segue.identifier == "westernSelectedSegue"{
             playVC.currentStory = westernStory
-            hideTutotrial()
-            
-        }else if segue.identifier == "tutorialSegue"{
-            playVC.currentStory = tutorial
-            UserDefaults.standard.isShowingTutorial = false
-            hideTutotrial()
+           
             
         }else if segue.identifier == "horrorSelectedSegue"{
             playVC.currentStory = horrorStory
-            hideTutotrial()
+            
+            
+        } else if segue.identifier == "tutorialSegue"{
+            playVC.currentStory = tutorial
+            
         }
     }
 }//end

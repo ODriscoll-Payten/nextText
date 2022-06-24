@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Genre Selection View Controller-->
+        <!--Title-->
         <scene sceneID="6dD-5O-RRJ">
             <objects>
                 <viewController storyboardIdentifier="GenreSelection" id="9le-1a-bZg" customClass="GenreSelectionViewController" customModule="Text_Adventure" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,20 +25,6 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="Pkd-aR-H3B">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1420"/>
                                                 <subviews>
-                                                    <button hidden="YES" opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-Jr-huY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="small">
-                                                            <backgroundConfiguration key="background" image="tutorialPic" imageContentMode="scaleAspectFill"/>
-                                                            <attributedString key="attributedTitle"/>
-                                                            <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="tLT-FI-Fcj" kind="show" identifier="tutorialSegue" id="2OF-Ac-dMy"/>
-                                                        </connections>
-                                                    </button>
                                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-9K-f1Z">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,14 +150,20 @@
                             <constraint firstAttribute="bottom" secondItem="dcl-dY-8Tg" secondAttribute="bottom" id="zyR-Rh-9x4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="a4w-ch-Yja"/>
+                    <navigationItem key="navigationItem" title="Title" id="Onl-GU-z7H">
+                        <barButtonItem key="rightBarButtonItem" title="tutorial" image="questionmark.circle" catalog="system" id="0Zy-Sl-tht">
+                            <connections>
+                                <segue destination="tLT-FI-Fcj" kind="show" identifier="tutorialSegue" id="vQb-hd-qJN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="choseFantasyGenreButton" destination="jJA-9K-f1Z" id="8Qr-1K-p4a"/>
                         <outlet property="choseHorrorGenreButton" destination="qtg-Yy-2o0" id="kR3-Ys-VED"/>
                         <outlet property="choseSciFiGenreButton" destination="xED-zL-mHS" id="Ayk-RA-GBE"/>
-                        <outlet property="choseTutorialButton" destination="5IQ-Jr-huY" id="48i-FF-8XZ"/>
                         <outlet property="choseWesternGenreButton" destination="SyA-fY-I8V" id="V6H-W2-2vG"/>
+                        <outlet property="tutorialButton" destination="0Zy-Sl-tht" id="DGp-bU-3KY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTO-zu-8JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -190,13 +182,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QaC-KG-5Ek"/>
+        <segue reference="vQb-hd-qJN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="FantasyImage" width="960" height="671"/>
         <image name="galaxy-gd63c4b49f_1920" width="1920" height="1380"/>
         <image name="knife-g25e7a2b79_1920" width="1280" height="1920"/>
-        <image name="tutorialPic" width="1920" height="1440"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="westernMusic" width="2400" height="1764"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

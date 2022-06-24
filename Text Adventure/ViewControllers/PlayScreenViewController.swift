@@ -109,7 +109,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
         // how long it last
         cell.lifetime = 10
         // how often they are spawning
-        cell.birthRate = 20
+        cell.birthRate = 100
         // how far they are going from point of origin
         cell.velocity = 150
         // color we have it so its represents itself
@@ -219,7 +219,7 @@ class PlayScreenViewController: UIViewController, UITextViewDelegate{
     }
     
     func shake() {
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.43, animations: {
             let moveRight = CGAffineTransform(translationX: 20.0, y: 0.0)
             let bounce = CGAffineTransform(scaleX: 2.5, y: 2.5)
             
