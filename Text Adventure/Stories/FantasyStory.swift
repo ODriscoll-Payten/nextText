@@ -9,19 +9,19 @@
 import Foundation
 import UIKit
 
-var fantIntroText1: String = "You wake up in a prison cell you are not sure how you got here. You can only hope that it was not for anything serious. You shuttle at the thought of what you might have done. Suddenly you hear heavy footsteps approaching your cell. The Prison guard looks at me and said \"Its your lucky day prisoner.\" As you walk out into the field you see a man in a fancy robe I believe it is the lord of this castle. He annouced that he is willing to give me my freedom if I am willing to go on an adventure to reclaim the castle in the Enchanted Mountain. I believe it was about five years ago the kingdom there has fallen into the hands of a Mighty Dragon! The Lord walks towards me with one hand having a Sword and the other with a Shield. Which one should I choose?"
+var fantIntroText1: String = "You wake up in a prison cell you are not sure how you got here. You can only hope that it wasn't for anything serious. You shutter at the thought of what you might have done. Suddenly I hear heavy footsteps approaching your cell. The Prison guard looks at me and said \"Today is your lucky day prisoner.\" As you walk out into the field you see a man in a fancy robe I believe it is the lord of this castle. He annouced that he is willing to give me my freedom if I am willing to go on an adventure to reclaim the castle in the Enchanted Mountain. I believe it was about five years ago the kingdom there has fallen into the hands of a Mighty Dragon! The Lord walks towards me with one hand having a Sword and the other with a Shield. Which one should I choose?"
 
 
 
 // Reverse order
 
     // If User Selects [Sword]
-var fan_LD: String = "I have Choosen the Sword! I should be able to begin my journey now! The Enchanted Mountain isn't too far from here however there is a thick forest and it is getting late now should I wait til morning or should I continue my journey thru the night?"
+var fan_LD: String = "I have Choosen the Sword! I should be able to begin my journey now! The Enchanted Mountain isn't too far from here however there is a heavy forest and it is getting late now should I wait til morning or should I continue my journey thru the night?"
 
 
 
     // If User Selects [Shield]
-var fan_RD: String = "I have Choosen the Shield! I should be able to begin my journey now! The Enchanted Mountain isn't too far from here however there is a thick forest and it is getting late now should I wait til morning or should I continue my journey into the night?"
+var fan_RD: String = "I have Choosen the Shield! I should be able to begin my journey now! The Enchanted Mountain isn't too far from here however there is a heavy forest and it is getting late now should I wait til morning or should I continue my journey into the night?"
 
     // [Sword] -> [Wait til Morning]
 var fan_LD_LD: String = "While you were resting you were ambused by vampires without good protective gear you did not survive this encounter"
