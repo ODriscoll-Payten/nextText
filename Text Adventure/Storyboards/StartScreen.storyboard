@@ -17,13 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLA-yk-gp0">
-                                <rect key="frame" x="73" y="597" width="268" height="93"/>
+                                <rect key="frame" x="160" y="422" width="94" height="52"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Choose An Adventure!">
+                                        <fragment content="Start">
                                             <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="33" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -38,10 +39,8 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TLA-yk-gp0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="73" id="60C-fu-m3H"/>
-                            <constraint firstItem="TLA-yk-gp0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="509" id="XMO-Hf-Zcs"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TLA-yk-gp0" secondAttribute="bottom" constant="172" id="YJw-GF-ekm"/>
-                            <constraint firstItem="TLA-yk-gp0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="guI-3w-sgN"/>
+                            <constraint firstItem="TLA-yk-gp0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="oxx-ky-7GZ"/>
+                            <constraint firstItem="TLA-yk-gp0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="rix-eG-VsL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y3G-m0-fJ6"/>
